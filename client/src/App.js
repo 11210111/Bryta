@@ -1,14 +1,20 @@
-import logo from "./logo.svg";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
+import Nav from "../src/components/Nav";
+import MainPage from "../src/pages/MainPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello World</h1>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route exact path="/">
+            <MainPage />
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
