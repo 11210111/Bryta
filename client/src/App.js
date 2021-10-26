@@ -6,14 +6,14 @@ import MainPage from "../src/pages/MainPage";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <header>
         <Nav />
-        <Switch>
-          <Route exact path="/">
-            <MainPage>Hello World<MainPage/>
-          </Route>
-        </Switch>
-      </div>
+      </header>
+      <Switch>
+        <Route exact path="/">
+          <MainPage />
+        </Route>
+      </Switch>
     </BrowserRouter>
   );
 }

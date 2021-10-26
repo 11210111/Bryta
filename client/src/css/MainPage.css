@@ -1,0 +1,37 @@
+#main-container {
+  width: 100vw;
+  height: 500px;
+}
+
+.main-nav {
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+}
+.todayactor {
+  padding: 20px;
+}
+.todayactor-text {
+  font-size: 20px;
+  margin: 10px 10px 20px 40px;
+}
+
+.todayactor-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.todayactor-movies {
+  display: flex;
+}
+
+.main-bryta {
+  height: 200px;
+  padding: 30px;
+}
+.main-bryta-name {
+  padding: 20px;
+}
+.main-bryta-about {
+  padding: 20px;
+}
