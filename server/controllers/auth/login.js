@@ -6,11 +6,11 @@ const {
 } = require("./token");
 
 const { user } = require("../../models");
-module.exports = (req, res) => {
-  const { ID, password } = req.body;
-  const userInfo = user.findOne({
+module.exports = async (req, res) => {
+  const { username, password } = req.body;
+  const userInfo = await user.findOne({
     where: {
-      ID,
+      username,
       password,
     },
   });
@@ -18,8 +18,8 @@ module.exports = (req, res) => {
     res.sendStatus(404);
   } else {
     const data = {
-      username: userInfo.dataValue.ID,
-      email: userInfo.dataValue.email,
+      username: userInfo.dataValues.username,
+      email: userInfo.dataValues.email,
     };
     const aceessToken = generateAccessToken(data);
     const refreshToken = generateRefreshToken(data);
