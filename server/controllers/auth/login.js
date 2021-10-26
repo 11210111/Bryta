@@ -7,10 +7,10 @@ const {
 
 const { user } = require("../../models");
 module.exports = (req, res) => {
-  const { username, password } = req.body;
+  const { ID, password } = req.body;
   const userInfo = user.findOne({
     where: {
-      username,
+      ID,
       password,
     },
   });
@@ -18,7 +18,7 @@ module.exports = (req, res) => {
     res.sendStatus(404);
   } else {
     const data = {
-      username: userInfo.dataValue.username,
+      username: userInfo.dataValue.ID,
       email: userInfo.dataValue.email,
     };
     const aceessToken = generateAccessToken(data);
