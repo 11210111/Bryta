@@ -1,22 +1,27 @@
 const { user } = require("../../models");
 
 module.exports = async (req, res) => {
-  const { ID, email, password } = req.body;
-  if (!ID || !email || !password) {
+  const { username, email, password } = req.body;
+  if (!username || !email || !password) {
     res.sendStatus(404);
   } else {
-    const [result, created] = await user.findOrCreate({
-      where: { ID },
-      defaults: {
-        ID,
-        email,
-        password,
+    const userInfo = await user.findOne({
+      where: {
+        username,
       },
     });
-    if (!created) {
-      res.send({ message: "email exists" });
+    if (userInfo.username) {
+      res.status(404).send({ message: "email exists" });
     } else {
-      res.status(201).send(result);
+      await user
+        .create({
+          username,
+          email,
+          password,
+        })
+        .then(() => {
+          res.sendStatus(201);
+        });
     }
   }
 };
