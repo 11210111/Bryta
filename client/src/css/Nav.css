@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  height: 3.9rem;
+}
+.nav {
+  margin-top: 4vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-search {
+  width: 200px;
+  position: relative;
+}
+.nav-search input {
+  width: 100%;
+  padding: 10px 5px 10px 10px;
+}
+
+.nav-search-icon {
+  /*임시;;*/
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+.nav-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-mypage {
+  margin: 0 15px;
+}
