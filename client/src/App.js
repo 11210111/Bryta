@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Nav from "../src/components/Nav";
-import MainPage from "../src/pages/MainPage";
+import Nav from "../src/components/nav";
+import MainPage from "../src/pages/mainPage";
 
 function App() {
   return (
