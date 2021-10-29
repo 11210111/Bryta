@@ -1,18 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Nav from "../src/components/Nav";
+import Nav from "./components/Nav";
 import MainPage from "./pages/MainPage";
-import LoginPage from "../src/pages/loginPage";
-import SignUpPage from "../src/pages/signupPage";
-import Loading from "./pages/loadingPage";
-import Detail from "../src/pages/Detail";
+import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./pages/SignupPage";
+import Loading from "./pages/LoadingPage";
+import Detail from "./pages/Detail";
 
 function App() {
   const [loader, setLoader] = useState(true);
+  const [userInfo, setUserInfo] = useState("");
+  const [isLogin, setIsLogin] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setLoader(false), 3000);
+    setTimeout(() => setLoader(false), 1000);
+    if (window.sessionStorage.getItem("accessToken")) {
+      setIsLogin(true);
+    } else {
+      setIsLogin(false);
+    }
+    console.log(isLogin);
   }, []);
 
   return (
@@ -29,13 +37,13 @@ function App() {
               <MainPage />
             </Route>
             <Route exact path="/login">
-              <LoginPage />
+              <LoginPage userInfo={userInfo} setUserInfo={setUserInfo} />
             </Route>
             <Route exact path="/signup">
               <SignUpPage />
             </Route>
             <Route path="/detail/:id">
-            <Detail />
+              <Detail />
             </Route>
           </Switch>
         </BrowserRouter>

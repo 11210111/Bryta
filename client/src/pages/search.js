@@ -5,7 +5,7 @@ import "../css/Search.css";
 function Search({ setSelectedActor, isLoading, setIsLoading, actor }) {
   const [searchValue, setSearchValue] = useState("");
   const [allActor] = useState(actor);
-  const [searchActor, setSearchActor] = usestate(actor);
+  const [searchActor, setSearchActor] = useState(actor);
   const [moreActor, setMoreActor] = useState(actor);
 
   //버튼 클릭했을 때 필터링 되는 함수

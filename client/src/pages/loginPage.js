@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import KakaoLogin from "../components/kakao";
+import KakaoLogin from "../components/Kakao";
 
-function LoginPage() {
+function LoginPage({ userInfo, setUserInfo }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errMessage, setErrMessage] = useState("");
@@ -89,7 +89,7 @@ function LoginPage() {
             </Link>
             <div>
               <button>구글 로그인</button>
-              <KakaoLogin />
+              <KakaoLogin userInfo={userInfo} setUserInfo={setUserInfo} />
             </div>
           </div>
           <aside className="login-aside">
