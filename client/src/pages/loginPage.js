@@ -46,10 +46,6 @@ function LoginPage() {
     }
   };
 
-  const onClickKakao = () => {
-    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=c139469ef8f15044f5e9ceaed0648aa8&redirect_uri=http://localhost:3000&response_type=code`;
-  };
-
   return (
     <div className="main">
       <section className="login-container">
@@ -93,9 +89,7 @@ function LoginPage() {
             </Link>
             <div>
               <button>구글 로그인</button>
-              <button className="kakaoOauth" onClick={onClickKakao}>
-                카카오톡 로그인
-              </button>
+              <KakaoLogin />
             </div>
           </div>
           <aside className="login-aside">
