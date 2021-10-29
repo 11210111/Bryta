@@ -1,0 +1,15 @@
+#detail-container {
+  width: 100vw;
+  height: 500px;
+}
+.detail-actor {
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+}
+.detail-actor-about {
+  display: flex;
+}
+.detail-actor-movies {
+  display: flex;
+}
