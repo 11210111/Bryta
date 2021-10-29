@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import KakaoLogin from "../components/oauth";
+import KakaoLogin from "../components/kakao";
 
 function LoginPage() {
   const [username, setUsername] = useState("");
