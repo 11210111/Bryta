@@ -28,7 +28,10 @@ function SignUpPage() {
             </form>
           </div>
           <aside className="login-aside">
-            <img src="https://img.insight.co.kr/static/2018/04/04/700/y1hkxoxpwxamps14n7b5.jpg"></img>
+            <img
+              src="https://img.insight.co.kr/static/2018/04/04/700/y1hkxoxpwxamps14n7b5.jpg"
+              alt=""
+            ></img>
           </aside>
         </div>
       </section>

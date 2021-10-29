@@ -13,7 +13,7 @@ const Text = styled.div`
   font-size: 30px;
 `;
 
-const LodingPage = () => {
+const LoadingPage = () => {
   return (
     <Container>
       <Text>Loading...</Text>
@@ -21,4 +21,4 @@ const LodingPage = () => {
   );
 };
 
-export default Loading;
+export default LoadingPage;
