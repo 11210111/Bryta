@@ -5,6 +5,7 @@ const logger = require("morgan");
 const helmet = require("helmet");
 const cors = require("cors");
 const authRouter = require("./routes/auth");
+const actorRouter = require("./routes/actor");
 const morgan = require("morgan");
 
 const app = express();
@@ -26,6 +27,7 @@ app.use(
 );
 
 app.use("/auth", authRouter);
+app.use("/actor", actorRouter);
 
 module.exports = app;
 

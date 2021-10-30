@@ -4,4 +4,7 @@ module.exports = {
   signup: require("./auth/signup"),
   getAccessToken: require("./auth/kakao").getAccessToken,
   getUserInfo: require("./auth/kakao").getUserInfo,
+  search: require("./actor/actor").search,
+  add: require("./actor/actor").add,
+  recommendation: require("./actor/recommendation"),
 };
