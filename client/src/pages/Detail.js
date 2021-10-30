@@ -11,7 +11,7 @@ export default function Detail() {
           <ActorProfile />
         </div>
         <div className="detail-actor-movie">
-          <h2>출연작</h2>
+          <h2>출연작!</h2>
           <div className="detail-actor-movies">
             <Movie />
             <Movie />

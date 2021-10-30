@@ -20,5 +20,6 @@ const LoadingPage = () => {
     </Container>
   );
 };
+console.log("qw");
 
 export default LoadingPage;
