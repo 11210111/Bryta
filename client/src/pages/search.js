@@ -64,7 +64,7 @@ function Search({ setSelectedActor, isLoading, setIsLoading, actor }) {
 
         {moreActor.length === 0 ? (
           <div className="search_have_none_actors">
-            <span>찾는 배우가 존재하지 않습니다</span>
+            <span>찾는 배우가 존재하지 않습니다!</span>
           </div>
         ) : null}
 

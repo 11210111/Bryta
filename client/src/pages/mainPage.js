@@ -20,7 +20,7 @@ function MainPage() {
         </section>
         <section className="main-bryta">
           <div className="main-bryta-name">Bryta란</div>
-          <p className="main-bryta-about">필모깨기를 도와주는 Bryta</p>
+          <p className="main-bryta-about">필모깨기를 도와주는 Bryta~</p>
         </section>
       </nav>
     </div>
