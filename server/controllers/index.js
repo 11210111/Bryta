@@ -7,4 +7,5 @@ module.exports = {
   search: require("./actor/actor").search,
   add: require("./actor/actor").add,
   recommendation: require("./actor/recommendation"),
+  actorDetail: require("./actor/actorDetail"),
 };
