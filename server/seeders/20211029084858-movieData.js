@@ -23,14 +23,16 @@ module.exports = {
       {
         id: 2,
         movieName: "보스턴 1947",
-        movieImage: "이미지 준비중",
+        movieImage:
+          "https://ssl.pstatic.net/static/movie/2012/06/dft_img133x190.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         id: 3,
         movieName: "피랍",
-        movieImage: "이미지 준비중",
+        movieImage:
+          "https://ssl.pstatic.net/static/movie/2012/06/dft_img133x190.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -333,7 +335,8 @@ module.exports = {
       {
         id: 41,
         movieName: "나, 그런 사람 아니에요",
-        movieImage: "이미지 준비중",
+        movieImage:
+          "https://ssl.pstatic.net/static/movie/2012/06/dft_img133x190.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
