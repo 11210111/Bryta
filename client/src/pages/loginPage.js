@@ -41,7 +41,7 @@ function LoginPage({ userInfo, setUserInfo }) {
           console.log(res.data);
           window.sessionStorage.setItem("token", res.data.accessToken);
           console.log(sessionStorage);
-          // window.location.replace("/");
+          window.location.replace("/");
         });
     }
   };

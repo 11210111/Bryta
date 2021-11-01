@@ -14,13 +14,13 @@ function App() {
   const [isLogin, setIsLogin] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setLoader(false), 1000);
     if (window.sessionStorage.getItem("accessToken")) {
       setIsLogin(true);
     } else {
       setIsLogin(false);
     }
     console.log(isLogin);
+    setTimeout(() => setLoader(false), 1000);
   }, []);
 
   return (
