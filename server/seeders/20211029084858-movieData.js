@@ -11,7 +11,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
      */
-    await queryInterface.bulkInsert("movie", [
+    await queryInterface.bulkInsert("movies", [
       {
         id: 1,
         movieName: "야행",
