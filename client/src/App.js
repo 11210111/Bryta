@@ -10,6 +10,8 @@ import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignupPage";
 import Loading from "./pages/LoadingPage";
 import Detail from "./pages/Detail";
+import Board from "./pages/Board";
+import Request from "./pages/Request";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -48,6 +50,12 @@ function App() {
             </Route>
             <Route path="/detail/:id">
               <Detail />
+            </Route>
+            <Route path="/board">
+              <Board />
+            </Route>
+            <Route path="/request">
+              <Request />
             </Route>
           </Switch>
         </BrowserRouter>
