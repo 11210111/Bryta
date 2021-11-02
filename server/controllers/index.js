@@ -5,9 +5,9 @@ module.exports = {
   getAccessToken: require("./auth/kakao").getAccessToken,
   getUserInfo: require("./auth/kakao").getUserInfo,
   search: require("./actor/actor").search,
-  add: require("./actor/actor").add,
   recommendation: require("./actor/recommendation"),
   actorDetail: require("./actor/actorDetail"),
   post: require("./noticeBard/post"),
   requestActor: require("./noticeBard/requestActor"),
+  favorite: require("./mypage/favorite"),
 };
