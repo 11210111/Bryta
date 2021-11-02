@@ -1,8 +1,8 @@
-import "../css/MainPage.css";
+import "../../css/MainPage.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import TodayActor from "../components/TodayActor";
-function MainPage() {
+import TodayActor from "../../components/TodayActor";
+function MainPage2() {
   const [isTodayActor, setIsTodayActor] = useState(null);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default MainPage2;
