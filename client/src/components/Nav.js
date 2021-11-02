@@ -1,10 +1,16 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { BiSearch } from "react-icons/bi";
-import LoginErrorModal from "./LoginErrorModal";
 import "../css/Nav.css";
+import LoginErrorModal from "./LoginErrorModal";
+import { logout } from "../reducers/APIs/userAPI";
 
-function Nav({ isLogin }) {
+function Nav() {
+  const history = useHistory();
+  const dispatch = useDispatch();
+  const login = useSelector((state) => state.user);
   const [searchInput, setSearchInput] = useState("");
   const [modal, setModal] = useState(false);
 
@@ -15,7 +21,10 @@ function Nav({ isLogin }) {
     e.preventDefault();
     setSearchInput(e.target.value);
   };
-
+  const logoutHandler = async () => {
+    await dispatch(logout()).unwrap();
+    history.push("/");
+  };
   return (
     <header>
       <nav className="nav">
@@ -39,17 +48,19 @@ function Nav({ isLogin }) {
             <BiSearch className="nav-search-icon" />
           </Link>
         </div>
-        {isLogin ? (
-          //로그인상태
+        {login ? (
           <div className="nav-right">
+            <Link to="/board">게시판</Link>
             <Link to="/mypage">
               <div className="nav-mypage">mypage</div>
             </Link>
-            <div className="nav-logout">logout</div>
+            <div className="nav-logout" onClick={logoutHandler}>
+              logout
+            </div>
           </div>
         ) : (
-          //로그아웃상태
           <div className="nav-right">
+            <Link to="/board">게시판</Link>
             <div className="nav-mypage" onClick={modalHandler}>
               mypage
             </div>
