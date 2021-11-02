@@ -1,6 +1,7 @@
 const {
   user,
   favorite,
+  actor,
   actor_movie,
   movie,
   user_movie,
@@ -10,7 +11,6 @@ const { isAuthorized } = require("../auth/token");
 module.exports = {
   favoriteActor: async (req, res) => {
     const userInfo = isAuthorized(req);
-    console.log(userInfo);
     if (!userInfo) {
       res.sendStatus(404);
     }
@@ -40,43 +40,39 @@ module.exports = {
     });
   },
 
-  favoriteMovie: async (req, res) => {
-    const userInfo = isAuthorized(req);
-    const { id } = req.params;
-    if (!userInfo) {
-      res.sendStatus(404);
-    }
-
-    const movieList = await user_movie.findAll({
-      where: {
-        userId: userInfo.id,
-        actorId: id,
-      },
-    });
-
-    const movies = await actor_movie.findAll({
-      where: {
-        actorId: id,
-      },
-      include: [
-        {
-          model: movie,
-          require: true,
-          attributes: ["id", "movieName", "movieImage"],
-        },
-      ],
-    });
-
-    if (movieList) {
-      res.status(201).send({
-        movieList,
-      });
-    } else {
-      await user_movie.create({});
-    }
-
-    res.status(201).send({
-      movieList,
-    });
+  favoriteMovie: (req, res) => {
+    // const userInfo = isAuthorized(req);
+    // const { id } = req.params;
+    // if (!userInfo) {
+    //   res.sendStatus(404);
+    // }
+    // const movieList = await user_movie.findAll({
+    //   where: {
+    //     userId: userInfo.id,
+    //     actorId: id,
+    //   },
+    // });
+    // const movies = await actor_movie.findAll({
+    //   where: {
+    //     actorId: id,
+    //   },
+    //   include: [
+    //     {
+    //       model: movie,
+    //       require: true,
+    //       attributes: ["id", "movieName", "movieImage"],
+    //     },
+    //   ],
+    // });
+    // if (movieList) {
+    //   res.status(201).send({
+    //     movieList,
+    //   });
+    // } else {
+    //   await user_movie.create({});
+    // }
+    // res.status(201).send({
+    //   movieList,
+    // });
   },
 };

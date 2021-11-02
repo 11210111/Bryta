@@ -12,4 +12,5 @@ module.exports = {
   favoriteActor: require("./mypage/favorite").favoriteActor,
   favoriteMovie: require("./mypage/favorite").favoriteMovie,
   updateProfile: require("./mypage/updateProfile"),
+  deleteAccount: require("./mypage/deleteAccount"),
 };
