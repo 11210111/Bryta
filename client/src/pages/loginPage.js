@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import KakaoLogin from "../components/oauth";
+import KakaoLogin from "../components/Kakao";
 
-function LoginPage() {
+function LoginPage({ userInfo, setUserInfo }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errMessage, setErrMessage] = useState("");
@@ -41,13 +41,9 @@ function LoginPage() {
           console.log(res.data);
           window.sessionStorage.setItem("token", res.data.accessToken);
           console.log(sessionStorage);
-          // window.location.replace("/");
+          window.location.replace("/");
         });
     }
-  };
-
-  const onClickKakao = () => {
-    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=c139469ef8f15044f5e9ceaed0648aa8&redirect_uri=http://localhost:3000&response_type=code`;
   };
 
   return (
@@ -93,13 +89,14 @@ function LoginPage() {
             </Link>
             <div>
               <button>구글 로그인</button>
-              <button className="kakaoOauth" onClick={onClickKakao}>
-                카카오톡 로그인
-              </button>
+              <KakaoLogin userInfo={userInfo} setUserInfo={setUserInfo} />
             </div>
           </div>
           <aside className="login-aside">
-            <img src="https://img.insight.co.kr/static/2018/04/04/700/y1hkxoxpwxamps14n7b5.jpg"></img>
+            <img
+              src="https://img.insight.co.kr/static/2018/04/04/700/y1hkxoxpwxamps14n7b5.jpg"
+              alt=""
+            ></img>
           </aside>
         </div>
       </section>

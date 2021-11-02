@@ -1,0 +1,19 @@
+#detail-container {
+  width: 100vw;
+  height: 500px;
+}
+.detail-actor {
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+}
+.detail-actor-about {
+  display: flex;
+}
+.detail-actor-movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-gap: 2rem;
+  justify-content: space-around;
+  justify-items: center;
+}

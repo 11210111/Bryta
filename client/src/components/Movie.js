@@ -1,11 +1,13 @@
-// Movie Component
-// 필요한 페이지 ; 메인, 배우 검색, 배우 상세
 import "../css/Movie.css";
-export default function Movie() {
+export default function Movie({ movie }) {
   return (
     <div id="movie-container">
-      <img src="" alt="" className="movie-image" />
-      <div className="movie-name">영화제목</div>
+      <img
+        src={movie && movie?.movieImage}
+        alt={movie && movie?.movieName}
+        className="movie-image"
+      />
+      <div className="movie-name">{movie && movie?.movieName}</div>
     </div>
   );
 }

@@ -6,6 +6,7 @@ const {
 } = require("./token");
 
 const { user } = require("../../models");
+
 module.exports = async (req, res) => {
   const { username, password } = req.body;
   const userInfo = await user.findOne({
@@ -18,13 +19,14 @@ module.exports = async (req, res) => {
     res.sendStatus(404);
   } else {
     const data = {
+      id: userInfo.dataValues.id,
       username: userInfo.dataValues.username,
       email: userInfo.dataValues.email,
     };
     const aceessToken = generateAccessToken(data);
     const refreshToken = generateRefreshToken(data);
 
-    sendAccessToken(res, aceessToken, data);
     sendRefreshToken(res, refreshToken);
+    sendAccessToken(res, aceessToken, data);
   }
 };

@@ -1,22 +1,27 @@
 import "../css/MainPage.css";
-import Actor from "../components/Actor";
-import Movie from "../components/Movie";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import TodayActor from "../components/TodayActor";
 function MainPage() {
+  const [isTodayActor, setIsTodayActor] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/actor/recommendation")
+      .then((res) => {
+        const data = res.data.actorMovie;
+        setIsTodayActor(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <div id="main-container">
       <nav className="main-nav">
-        <section className="todayactor">
-          <div className="todayactor-text">오늘의 배우</div>
-          <div className="todayactor-images">
-            <div className="todayactor-actor">
-              <Actor />
-            </div>
-            <div className="todayactor-movies">
-              <Movie />
-              <Movie />
-              <Movie />
-            </div>
-          </div>
+        <section className="main-todayactor">
+          <TodayActor todayActor={isTodayActor} />
         </section>
         <section className="main-bryta">
           <div className="main-bryta-name">Bryta란</div>
