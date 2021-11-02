@@ -19,7 +19,7 @@ function SignUpPage() {
                 <input type="password" placeholder="password"></input>
               </div>
               <div className="signup-input">
-                <label>비밀번호 확인</label>
+                <label>비밀번호 확인!</label>
                 <input type="password" placeholder="confirm password"></input>
               </div>
               <button type="submit" className="signup-btn">

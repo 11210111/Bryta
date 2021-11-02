@@ -41,7 +41,7 @@ function LoginPage({ userInfo, setUserInfo }) {
           console.log(res.data);
           window.sessionStorage.setItem("token", res.data.accessToken);
           console.log(sessionStorage);
-          // window.location.replace("/");
+          window.location.replace("/");
         });
     }
   };
@@ -93,7 +93,10 @@ function LoginPage({ userInfo, setUserInfo }) {
             </div>
           </div>
           <aside className="login-aside">
-            <img src="https://img.insight.co.kr/static/2018/04/04/700/y1hkxoxpwxamps14n7b5.jpg"></img>
+            <img
+              src="https://img.insight.co.kr/static/2018/04/04/700/y1hkxoxpwxamps14n7b5.jpg"
+              alt=""
+            ></img>
           </aside>
         </div>
       </section>

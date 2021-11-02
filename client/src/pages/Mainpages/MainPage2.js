@@ -1,35 +1,27 @@
+import "../css/MainPage.css";
 import React, { useEffect, useState } from "react";
-import "../../css/MainPage.css";
-import Actor from "../../components/Actor";
-import Movie from "../../components/Movie";
+import axios from "axios";
+import TodayActor from "../components/TodayActor";
+function MainPage() {
+  const [isTodayActor, setIsTodayActor] = useState(null);
 
-function MainPage2() {
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/actor/recommendation")
+      .then((res) => {
+        const data = res.data.actorMovie;
+        setIsTodayActor(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <div id="main-container">
       <nav className="main-nav">
-        <section className="todayactor">
-          <div className="todayactor-text-wrapper">
-            <div
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1300"
-              data-aos-easing="ease-out"
-              className="todayactor-text"
-            >
-              오늘의 배우
-              <br />
-            </div>
-          </div>
-          <div className="todayactor-images">
-            <div className="todayactor-actor">
-              <Actor />
-            </div>
-            <div className="todayactor-movies">
-              <Movie />
-              <Movie />
-              <Movie />
-            </div>
-          </div>
+        <section className="main-todayactor">
+          <TodayActor todayActor={isTodayActor} />
         </section>
         <section className="main-bryta">
           <div className="main-bryta-name">Bryta란</div>
