@@ -1,7 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const { favorite } = require("../controllers");
+const {
+  favoriteActor,
+  favoriteMovie,
+  updateProfile,
+} = require("../controllers");
 
-router.get("/favorite", favorite);
+router.get("/favoriteActor", favoriteActor);
+router.get("/:id", favoriteMovie);
+router.post("/updateProfile", updateProfile);
 
 module.exports = router;

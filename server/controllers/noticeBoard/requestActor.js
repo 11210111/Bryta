@@ -1,4 +1,4 @@
-const { noticeBoard } = require("../../models");
+const { noticeboard } = require("../../models");
 const { isAuthorized } = require("../auth/token");
 
 module.exports = async (req, res) => {
@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
   if (!userInfo) {
     res.sendStatus(404);
   } else {
-    await noticeBoard.create({
+    await noticeboard.create({
       username: userInfo.username,
       content: req.body.content,
     });
