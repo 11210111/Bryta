@@ -19,6 +19,7 @@ module.exports = async (req, res) => {
     res.sendStatus(404);
   } else {
     const data = {
+      id: userInfo.dataValues.id,
       username: userInfo.dataValues.username,
       email: userInfo.dataValues.email,
     };
