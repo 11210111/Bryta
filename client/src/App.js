@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.css";
+/*** Components ***/
 import Nav from "./components/Nav";
-import MainPage from "./pages/MainPage";
+import MainPage from "./pages/Mainpages/MainPage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignupPage";
 import Loading from "./pages/LoadingPage";
@@ -14,6 +17,7 @@ function App() {
   const [isLogin, setIsLogin] = useState(false);
 
   useEffect(() => {
+    AOS.init();
     setTimeout(() => setLoader(false), 1000);
     if (window.sessionStorage.getItem("accessToken")) {
       setIsLogin(true);

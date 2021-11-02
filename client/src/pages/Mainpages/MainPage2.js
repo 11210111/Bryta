@@ -1,12 +1,25 @@
-import "../css/MainPage.css";
-import Actor from "../components/Actor";
-import Movie from "../components/Movie";
-function MainPage() {
+import React, { useEffect, useState } from "react";
+import "../../css/MainPage.css";
+import Actor from "../../components/Actor";
+import Movie from "../../components/Movie";
+
+function MainPage2() {
   return (
     <div id="main-container">
       <nav className="main-nav">
         <section className="todayactor">
-          <div className="todayactor-text">오늘의 배우</div>
+          <div className="todayactor-text-wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1300"
+              data-aos-easing="ease-out"
+              className="todayactor-text"
+            >
+              오늘의 배우
+              <br />
+            </div>
+          </div>
           <div className="todayactor-images">
             <div className="todayactor-actor">
               <Actor />
@@ -27,4 +40,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default MainPage2;
