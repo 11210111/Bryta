@@ -9,7 +9,7 @@ const {
 
 router.get("/favoriteActor", favoriteActor);
 router.get("/deleteAccount", deleteAccount);
-router.get("/:id", favoriteMovie);
 router.post("/updateProfile", updateProfile);
+router.get("/:id", favoriteMovie);
 
 module.exports = router;

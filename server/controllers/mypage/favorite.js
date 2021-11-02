@@ -40,30 +40,31 @@ module.exports = {
     });
   },
 
-  favoriteMovie: (req, res) => {
-    // const userInfo = isAuthorized(req);
-    // const { id } = req.params;
-    // if (!userInfo) {
-    //   res.sendStatus(404);
-    // }
-    // const movieList = await user_movie.findAll({
-    //   where: {
-    //     userId: userInfo.id,
-    //     actorId: id,
-    //   },
-    // });
-    // const movies = await actor_movie.findAll({
-    //   where: {
-    //     actorId: id,
-    //   },
-    //   include: [
-    //     {
-    //       model: movie,
-    //       require: true,
-    //       attributes: ["id", "movieName", "movieImage"],
-    //     },
-    //   ],
-    // });
+  favoriteMovie: async (req, res) => {
+    const userInfo = isAuthorized(req);
+    const { id } = req.params;
+    if (!userInfo) {
+      res.sendStatus(404);
+    }
+    const movieList = await user_movie.findAll({
+      where: {
+        userId: userInfo.id,
+        actorId: id,
+      },
+    });
+    const movies = await actor_movie.findAll({
+      where: {
+        actorId: id,
+      },
+      include: [
+        {
+          model: movie,
+          require: true,
+          attributes: ["id", "movieName", "movieImage"],
+        },
+      ],
+    });
+
     // if (movieList) {
     //   res.status(201).send({
     //     movieList,
@@ -71,8 +72,12 @@ module.exports = {
     // } else {
     //   await user_movie.create({});
     // }
-    // res.status(201).send({
-    //   movieList,
-    // });
+    res.status(201).send({
+      movies,
+    });
   },
 };
+
+/* 
+  
+*/
