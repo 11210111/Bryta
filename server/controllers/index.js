@@ -7,7 +7,9 @@ module.exports = {
   search: require("./actor/actor").search,
   recommendation: require("./actor/recommendation"),
   actorDetail: require("./actor/actorDetail"),
-  post: require("./noticeBard/post"),
-  requestActor: require("./noticeBard/requestActor"),
-  favorite: require("./mypage/favorite"),
+  post: require("./noticeBoard/post"),
+  requestActor: require("./noticeBoard/requestActor"),
+  favoriteActor: require("./mypage/favorite").favoriteActor,
+  favoriteMovie: require("./mypage/favorite").favoriteMovie,
+  updateProfile: require("./mypage/updateProfile"),
 };
