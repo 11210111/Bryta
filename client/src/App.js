@@ -18,13 +18,13 @@ function App() {
 
   useEffect(() => {
     AOS.init();
-    setTimeout(() => setLoader(false), 1000);
     if (window.sessionStorage.getItem("accessToken")) {
       setIsLogin(true);
     } else {
       setIsLogin(false);
     }
     console.log(isLogin);
+    setTimeout(() => setLoader(false), 1000);
   }, []);
 
   return (
