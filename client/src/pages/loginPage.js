@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import KakaoLogin from "../components/Kakao";
+import { useDispatch } from "react-redux";
+import { login } from "../reducers/APIs/userAPI";
 
 function LoginPage({ userInfo, setUserInfo }) {
+  const dispatch = useDispatch();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errMessage, setErrMessage] = useState("");
@@ -24,25 +27,28 @@ function LoginPage({ userInfo, setUserInfo }) {
     if (username === "" || password === "") {
       setErrMessage("빈칸을 입력하세요");
     } else {
-      const url = "http://localhost:8080/auth/login";
-      await axios
-        .post(
-          url,
-          {
-            username,
-            password,
-          },
-          {
-            "Content-Type": "application/json",
-            withCredentials: true,
-          }
-        )
-        .then((res) => {
-          console.log(res.data);
-          window.sessionStorage.setItem("token", res.data.accessToken);
-          console.log(sessionStorage);
-          window.location.replace("/");
-        });
+      await dispatch(login({ username, password })).unwrap();
+      window.location.replace("/");
+      // const url = "http://localhost:8080/auth/login";
+      // await axios
+      //   .post(
+      //     url,
+      //     {
+      //       username,
+      //       password,
+      //     },
+      //     {
+      //       "Content-Type": "application/json",
+      //       withCredentials: true,
+      //     }
+      //   )
+      //   .then((res) => {
+      //     //
+      //     console.log(res.data);
+      //     window.sessionStorage.setItem("token", res.data.accessToken);
+      //     console.log(sessionStorage);
+
+      //   });
     }
   };
 
