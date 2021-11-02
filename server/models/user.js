@@ -6,9 +6,6 @@ module.exports = (sequelize, DataTypes) => {
       models.user.hasMany(models.favorite, {
         foreignKey: "userId",
       });
-      models.user.hasMany(models.actorPost, {
-        foreignKey: "userId",
-      });
       models.user.hasMany(models.user_movie, {
         foreignKey: "userId",
       });

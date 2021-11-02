@@ -8,4 +8,6 @@ module.exports = {
   add: require("./actor/actor").add,
   recommendation: require("./actor/recommendation"),
   actorDetail: require("./actor/actorDetail"),
+  post: require("./noticeBard/post"),
+  requestActor: require("./noticeBard/requestActor"),
 };
