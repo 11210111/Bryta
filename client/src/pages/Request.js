@@ -9,7 +9,7 @@ export default function Request() {
   const postRequest = async () => {
     await axios
       .post(
-        "http://localhost:8080/noticeBoard/requestActor",
+        "http://localhost:8080/noticeBoard",
         {
           content: requestValue,
         },

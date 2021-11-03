@@ -4,7 +4,7 @@ import LoginErrorModal from "./LoginErrorModal";
 import { useSelector } from "react-redux";
 
 export default function Actor({ actor }) {
-  const isLogin = useSelector((state) => state.user);
+  const isLogin = useSelector((state) => state.auth);
   const [modal, setModal] = useState(false);
   const modalHandler = () => {
     setModal(!modal);

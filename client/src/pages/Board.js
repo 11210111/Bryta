@@ -8,7 +8,7 @@ import "../css/Board.css";
 
 function Board() {
   const history = useHistory();
-  const isLogin = useSelector((state) => state.user);
+  const isLogin = useSelector((state) => state.auth);
   const [isPost, setIsPost] = useState(null);
   const [modal, setModal] = useState(false);
   const modalHandler = () => {
@@ -16,7 +16,7 @@ function Board() {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:8080/noticeBoard/post")
+      .get("http://localhost:8080/noticeBoard")
       .then((res) => setIsPost(res.data.post));
   }, []);
   const boardWriteHandler = () => {

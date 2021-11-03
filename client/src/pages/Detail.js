@@ -5,7 +5,7 @@ import Actor from "../components/Actor";
 import ActorProfile from "../components/ActorProfile";
 import Movie from "../components/Movie";
 import axios from "axios";
-export default function Detail({ isLogin }) {
+export default function Detail() {
   const { id } = useParams();
   const [isActor, setIsActor] = useState(null);
 
@@ -25,7 +25,7 @@ export default function Detail({ isLogin }) {
     <div id="detail-container">
       <section className="detail-actor">
         <div className="detail-actor-about">
-          <Actor isLogin={isLogin} actor={isActor} />
+          <Actor actor={isActor} />
           <ActorProfile actor={isActor} />
         </div>
         <div className="detail-actor-movie">

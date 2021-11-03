@@ -3,8 +3,10 @@ import { persistReducer } from "redux-persist";
 // persist : session storage 유지
 import storage from "redux-persist/lib/storage/session";
 
+import authReducer from "./authSlice";
 import userReducer from "./userSlice";
-import likeReducer from "./likeSlice";
+import favoriteReducer from "./favoriteSlice";
+import requestReducer from "./requestSlice";
 
 const persistConfig = {
   key: "root",
@@ -12,8 +14,10 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
+  auth: authReducer,
   user: userReducer,
-  like: likeReducer,
+  favorite: favoriteReducer,
+  request: requestReducer,
 });
 
 export const persistedReducer = persistReducer(persistConfig, rootReducer);

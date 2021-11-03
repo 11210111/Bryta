@@ -5,12 +5,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { BiSearch } from "react-icons/bi";
 import "../css/Nav.css";
 import LoginErrorModal from "./LoginErrorModal";
-import { logout } from "../reducers/APIs/userAPI";
+import { logout } from "../features/API/authAPI";
 
 function Nav() {
   const history = useHistory();
   const dispatch = useDispatch();
-  const user = useSelector((state) => state.user);
+  const isLogin = useSelector((state) => state.auth);
 
   const [searchInput, setSearchInput] = useState("");
   const [modal, setModal] = useState(false);
@@ -22,7 +22,7 @@ function Nav() {
     setSearchInput(e.target.value);
   };
   const logoutHandler = async () => {
-    await dispatch(logout(user)).unwrap();
+    await dispatch(logout(isLogin)).unwrap();
     history.push("/");
   };
   return (
@@ -48,7 +48,7 @@ function Nav() {
             <BiSearch className="nav-search-icon" />
           </Link>
         </div>
-        {user ? (
+        {isLogin ? (
           <div className="nav-right">
             <Link to="/board">게시판</Link>
             <Link to="/mypage">
