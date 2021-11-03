@@ -5,9 +5,11 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       models.user.hasMany(models.favorite, {
         foreignKey: "userId",
+        onDelete: "cascade",
       });
       models.user.hasMany(models.user_movie, {
         foreignKey: "userId",
+        onDelete: "cascade",
       });
     }
   }
