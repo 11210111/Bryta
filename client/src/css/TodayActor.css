@@ -1,3 +1,20 @@
+.background {
+  background-image: url("../images/MainPage2.jpg");
+  background-size: "cover";
+  background-position: "center";
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.todayactor-section {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  transform: translate(5%, 5%);
+  white-space: nowrap;
+}
+
 .todayactor-actor {
   width: 190px;
   height: 230px;
@@ -8,8 +25,12 @@
 }
 
 .todayactor-text {
-  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
   margin: 10px 10px 20px 40px;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 .todayactor-img {
@@ -34,4 +55,18 @@
   justify-content: center;
   align-items: center;
   margin: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .background {
+    height: 500px;
+  }
+
+  .todayactor-section {
+    bottom: 10%;
+    transform: translate(5%, 10%);
+  }
+  .todayactor-text {
+    font-size: max(calc(100vw / 20));
+  }
 }

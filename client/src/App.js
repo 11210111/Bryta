@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import "./App.css";
 /*** Components ***/
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import MainPage from "./pages/Mainpages/MainPage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignupPage";
@@ -58,6 +59,7 @@ function App() {
               <Request />
             </Route>
           </Switch>
+          <Footer />
         </BrowserRouter>
       )}
     </>

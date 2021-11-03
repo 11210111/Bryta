@@ -14,33 +14,47 @@ export default function TodayActor({ todayActor }) {
     });
   };
   return (
-    <section className="todayactor-section">
-      <div className="todayactor-text">오늘의 배우</div>
-      <div className="todayactor-images">
-        <div className="todayactor-actor" onClick={actorClick}>
-          <img
-            src={todayActor && todayActor?.image}
-            alt={todayActor && todayActor?.actorName}
-            className="todayactor-img"
-          />
-          <div className="actor-name">
-            {todayActor && todayActor?.actorName}
+    <>
+      <div>
+        <section className="todayactor-section">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1300"
+            data-aos-easing="ease-out"
+            className="todayactor-text"
+          >
+            오늘의 추천배우
           </div>
-        </div>
-        <div className="todayactor-movies">
-          {todayActor &&
-            todayActor?.actor_movies.map((actor_movie) => (
-              <div key={actor_movie.id} className="todayactor-movie">
-                <img
-                  src={actor_movie.movie.movieImage}
-                  alt={actor_movie.movie.movieName}
-                  className="movie-image"
-                />
-                <div className="movie-name">{actor_movie.movie.movieName}</div>
+          <div className="todayactor-images">
+            <div className="todayactor-actor" onClick={actorClick}>
+              <img
+                src={todayActor && todayActor?.image}
+                alt={todayActor && todayActor?.actorName}
+                className="todayactor-img"
+              />
+              <div className="actor-name">
+                {todayActor && todayActor?.actorName}
               </div>
-            ))}
-        </div>
+            </div>
+            <div className="todayactor-movies">
+              {todayActor &&
+                todayActor?.actor_movies.map((actor_movie) => (
+                  <div key={actor_movie.id} className="todayactor-movie">
+                    <img
+                      src={actor_movie.movie.movieImage}
+                      alt={actor_movie.movie.movieName}
+                      className="movie-image"
+                    />
+                    <div className="movie-name">
+                      {actor_movie.movie.movieName}
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </>
   );
 }
