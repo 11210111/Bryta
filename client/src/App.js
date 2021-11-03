@@ -13,6 +13,7 @@ import Loading from "./pages/LoadingPage";
 import Detail from "./pages/Detail";
 import Board from "./pages/Board";
 import Request from "./pages/Request";
+import MyPage from "./pages/MyPage";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -57,6 +58,9 @@ function App() {
             </Route>
             <Route path="/request">
               <Request />
+            </Route>
+            <Route path="/mypage">
+              <MyPage />
             </Route>
           </Switch>
           <Footer />

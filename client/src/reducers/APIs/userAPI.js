@@ -13,6 +13,15 @@ export const login = createAsyncThunk("user/login", async (loginInfo) => {
   return response.data;
 });
 
-export const logout = createAsyncThunk("user/logout", async () => {
-  await axios.get("http://localhost:8080/auth/logout");
+export const logout = createAsyncThunk("user/logout", async (user) => {
+  await axios
+    .get("http://localhost:8080/auth/logout", {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${user.accessToken}`,
+      },
+      withCredentials: true,
+    })
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err));
 });

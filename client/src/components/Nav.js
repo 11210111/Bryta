@@ -10,10 +10,10 @@ import { logout } from "../reducers/APIs/userAPI";
 function Nav() {
   const history = useHistory();
   const dispatch = useDispatch();
-  const login = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user);
+
   const [searchInput, setSearchInput] = useState("");
   const [modal, setModal] = useState(false);
-
   const modalHandler = () => {
     setModal(!modal);
   };
@@ -22,7 +22,7 @@ function Nav() {
     setSearchInput(e.target.value);
   };
   const logoutHandler = async () => {
-    await dispatch(logout()).unwrap();
+    await dispatch(logout(user)).unwrap();
     history.push("/");
   };
   return (
@@ -48,7 +48,7 @@ function Nav() {
             <BiSearch className="nav-search-icon" />
           </Link>
         </div>
-        {login ? (
+        {user ? (
           <div className="nav-right">
             <Link to="/board">게시판</Link>
             <Link to="/mypage">
