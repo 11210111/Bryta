@@ -9,8 +9,11 @@ module.exports = {
   actorDetail: require("./actor/actorDetail"),
   post: require("./noticeBoard/post"),
   requestActor: require("./noticeBoard/requestActor"),
-  favoriteActor: require("./mypage/favorite").favoriteActor,
-  favoriteMovie: require("./mypage/favorite").favoriteMovie,
   updateProfile: require("./mypage/updateProfile"),
   deleteAccount: require("./mypage/deleteAccount"),
+  clickFavorite: require("./favorite/clickFavorite"),
+  favoriteActor: require("./favorite/favorite").favoriteActor,
+  favoriteMovie: require("./favorite/favorite").favoriteMovie,
+  deleteFavorite: require("./favorite/favorite").deleteFavorite,
+  watchButton: require("./favorite/favorite").watchButton,
 };
