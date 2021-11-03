@@ -76,6 +76,22 @@ module.exports = {
       movies,
     });
   },
+
+  deleteFavorite: async (req, res) => {
+    const userInfo = isAuthorized(req);
+    const { actorId } = req.body;
+
+    await favorite
+      .destroy({
+        where: {
+          userId: userInfo.id,
+          actorId,
+        },
+      })
+      .then(() => {
+        res.sendStatus(201);
+      });
+  },
 };
 
 /* 
