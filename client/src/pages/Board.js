@@ -1,15 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
+import { useSelector } from "react-redux";
 import axios from "axios";
 import Post from "../components/Post";
+import LoginErrorModal from "../components/LoginErrorModal";
+import "../css/Board.css";
 
 function Board() {
+  const history = useHistory();
+  const isLogin = useSelector((state) => state.user);
   const [isPost, setIsPost] = useState(null);
+  const [modal, setModal] = useState(false);
+  const modalHandler = () => {
+    setModal(!modal);
+  };
   useEffect(() => {
     axios
       .get("http://localhost:8080/noticeBoard/post")
       .then((res) => setIsPost(res.data.post));
   }, []);
+  const boardWriteHandler = () => {
+    history.push("/request");
+  };
 
   return (
     <div className="board-container">
@@ -22,9 +34,19 @@ function Board() {
           />
           <h3>배우 추가 건의</h3>
         </div>
-        <Link to="/request">
-          <button className="board-writebtn">게시물 작성</button>
-        </Link>
+        {isLogin ? (
+          <button className="board-writebtn" onClick={boardWriteHandler}>
+            게시물 작성
+          </button>
+        ) : (
+          <>
+            <button className="board-writebtn" onClick={modalHandler}>
+              게시물 작성
+            </button>
+            <LoginErrorModal modal={modal} setModal={setModal} />
+          </>
+        )}
+
         <div className="board-postlist">
           {isPost?.map((post) => (
             <Post key={post.id} post={post} />
