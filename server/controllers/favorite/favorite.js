@@ -1,11 +1,4 @@
-const {
-  user,
-  favorite,
-  actor,
-  actor_movie,
-  movie,
-  user_movie,
-} = require("../../models");
+const { user, favorite, actor, movie, user_movie } = require("../../models");
 const { isAuthorized } = require("../auth/token");
 
 module.exports = {
@@ -43,49 +36,67 @@ module.exports = {
   favoriteMovie: async (req, res) => {
     const userInfo = isAuthorized(req);
     const { id } = req.params;
+
     if (!userInfo) {
       res.sendStatus(404);
     }
-    const movieList = await user_movie.findAll({
+
+    await user_movie
+      .findAll({
+        where: {
+          userId: userInfo.id,
+          actorId: id,
+        },
+        attributes: ["id", "userId", "movieId", "actorId", "watch"],
+        include: [
+          {
+            model: movie,
+            require: true,
+            attributes: ["id", "movieName", "movieImage"],
+          },
+        ],
+      })
+      .then((data) => {
+        res.status(201).send({
+          data,
+        });
+      });
+  },
+
+  watchButton: async (req, res) => {
+    const userInfo = isAuthorized(req);
+    const { movieId, actorId } = req.body;
+
+    await user_movie
+      .update(
+        {
+          watch: true,
+        },
+        {
+          userId: userInfo.id,
+        }
+      )
+      .then(() => {
+        res.sendStatus(201);
+      });
+  },
+
+  deleteFavorite: async (req, res) => {
+    const userInfo = isAuthorized(req);
+    const { id } = req.params;
+
+    await favorite.destroy({
       where: {
         userId: userInfo.id,
         actorId: id,
       },
     });
-    const movies = await actor_movie.findAll({
-      where: {
-        actorId: id,
-      },
-      include: [
-        {
-          model: movie,
-          require: true,
-          attributes: ["id", "movieName", "movieImage"],
-        },
-      ],
-    });
 
-    // if (movieList) {
-    //   res.status(201).send({
-    //     movieList,
-    //   });
-    // } else {
-    //   await user_movie.create({});
-    // }
-    res.status(201).send({
-      movies,
-    });
-  },
-
-  deleteFavorite: async (req, res) => {
-    const userInfo = isAuthorized(req);
-    const { actorId } = req.body;
-
-    await favorite
+    await user_movie
       .destroy({
         where: {
           userId: userInfo.id,
-          actorId,
+          actorId: id,
         },
       })
       .then(() => {
@@ -93,7 +104,3 @@ module.exports = {
       });
   },
 };
-
-/* 
-  
-*/
