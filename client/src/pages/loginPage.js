@@ -33,31 +33,36 @@ function LoginPage({ userInfo, setUserInfo }) {
   };
 
   return (
-    <div className="main">
+    <>
       <section className="login-container">
         <div className="loginFlex">
+          <aside className="login-aside">
+            <img src="https://images.unsplash.com/photo-1608871633488-65ae24f795d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2231&q=80" />
+          </aside>
           <div className="login-main">
             <h2 className="title">LOGIN</h2>
             <form className="login-form">
               <div className="login-input">
-                <label>아이디</label>
+                <label htmlFor="username">아이디</label>
                 <input
                   type="text"
                   placeholder="username"
                   onChange={onChangeLoginState}
                   name="username"
+                  required
                   value={username}
-                ></input>
+                />
               </div>
               <div className="login-input">
-                <label>비밀번호</label>
+                <label htmlFor="password">비밀번호</label>
                 <input
                   type="password"
                   placeholder="password"
                   onChange={onChangeLoginState}
                   name="password"
+                  required
                   value={password}
-                ></input>
+                />
               </div>
               <button
                 type="submit"
@@ -70,23 +75,22 @@ function LoginPage({ userInfo, setUserInfo }) {
                 <div className="errMessage">{errMessage}</div>
               ) : null}
             </form>
-            <Link to="/signup">
-              <div>회원가입</div>
-            </Link>
-            <div>
-              <button>구글 로그인</button>
-              <KakaoLogin userInfo={userInfo} setUserInfo={setUserInfo} />
+            <div className="signup-path">
+              <Link to="/signup">회원가입</Link>
+            </div>
+
+            <div className="login-oauth">
+              <button className="googleOauth"></button>
+              <KakaoLogin
+                className="kakaoOauth"
+                userInfo={userInfo}
+                setUserInfo={setUserInfo}
+              />
             </div>
           </div>
-          <aside className="login-aside">
-            <img
-              src="https://img.insight.co.kr/static/2018/04/04/700/y1hkxoxpwxamps14n7b5.jpg"
-              alt=""
-            ></img>
-          </aside>
         </div>
       </section>
-    </div>
+    </>
   );
 }
 

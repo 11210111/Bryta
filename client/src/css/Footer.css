@@ -1,7 +1,7 @@
 .footer {
   background-color: #000;
   padding: 70px 0;
-  height: 200px;
+  height: 130px;
 }
 .footer-container {
   max-width: 1170px;
@@ -9,6 +9,7 @@
 }
 .footer-row {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .footer-col {
@@ -19,7 +20,7 @@
   list-style: none;
 }
 .footer-col h4 {
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   text-transform: capitalize;
   margin-bottom: 35px;
@@ -37,7 +38,7 @@
   width: 50px;
 }
 .footer-col a {
-  font-size: 16px;
+  font-size: 12px;
   text-transform: capitalize;
   color: #fff;
   text-decoration: none;

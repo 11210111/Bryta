@@ -46,10 +46,7 @@ const KakaoLogin = ({ userInfo, setUserInfo }) => {
 
   return (
     <div>
-      <button className="kakaoOauth" onClick={onClickKakao}>
-        카카오톡 로그인!
-      </button>
-      ;
+      <button className="kakaoOauth" onClick={onClickKakao}></button>
     </div>
   );
 };
