@@ -9,7 +9,6 @@ header {
 }
 
 .nav {
-  margin-top: 4vh;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -22,12 +21,14 @@ header {
 }
 
 .logo-img {
-  width: 48px;
+  margin-top: 10px;
+  width: 1.5rem;
 }
 
 .logo-text {
+  margin-top: 5px;
   margin-left: 10px;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ffaa28;
   letter-spacing: 0.1em;
