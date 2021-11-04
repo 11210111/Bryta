@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const login = createAsyncThunk("user/login", async (loginInfo) => {
+export const login = createAsyncThunk("auth/login", async (loginInfo) => {
   const response = await axios.post(
     "http://localhost:8080/auth/login",
     loginInfo,
@@ -13,7 +13,7 @@ export const login = createAsyncThunk("user/login", async (loginInfo) => {
   return response.data;
 });
 
-export const logout = createAsyncThunk("user/logout", async (user) => {
+export const logout = createAsyncThunk("auth/logout", async (user) => {
   await axios
     .get("http://localhost:8080/auth/logout", {
       headers: {

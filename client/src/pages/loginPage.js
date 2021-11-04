@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import KakaoLogin from "../components/Kakao";
 import { useDispatch } from "react-redux";
-import { login } from "../reducers/APIs/userAPI";
+import { login } from "../features/API/authAPI";
+import "../css/LoginPage.css";
 
 function LoginPage({ userInfo, setUserInfo }) {
   const dispatch = useDispatch();
@@ -29,26 +29,6 @@ function LoginPage({ userInfo, setUserInfo }) {
     } else {
       await dispatch(login({ username, password })).unwrap();
       window.location.replace("/");
-      // const url = "http://localhost:8080/auth/login";
-      // await axios
-      //   .post(
-      //     url,
-      //     {
-      //       username,
-      //       password,
-      //     },
-      //     {
-      //       "Content-Type": "application/json",
-      //       withCredentials: true,
-      //     }
-      //   )
-      //   .then((res) => {
-      //     //
-      //     console.log(res.data);
-      //     window.sessionStorage.setItem("token", res.data.accessToken);
-      //     console.log(sessionStorage);
-
-      //   });
     }
   };
 
