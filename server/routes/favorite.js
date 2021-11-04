@@ -10,8 +10,8 @@ const {
 
 router.get("/", favoriteActor);
 router.get("/:id", favoriteMovie);
-router.post("/:id", clickFavorite);
-router.patch("/watch", watchButton);
-router.delete("/:id", deleteFavorite);
+router.post("/", clickFavorite);
+router.patch("/:actorId/:movieId", watchButton);
+router.delete("/", deleteFavorite);
 
 module.exports = router;

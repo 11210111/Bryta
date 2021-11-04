@@ -3,12 +3,12 @@ const { isAuthorized } = require("../auth/token");
 
 module.exports = async (req, res) => {
   const userInfo = isAuthorized(req);
-  const { id } = req.params;
+  const { actorId } = req.body;
 
   const isFavorite = await favorite.findOne({
     where: {
       userId: userInfo.id,
-      actorId: id,
+      actorId,
     },
   });
 
@@ -17,12 +17,12 @@ module.exports = async (req, res) => {
   } else {
     await favorite.create({
       userId: userInfo.id,
-      actorId: id,
+      actorId,
     });
 
     const movies = await actor_movie.findAll({
       where: {
-        actorId: id,
+        actorId,
       },
       include: [
         {
@@ -37,7 +37,7 @@ module.exports = async (req, res) => {
       await user_movie.create({
         userId: userInfo.id,
         movieId: el.movie.id,
-        actorId: id,
+        actorId,
         watch: false,
       });
     });

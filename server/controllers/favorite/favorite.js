@@ -65,7 +65,7 @@ module.exports = {
 
   watchButton: async (req, res) => {
     const userInfo = isAuthorized(req);
-    const { movieId, actorId } = req.body;
+    const { actorId, movieId } = req.params;
 
     await user_movie
       .update(
@@ -87,12 +87,12 @@ module.exports = {
 
   deleteFavorite: async (req, res) => {
     const userInfo = isAuthorized(req);
-    const { id } = req.params;
+    const { actorId } = req.body;
 
     await favorite.destroy({
       where: {
         userId: userInfo.id,
-        actorId: id,
+        actorId,
       },
     });
 
@@ -100,7 +100,7 @@ module.exports = {
       .destroy({
         where: {
           userId: userInfo.id,
-          actorId: id,
+          actorId,
         },
       })
       .then(() => {
