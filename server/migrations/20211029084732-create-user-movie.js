@@ -19,6 +19,7 @@ module.exports = {
       },
       watch: {
         type: Sequelize.BOOLEAN,
+        defaultValue: false,
       },
       createdAt: {
         allowNull: false,

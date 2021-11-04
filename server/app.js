@@ -8,6 +8,7 @@ const authRouter = require("./routes/auth");
 const actorRouter = require("./routes/actor");
 const noticeBoardRouter = require("./routes/noticeBoard");
 const mypageRouter = require("./routes/mypage");
+const favoriteRouter = require("./routes/favorite");
 const morgan = require("morgan");
 
 const app = express();
@@ -32,7 +33,6 @@ app.use("/auth", authRouter);
 app.use("/actor", actorRouter);
 app.use("/noticeBoard", noticeBoardRouter);
 app.use("/mypage", mypageRouter);
+app.use("/favorite", favoriteRouter);
 
 module.exports = app;
-
-// static
