@@ -385,7 +385,7 @@ module.exports = {
       {
         id: 51,
         actorId: 1,
-        movieId: 52,
+        movieId: 51,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
