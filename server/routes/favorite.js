@@ -11,7 +11,7 @@ const {
 router.get("/", favoriteActor);
 router.get("/:id", favoriteMovie);
 router.post("/:id", clickFavorite);
-router.patch("watch", watchButton);
+router.patch("/watch", watchButton);
 router.delete("/:id", deleteFavorite);
 
 module.exports = router;

@@ -73,7 +73,11 @@ module.exports = {
           watch: true,
         },
         {
-          userId: userInfo.id,
+          where: {
+            userId: userInfo.id,
+            movieId,
+            actorId,
+          },
         }
       )
       .then(() => {

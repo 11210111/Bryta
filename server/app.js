@@ -36,5 +36,3 @@ app.use("/mypage", mypageRouter);
 app.use("/favorite", favoriteRouter);
 
 module.exports = app;
-
-// static
