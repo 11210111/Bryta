@@ -21,7 +21,7 @@ export default function UserEditModal({ modal, setModal }) {
                 <label>Confirm Password</label>
                 <input type="password" placeholder="password" name="password" />
               </div>
-              <button>수정하기</button>
+              <button onClick={() => setModal(!modal)}>수정하기</button>
               {/* 수정하시겠습니까 모달  : */}
               <button>계정 삭제하기</button>
               {/* 삭제하시겠습니까 모달  */}
