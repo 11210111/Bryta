@@ -87,12 +87,12 @@ module.exports = {
 
   deleteFavorite: async (req, res) => {
     const userInfo = isAuthorized(req);
-    const { actorId } = req.body;
+    const { id } = req.params;
 
     await favorite.destroy({
       where: {
         userId: userInfo.id,
-        actorId,
+        actorId: id,
       },
     });
 
@@ -100,7 +100,7 @@ module.exports = {
       .destroy({
         where: {
           userId: userInfo.id,
-          actorId,
+          actorId: id,
         },
       })
       .then(() => {
