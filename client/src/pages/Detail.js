@@ -25,7 +25,7 @@ export default function Detail() {
     <div id="detail-container">
       <section className="detail-actor">
         <div className="detail-actor-about">
-          <Actor actor={isActor} />
+          <Actor actor={isActor && isActor} />
           <ActorProfile actor={isActor} />
         </div>
         <div className="detail-actor-movie">
