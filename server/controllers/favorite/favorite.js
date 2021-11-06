@@ -17,7 +17,7 @@ module.exports = {
             {
               model: actor,
               require: true,
-              attributes: ["actorName", "image"],
+              attributes: ["id", "actorName", "image"],
             },
           ],
         },
