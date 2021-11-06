@@ -5,14 +5,17 @@ import TodayActor from "../../components/TodayActor";
 import Background from "../../images/MainPage2.jpg";
 
 function MainPage2() {
+  const [isLoading, setIsLoading] = useState(true);
   const [isTodayActor, setIsTodayActor] = useState(null);
 
   useEffect(() => {
+    setIsLoading(true);
     axios
       .get("http://localhost:8080/actor/recommendation")
       .then((res) => {
         const data = res.data.actorMovie;
         setIsTodayActor(data);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.log(error);
@@ -32,7 +35,11 @@ function MainPage2() {
         <div id="main-container">
           <nav className="main-nav">
             <section className="main-todayactor">
-              <TodayActor todayActor={isTodayActor} />
+              {isLoading ? (
+                <div>loading...</div>
+              ) : (
+                <TodayActor todayActor={isTodayActor} />
+              )}
             </section>
             <section className="main-bryta">
               <div

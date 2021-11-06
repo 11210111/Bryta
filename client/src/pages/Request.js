@@ -4,7 +4,7 @@ import axios from "axios";
 import "../css/Request.css";
 
 export default function Request() {
-  const user = useSelector((state) => state.user);
+  const isLogin = useSelector((state) => state.auth);
   const [requestValue, setRequestValue] = useState("");
   const postRequest = async () => {
     await axios
@@ -16,7 +16,7 @@ export default function Request() {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${user.accessToken}`,
+            Authorization: `Bearer ${isLogin.accessToken}`,
           },
           withCredentials: true,
         }

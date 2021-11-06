@@ -1,19 +1,22 @@
-import React from "react";
-import { useState } from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "../css/MyPage.css";
 import EditUserModal from "../components/EditUserModal";
 import Favorite from "../components/Favorite";
-import EmptyFavorite from "../components/EmptyFavorite";
+import { getFavorite } from "../features/API/favoriteAPI";
 
 function Mypage() {
+  const dispatch = useDispatch();
   const isLogin = useSelector((state) => state.auth);
-  const isFavorite = useSelector((state) => state.favorite);
   const [modal, setModal] = useState(false);
 
+  useEffect(() => {
+    dispatch(getFavorite(isLogin)).unwrap();
+  });
   const modalHandler = () => {
     setModal(!modal);
   };
+
   return (
     <div className="mypage-container">
       <section className="mypage">
@@ -28,7 +31,7 @@ function Mypage() {
           </div>
         </div>
         <div className="mypage-favorite">
-          {!isFavorite.length ? <EmptyFavorite /> : <Favorite />}
+          <Favorite />
         </div>
       </section>
     </div>
