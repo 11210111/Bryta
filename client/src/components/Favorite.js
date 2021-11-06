@@ -18,17 +18,17 @@ export default function Favorite() {
   useEffect(() => {
     const id = favOne;
     dispatch(getFavOne({ isLogin, id })).unwrap();
-  });
+  }, [dispatch, favOne, isLogin]);
 
   return (
     <>
-      {isFavorite === null || !isFavorite.length ? (
+      {isFavorite === null || !isFavorite[0] ? (
         <EmptyFavorite />
       ) : (
         <div className="favorite-container">
           <section className="favorite-section">
             <ul className="favorite-actors">
-              {!isFavorite[0]
+              {!isFavorite[0].actorId
                 ? null
                 : isFavorite.map((favorite) => (
                     <li key={favorite.actorId}>
@@ -42,7 +42,7 @@ export default function Favorite() {
             </ul>
           </section>
           <section className="favorite-actor-movies">
-            {!isFavorite[0] ? null : <MovieList actorId={favOne} />}
+            {!isFavorite[0].actorId ? null : <MovieList actorId={favOne} />}
           </section>
         </div>
       )}

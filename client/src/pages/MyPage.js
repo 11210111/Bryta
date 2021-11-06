@@ -12,7 +12,7 @@ function Mypage() {
 
   useEffect(() => {
     dispatch(getFavorite(isLogin)).unwrap();
-  });
+  }, [dispatch, isLogin]);
   const modalHandler = () => {
     setModal(!modal);
   };
