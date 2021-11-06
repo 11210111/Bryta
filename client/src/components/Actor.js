@@ -5,7 +5,7 @@ import { FaRegHeart, FaHeart } from "react-icons/fa";
 import LoginErrorModal from "./LoginErrorModal";
 import { addFavorite, delFavorite } from "../features/API/favoriteAPI";
 
-export default function Actor({ actor }) {
+export default function Actor({ getId, actor }) {
   const dispatch = useDispatch();
   const isLogin = useSelector((state) => state.auth);
   const isFavorite = useSelector((state) => state.favorite);
@@ -13,27 +13,34 @@ export default function Actor({ actor }) {
   const actorId = actor?.id;
   const payload = {
     actorId,
-    actor: { actorName: actor?.actorName, image: actor?.image },
+    actor: { id: actor?.id, actorName: actor?.actorName, image: actor?.image },
   };
   const [modal, setModal] = useState(false);
 
-  const checkFavorite = (id) => {
-    return isFavorite.filter((favorite) => favorite.actorId === id);
+  const actorClick = () => {
+    getId(actorId);
   };
+
+  const checkFavorite = (id) => {
+    if (isFavorite && isFavorite.find((favorite) => favorite.actorId === id)) {
+      return true;
+    } else return false;
+  };
+  const [emptyHeart, setEmptyHeart] = useState(!checkFavorite(actorId));
+
   const favoriteHandler = async (e) => {
     e.preventDefault();
     if (!isLogin) {
       setModal(!modal);
     } else {
-      if (!checkFavorite(actorId).length) {
-        await dispatch(addFavorite({ isLogin, payload })).unwrap();
-      } else if (checkFavorite(actorId).length >= 1) {
-        await dispatch(delFavorite({ isLogin, payload })).unwrap();
-      }
+      emptyHeart
+        ? await dispatch(addFavorite({ isLogin, payload })).unwrap()
+        : await dispatch(delFavorite({ isLogin, payload })).unwrap();
     }
+    setEmptyHeart((heart) => !heart);
   };
   return (
-    <div id="actor-container">
+    <div id="actor-container" onClick={url === "/mypage" ? actorClick : null}>
       <div className={url === "/mypage" ? "actorimg-crop" : ""}>
         <img
           src={actor && actor?.image}
@@ -42,7 +49,7 @@ export default function Actor({ actor }) {
         />
       </div>
       <div className="actor-name">{actor && actor?.actorName}</div>
-      {!checkFavorite(actorId).length ? (
+      {emptyHeart ? (
         <FaRegHeart
           className={url === "/search" ? "hide" : "myfav-btn emptyHeart"}
           onClick={favoriteHandler}
