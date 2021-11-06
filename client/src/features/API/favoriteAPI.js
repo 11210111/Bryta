@@ -20,30 +20,34 @@ export const getFavorite = createAsyncThunk(
 export const addFavorite = createAsyncThunk(
   "favorite/addFavorite",
   async ({ isLogin, payload }) => {
-    await axios
-      .post(
-        "http://localhost:8080/favorite",
-        { actorId: payload.actorId },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${isLogin.accessToken}`,
-          },
-          withCredentials: true,
-        }
-      )
-      .then((res) => console.log(res));
-    return payload;
+    try {
+      await axios
+        .post(
+          "http://localhost:8080/favorite",
+          { actorId: payload.actorId },
+          {
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${isLogin.accessToken}`,
+            },
+            withCredentials: true,
+          }
+        )
+        .then((res) => console.log(res));
+      return payload;
+    } catch (err) {
+      throw err;
+    }
   }
 );
 
 export const delFavorite = createAsyncThunk(
   "favorite/delFavorite",
   async ({ isLogin, payload }) => {
-    const actorId = payload.actorId;
+    const id = payload.actorId;
     try {
       await axios
-        .delete(`http://localhost:8080/favorite/${actorId}`, {
+        .delete(`http://localhost:8080/favorite/${id}`, {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${isLogin.accessToken}`,
@@ -53,7 +57,7 @@ export const delFavorite = createAsyncThunk(
         .then((res) => console.log(res));
       return payload;
     } catch (err) {
-      console.log(err);
+      throw err;
     }
   }
 );

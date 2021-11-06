@@ -9,6 +9,10 @@ const favoriteSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
+      .addCase(getFavorite.pending, (state) => {
+        state = null;
+        return state;
+      })
       .addCase(getFavorite.fulfilled, (state, action) => {
         state = action.payload;
         return state;
@@ -17,9 +21,7 @@ const favoriteSlice = createSlice({
         state.push(action.payload);
       })
       .addCase(delFavorite.fulfilled, (state, action) => {
-        return state.filter(
-          (state) => state.actorId !== action.payload.actorId
-        );
+        state.filter((state) => state.actorId !== action.payload.actorId);
       })
       .addDefaultCase((state) => {
         return state;
