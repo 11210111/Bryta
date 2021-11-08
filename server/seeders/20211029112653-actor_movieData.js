@@ -4316,13 +4316,13 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
-      {
-        id: 613,
-        actorId: 13,
-        movieId: 512,
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
+      // {
+      //   id: 613,
+      //   actorId: 13,
+      //   movieId: 512,
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
       {
         id: 614,
         actorId: 13,
@@ -10938,13 +10938,13 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
-      {
-        id: 1568,
-        actorId: 47,
-        movieId: 1070,
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
+      // {
+      //   id: 1568,
+      //   actorId: 47,
+      //   movieId: 1070,
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
       {
         id: 1569,
         actorId: 47,
@@ -14276,7 +14276,8 @@ module.exports = {
         movieId: 1293,
         createdAt: new Date(),
         updatedAt: new Date(),
-      },{
+      },
+      {
         id: 2045,
         actorId: 62,
         movieId: 1323,

@@ -7161,86 +7161,86 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
-      {
-        id: 893,
-        movieName: "첩첩산중",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111222_225/1324564744736a67ki_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-      {
-        id: 894,
-        movieName: "어떤방문 : 디지털삼인삼색2009",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111223_65/1324595030418KJINL_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-      {
-        id: 895,
-        movieName: "파주",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111223_152/1324594912744iqA2S_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-      {
-        id: 896,
-        movieName: "로맨틱 아일랜드",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111223_187/1324574136001wpta0_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-      {
-        id: 897,
-        movieName: "밤과 낮",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111222_204/1324557206703mozLp_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-      {
-        id: 898,
-        movieName: "우리 동네",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111222_188/1324561111276uBr05_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-      {
-        id: 899,
-        movieName: "잔혹한 출근",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111223_26/1324567509693afAh0_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-      {
-        id: 890,
-        movieName: "손님은 왕이다",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111222_125/1324487241050orO5O_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-      {
-        id: 891,
-        movieName: "카레 라이스 이야기",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111224_104/1324655858717JYpHb_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-      {
-        id: 892,
-        movieName: "사과",
-        movieImage:
-          "https://movie-phinf.pstatic.net/20111222_162/1324526534432ACWnR_JPEG/movie_image.jpg?type=m133_190_2",
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
+      // {
+      //   id: 893,
+      //   movieName: "첩첩산중",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111222_225/1324564744736a67ki_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
+      // {
+      //   id: 894,
+      //   movieName: "어떤방문 : 디지털삼인삼색2009",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111223_65/1324595030418KJINL_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
+      // {
+      //   id: 895,
+      //   movieName: "파주",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111223_152/1324594912744iqA2S_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
+      // {
+      //   id: 896,
+      //   movieName: "로맨틱 아일랜드",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111223_187/1324574136001wpta0_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
+      // {
+      //   id: 897,
+      //   movieName: "밤과 낮",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111222_204/1324557206703mozLp_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
+      // {
+      //   id: 898,
+      //   movieName: "우리 동네",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111222_188/1324561111276uBr05_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
+      // {
+      //   id: 899,
+      //   movieName: "잔혹한 출근",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111223_26/1324567509693afAh0_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
+      // {
+      //   id: 890,
+      //   movieName: "손님은 왕이다",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111222_125/1324487241050orO5O_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
+      // {
+      //   id: 891,
+      //   movieName: "카레 라이스 이야기",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111224_104/1324655858717JYpHb_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
+      // {
+      //   id: 892,
+      //   movieName: "사과",
+      //   movieImage:
+      //     "https://movie-phinf.pstatic.net/20111222_162/1324526534432ACWnR_JPEG/movie_image.jpg?type=m133_190_2",
+      //   createdAt: new Date(),
+      //   updatedAt: new Date(),
+      // },
       {
         id: 893,
         movieName: "히치하이킹",
