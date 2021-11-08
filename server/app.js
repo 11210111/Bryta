@@ -24,7 +24,7 @@ app.use(helmet());
 app.use(
   cors({
     origin: ["http://localhost:3000"],
-    methods: ["GET", "POST", "DELETE", "OPTIONS"],
+    methods: ["GET", "POST", "DELETE", "PATCH", "OPTIONS"],
     credentials: true,
   })
 );
