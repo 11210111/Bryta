@@ -37,7 +37,10 @@ function LoginPage({ userInfo, setUserInfo }) {
       <section className="login-container">
         <div className="loginFlex">
           <aside className="login-aside">
-            <img src="https://images.unsplash.com/photo-1608871633488-65ae24f795d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2231&q=80" />
+            <img
+              src="https://images.unsplash.com/photo-1608871633488-65ae24f795d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2231&q=80"
+              alt=""
+            />
           </aside>
           <div className="login-main">
             <h2 className="title">LOGIN</h2>
