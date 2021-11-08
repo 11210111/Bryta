@@ -66,11 +66,11 @@ module.exports = {
   watchButton: async (req, res) => {
     const userInfo = isAuthorized(req);
     const { actorId, movieId } = req.params;
-
+    const { watch } = req.body;
     await user_movie
       .update(
         {
-          watch: true,
+          watch,
         },
         {
           where: {

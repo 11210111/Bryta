@@ -242,7 +242,7 @@ module.exports = {
         debut: "1997년 패션잡지 '에꼴'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202106%2F20210607161142258.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -253,7 +253,7 @@ module.exports = {
         debut: "1996년 SBS 6기 공채 탤런트",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202103%2F20210303145401112.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -264,7 +264,7 @@ module.exports = {
         debut: "2004년 뮤지컬 '호두까기인형'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202108%2F202108201044543.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -275,7 +275,7 @@ module.exports = {
         debut: "1993년 영화 '바람 부는 날이면 압구정동에 가야한다'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201908%2F20190816151112982.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -286,7 +286,7 @@ module.exports = {
         debut: "1986년 영화 '깜보'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F42%2F201802141225151721.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -297,7 +297,7 @@ module.exports = {
         debut: "1994년 영화 '구미호'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201812%2F20181220111450105.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -308,7 +308,7 @@ module.exports = {
         debut: "2015년 영화 '소셜포비아'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201905%2F20190528142316857-8531317.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -319,7 +319,7 @@ module.exports = {
         debut: "2003년 드라마 '대장금'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201801%2F20180104100848526-1340226.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -330,7 +330,7 @@ module.exports = {
         debut: "2006년 제50회 미스코리아 선발대회",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202106%2F20210617145942474.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -341,7 +341,7 @@ module.exports = {
         debut: "",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202106%2F20210603120556175.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -352,7 +352,7 @@ module.exports = {
         debut: "2001년 뮤지컬 '록키호러쇼'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201705%2F20170510003420102-7278827.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -363,7 +363,7 @@ module.exports = {
         debut: "1996년 KBS 신세대 보고 - 어른들은 몰라요",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202002%2F20200224175055200.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -374,7 +374,7 @@ module.exports = {
         debut: "1996년 MBC 드라마 '화려한 휴가'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F194%2F201005241048583111.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -385,7 +385,7 @@ module.exports = {
         debut: "2000년 영화 '죽거나 혹은 나쁘거나'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F122%2F201011091145128401.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -396,7 +396,7 @@ module.exports = {
         debut: "2003년 미스 빙그레 선발대회",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202006%2F20200609190539136.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -407,7 +407,7 @@ module.exports = {
         debut: "2003년 KBS 드라마 '보디가드'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201909%2F20190909110909451-6101473.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -418,7 +418,7 @@ module.exports = {
         debut: "1991년 SBS 1기 공채 탤런트",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F84%2F200803031339272621.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -429,7 +429,7 @@ module.exports = {
         debut: "",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202107%2F20210719185949590.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -440,7 +440,7 @@ module.exports = {
         debut: "2006년 EBS 드라마 '비밀의 교정'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F15%2F202005111648169131.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -451,7 +451,7 @@ module.exports = {
         debut: "2004년 영화 '순흔'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202107%2F2021072301331283.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -462,7 +462,7 @@ module.exports = {
         debut: "2011년 MBC 드라마 '짝패'",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201911%2F20191111162806970-8759926.jpg&type=u120_150&quality=95",
-        cratedAt: new Date(),
+        createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
@@ -474,7 +474,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201408%2F2014081216530934-7249138.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -486,7 +486,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F159%2F201901211445306131.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -498,7 +498,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202106%2F20210629202332185.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -510,7 +510,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201206%2F2012061311455478-3465371.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -522,7 +522,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202011%2F20201102135115429.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -534,7 +534,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F146%2F202109061941584561.gif&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -546,7 +546,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F122%2F201703151820454931.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -558,7 +558,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202002%2F20200203155236234-7932904.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -570,7 +570,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F21%2F201302271816087311.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -582,7 +582,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201505%2F20150514181602930.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -594,7 +594,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202107%2F20210716143845587.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -606,7 +606,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F104%2F201904151435119511.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -618,7 +618,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202104%2F2021042814480688.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -630,7 +630,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F50%2F201302271821397491.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -642,7 +642,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F172%2F201204301825039481.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -654,7 +654,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F19%2F201608121456331871.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -666,7 +666,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202102%2F20210215121042224.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -678,7 +678,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F56%2F201404161358287651.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -690,7 +690,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F35%2F201710101911049321.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -702,7 +702,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F156%2F202012151437249261.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
 
       {
@@ -714,7 +714,7 @@ module.exports = {
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202104%2F20210412173154475.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
-        updateAt: new Date(),
+        updatedAt: new Date(),
       },
     ]);
   },
