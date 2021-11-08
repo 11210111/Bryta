@@ -3,7 +3,8 @@ import axios from "axios";
 
 const KakaoLogin = ({ userInfo, setUserInfo }) => {
   const [authorizationCode, setAuthorization] = useState("");
-  const serverUrl = "http://localhost:8080/auth/kakao/getAccessToken";
+  const serverUrl =
+    "http://ec2-13-209-3-25.ap-northeast-2.compute.amazonaws.com:8080/auth/kakao/getAccessToken";
   const onClickKakao = () => {
     window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=c139469ef8f15044f5e9ceaed0648aa8&redirect_uri=http://localhost:3000/login&response_type=code`;
   };
@@ -29,7 +30,8 @@ const KakaoLogin = ({ userInfo, setUserInfo }) => {
       )
       .then((data) => {
         window.sessionStorage.setItem("accessToken", data.data.accessToken);
-        const userInfoUrl = "http://localhost:8080/auth/kakao/getUserInfo";
+        const userInfoUrl =
+          "http://ec2-13-209-3-25.ap-northeast-2.compute.amazonaws.com:8080/auth/kakao/getUserInfo";
         const authorization = data.data.accessToken;
         axios
           .get(userInfoUrl, {

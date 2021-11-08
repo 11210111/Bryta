@@ -16,7 +16,9 @@ function Board() {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:8080/noticeBoard")
+      .get(
+        "http://ec2-13-209-3-25.ap-northeast-2.compute.amazonaws.com:8080/noticeBoard"
+      )
       .then((res) => setIsPost(res.data.post));
   }, []);
   const boardWriteHandler = () => {
