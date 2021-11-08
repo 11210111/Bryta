@@ -1,16 +1,10 @@
-const app = require("../app");
-const debug = require("debug")("server:server");
+const app = require("./app");
 const https = require("https");
+const http = require("http");
 const fs = require("fs");
 
 const port = normalizePort(process.env.PORT || "8080");
 app.set("port", port);
-
-const server = https.createServer(app);
-
-server.listen(port);
-server.on("error", onError);
-server.on("listening", onListening);
 
 function normalizePort(val) {
   const port = parseInt(val, 10);
@@ -28,6 +22,10 @@ function normalizePort(val) {
   return false;
 }
 
+const server = https.createServer(app);
+
+server.listen(port);
+/*
 function onError(error) {
   if (error.syscall !== "listen") {
     throw error;
@@ -50,12 +48,12 @@ function onError(error) {
   }
 }
 
-/**
- * Event listener for HTTP server "listening" event.
- */
+  Event listener for HTTP server "listening" event.
 
 function onListening() {
   const addr = server.address();
   const bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
   debug("Listening on " + bind);
 }
+
+*/
