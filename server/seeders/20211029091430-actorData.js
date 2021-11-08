@@ -694,7 +694,7 @@ module.exports = {
       },
 
       {
-        id: 61,
+        id: 62,
         actorName: "이경영",
         company: "다홍 엔터테인먼트",
         bodySize: "171cm",
@@ -706,25 +706,13 @@ module.exports = {
       },
 
       {
-        id: 62,
+        id: 63,
         actorName: "이성재",
         company: "아이오케이컴퍼니",
         bodySize: "180cm",
         debut: "1995년 MBC 24기 공채 탤런트",
         image:
           "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202104%2F20210412173154475.jpg&type=u120_150&quality=95",
-        createdAt: new Date(),
-        updateAt: new Date(),
-      },
-
-      {
-        id: 63,
-        actorName: "심혜진",
-        company: "웰메이드스타이엔티",
-        bodySize: "169cm",
-        debut: "1986년 코카콜라CF",
-        image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F199%2F201004161132584391.jpg&type=u120_150&quality=95",
         createdAt: new Date(),
         updateAt: new Date(),
       },
