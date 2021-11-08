@@ -9,7 +9,7 @@ export default function Request() {
   const postRequest = async () => {
     await axios
       .post(
-        "http://localhost:8080/noticeBoard",
+        "http://ec2-13-209-3-25.ap-northeast-2.compute.amazonaws.com:8080/noticeBoard",
         {
           content: requestValue,
         },

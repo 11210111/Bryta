@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const login = createAsyncThunk("auth/login", async (loginInfo) => {
   const response = await axios.post(
-    "http://localhost:8080/auth/login",
+    "http://ec2-13-209-3-25.ap-northeast-2.compute.amazonaws.com:8080/auth/login",
     loginInfo,
     {
       headers: { "Content-Type": "application/json" },
@@ -15,12 +15,15 @@ export const login = createAsyncThunk("auth/login", async (loginInfo) => {
 
 export const logout = createAsyncThunk("auth/logout", async (user) => {
   await axios
-    .get("http://localhost:8080/auth/logout", {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.accessToken}`,
-      },
-      withCredentials: true,
-    })
+    .get(
+      "hhttp://ec2-13-209-3-25.ap-northeast-2.compute.amazonaws.com:8080/auth/logout",
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.accessToken}`,
+        },
+        withCredentials: true,
+      }
+    )
     .then((res) => console.log(res));
 });
