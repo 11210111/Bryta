@@ -23,7 +23,10 @@ app.use(logger("dev"));
 app.use(helmet());
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: [
+      "http://localhost:3000",
+      "http://bryta.s3-website.ap-northeast-2.amazonaws.com",
+    ],
     methods: ["GET", "POST", "DELETE", "PATCH", "OPTIONS"],
     credentials: true,
   })

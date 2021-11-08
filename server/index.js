@@ -22,7 +22,7 @@ function normalizePort(val) {
   return false;
 }
 
-const server = https.createServer(app);
+const server = http.createServer(app);
 
 server.listen(port);
 /*
