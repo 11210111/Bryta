@@ -1,0 +1,8 @@
+.post-container {
+  width: 400vh;
+}
+.post-section {
+  display: grid;
+  grid-template-columns: 300px 100px 100px;
+  grid-template-rows: 1fr 1fr 1fr;
+}

@@ -15,7 +15,8 @@ module.exports = (sequelize, DataTypes) => {
     {
       userId: DataTypes.INTEGER,
       movieId: DataTypes.INTEGER,
-      watch: DataTypes.BOOLEAN,
+      actorId: DataTypes.INTEGER,
+      watch: { type: DataTypes.BOOLEAN, defaultValue: false },
     },
     {
       sequelize,

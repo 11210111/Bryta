@@ -1,0 +1,14 @@
+.request-container {
+  margin-top: 20%;
+  width: 70vh;
+}
+.request-form {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 20%;
+  left: 40%;
+}
+.request-form-btn {
+  width: 20px;
+}

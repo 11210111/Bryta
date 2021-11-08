@@ -1,0 +1,17 @@
+/* 임시;;적용 */
+.mypage-container {
+  margin-top: 15vh;
+}
+
+.mypage-user {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mypage-username h3 {
+  display: inline;
+}
+
+.mypage-username span {
+  width: 400px;
+}

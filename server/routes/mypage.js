@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const { favorite } = require("../controllers");
+const { updateProfile, deleteAccount } = require("../controllers");
 
-router.get("/favorite", favorite);
+router.delete("/", deleteAccount);
+router.patch("/", updateProfile);
 
 module.exports = router;

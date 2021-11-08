@@ -8,8 +8,8 @@ const {
   getUserInfo,
 } = require("../controllers");
 
-router.post("/login", login);
 router.get("/logout", logout);
+router.post("/login", login);
 router.post("/signup", signup);
 router.post("/kakao/getAccessToken", getAccessToken);
 router.get("/kakao/getUserInfo", getUserInfo);
