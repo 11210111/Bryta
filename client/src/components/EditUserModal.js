@@ -29,13 +29,17 @@ export default function UserEditModal({ modal, setModal }) {
   const onClickEdit = (e) => {
     e.preventDefault();
     const emailCheck =
-      /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+      /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+    const passwordCheck = /^(?=.*\d)(?=.*[a-z])(?=.*[!@#$%^&*]).{8,16}$/;
+
     if (email === "" || password === "") {
       setErrMessage("빈칸을 입력하세요");
     } else if (!emailCheck.test(email)) {
-      setErrMessage("이메일 형식이 아닙니다");
+      setErrMessage("올바른 이메일 형식이 아닙니다");
+    } else if (!passwordCheck.test(password)) {
+      setErrMessage("8~16자의 영문 소문자, 숫자, 특수문자를 사용해주세요.");
     } else if (password !== confirmPassword) {
-      setErrMessage("비밀번호가 다릅니다");
+      setErrMessage("비밀번호가 맞지 않습니다.");
     } else {
       setEditModal(!editModal);
     }
@@ -49,7 +53,7 @@ export default function UserEditModal({ modal, setModal }) {
             <form className="user-edit-form">
               <p className="user-edit-modal-text">정보수정</p>
               <div className="user-edit-input">
-                <label>Email</label>
+                <label>이메일</label>
                 <input
                   type="text"
                   placeholder="email"
@@ -59,7 +63,7 @@ export default function UserEditModal({ modal, setModal }) {
                 />
               </div>
               <div className="user-edit-input">
-                <label>Password</label>
+                <label>비밀번호</label>
                 <input
                   type="password"
                   placeholder="password"
@@ -69,7 +73,7 @@ export default function UserEditModal({ modal, setModal }) {
                 />
               </div>
               <div className="user-edit-input">
-                <label>Confirm Password</label>
+                <label>비밀번호 확인</label>
                 <input
                   type="password"
                   placeholder="password"

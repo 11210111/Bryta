@@ -1,0 +1,21 @@
+.confirm-signup-modal-section {
+  position: fixed;
+  background: rgba(212, 212, 212, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm-signup-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 6.5rem 1.5rem;
+  width: 15rem;
+  height: 8rem;
+  background-color: #fff;
+  border: 1px solid #000;
+}

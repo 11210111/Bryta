@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { login, logout } from "./API/authAPI";
+import { login, logout, signup } from "./API/authAPI";
 
 const initialState = null;
 
@@ -17,6 +17,7 @@ const authSlice = createSlice({
         state = null;
         return state;
       })
+      .addCase(signup.fulfilled, () => {})
       .addDefaultCase((state) => {
         return state;
       });
