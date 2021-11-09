@@ -23,10 +23,10 @@ module.exports = async (req, res) => {
       username: userInfo.dataValues.username,
       email: userInfo.dataValues.email,
     };
-    const aceessToken = generateAccessToken(data);
+    const accessToken = generateAccessToken(data);
     const refreshToken = generateRefreshToken(data);
 
     sendRefreshToken(res, refreshToken);
-    sendAccessToken(res, aceessToken, data);
+    sendAccessToken(res, accessToken, data);
   }
 };

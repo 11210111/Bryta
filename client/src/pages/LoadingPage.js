@@ -64,7 +64,7 @@ const Loader = styled.div`
   }
 `;
 
-const LodingPage = () => (
+const LoadingPage = () => (
   <Container>
     <Box>
       <Logo src={process.env.PUBLIC_URL + "/icon192.png"} />
@@ -74,4 +74,4 @@ const LodingPage = () => (
   </Container>
 );
 
-export default LodingPage;
+export default LoadingPage;
