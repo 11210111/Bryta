@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { login, logout, signup } from "./API/authAPI";
+import { kakao, login, logout, signup } from "./API/authAPI";
 
 const initialState = null;
 
@@ -18,6 +18,10 @@ const authSlice = createSlice({
         return state;
       })
       .addCase(signup.fulfilled, () => {})
+      .addCase(kakao.fulfilled, (state, action) => {
+        state = action.payload;
+        return state;
+      })
       .addDefaultCase((state) => {
         return state;
       });
