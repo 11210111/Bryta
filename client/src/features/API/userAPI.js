@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const editInfo = createAsyncThunk(
   "user/editInfo",
-  async({isLogin, payload, password }, { rejectWithValue }) => {
+  async ({ isLogin, payload, password }, { rejectWithValue }) => {
     try {
       await axios.patch(
         "http://localhost:8080/mypage",
