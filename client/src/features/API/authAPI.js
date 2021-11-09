@@ -46,3 +46,18 @@ export const signup = createAsyncThunk(
       .then((res) => console.log(res));
   }
 );
+
+export const kakao = createAsyncThunk(
+  "auth/kakao",
+  async ({ serverUrl, authorizationCode }, { rejectWithValue }) => {
+    const code = { code: authorizationCode };
+    const res = await axios
+      .post(serverUrl, code, {
+        withCredentials: true,
+      })
+      .then((res) => {
+        return res.data;
+      });
+    return res;
+  }
+);

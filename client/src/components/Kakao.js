@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { useDispatch } from "react-redux";
+import { kakao } from "../features/API/authAPI";
 
 const KakaoLogin = ({ userInfo, setUserInfo }) => {
+  const dispatch = useDispatch();
   const [authorizationCode, setAuthorization] = useState("");
   const serverUrl = "http://localhost:8080/auth/kakao/getAccessToken";
   const onClickKakao = () => {
@@ -12,27 +14,13 @@ const KakaoLogin = ({ userInfo, setUserInfo }) => {
     const url = new URL(window.location.href);
     const authorizationCode = url.searchParams.get("code");
     if (authorizationCode) {
-      setAuthorization(authorizationCode);
+      Promise.all([
+        (setAuthorization(authorizationCode),
+        dispatch(kakao({ serverUrl, authorizationCode }))),
+      ]);
     }
   }, []);
 
-  if (authorizationCode) {
-    axios
-      .post(
-        serverUrl,
-        {
-          code: authorizationCode,
-        },
-        {
-          withCredentials: true,
-        }
-      )
-      .then((data) => {
-        console.log(data.data);
-        // window.location.replace(`/`);
-        //   window.sessionStorage.setItem("accessToken", data.data.accessToken);
-      });
-  }
 
   return (
     <div>
