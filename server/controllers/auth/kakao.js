@@ -5,6 +5,7 @@ const {
   sendAccessToken,
   sendRefreshToken,
 } = require("./token");
+const { user } = require("../../models");
 const kakaoClientId = process.env.KAKAO_CLIENT_ID;
 const kakaoClientSecret = process.env.KAKAO_CLIENT_SECRET;
 
@@ -28,16 +29,36 @@ module.exports = {
               Authorization: `Bearer ${data.data.access_token}`,
             },
           })
-          .then((data) => {
+          .then(async (data) => {
             console.log(data.data);
             const userInfo = {
               username: data.data.kakao_account.profile.nickname,
             };
-            const accessToken = generateAccessToken(userInfo);
-            const refreshToken = generateRefreshToken(userInfo);
 
-            sendRefreshToken(res, refreshToken);
-            sendAccessToken(res, accessToken, userInfo);
+            const usernameInfo = await user.findOne({
+              where: {
+                username: userInfo.username,
+              },
+            });
+
+            if (!usernameInfo) {
+              await user.create({
+                username: userInfo.username,
+                email: null,
+                password: null,
+              });
+              const accessToken = generateAccessToken(userInfo);
+              const refreshToken = generateRefreshToken(userInfo);
+
+              sendRefreshToken(res, refreshToken);
+              sendAccessToken(res, accessToken, userInfo);
+            } else {
+              const accessToken = generateAccessToken(userInfo);
+              const refreshToken = generateRefreshToken(userInfo);
+
+              sendRefreshToken(res, refreshToken);
+              sendAccessToken(res, accessToken, userInfo);
+            }
           });
       });
   },
