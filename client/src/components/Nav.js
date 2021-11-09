@@ -44,7 +44,12 @@ function Nav() {
             placeholder="  배우를 검색해주세요."
             onChange={(e) => searchInputHandler(e)}
           />
-          <Link to={{ pathname: "/search", state: { value: { searchInput } } }}>
+          <Link
+            to={{
+              pathname: "/search",
+              state: { value: { searchInput } },
+            }}
+          >
             <BiSearch className="nav-search-icon" />
           </Link>
         </div>

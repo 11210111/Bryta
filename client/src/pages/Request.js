@@ -9,7 +9,7 @@ export default function Request() {
   const postRequest = async () => {
     await axios
       .post(
-        "https://api.bryta.shop/noticeBoard",
+        "https://localhost:8080/noticeBoard",
         {
           content: requestValue,
         },
