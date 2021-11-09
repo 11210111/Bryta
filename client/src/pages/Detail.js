@@ -15,9 +15,7 @@ export default function Detail() {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(
-        `http://ec2-13-209-3-25.ap-northeast-2.compute.amazonaws.com:8080/actor/${id}`
-      )
+      .get(`https://api.bryta.shop/actor/${id}`)
       .then((res) => {
         const data = res.data.actorDetail;
         setIsActor(data);

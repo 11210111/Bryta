@@ -2,18 +2,21 @@ const { actor } = require("../../models");
 
 module.exports = {
   search: async (req, res) => {
-    await actor
-      .findOne({
-        where: { actorName: req.query },
-      })
-      .then((data) => {
-        const payload = {
-          id: data.dataValues.id,
-          actorid: data.dataValues.actorid,
-          actorName: data.dataValues.actorName,
-          actorImage: data.dataValues.actorImage,
-        };
-      });
-    res.status(200).send({ payload });
+    const { actorName } = req.query;
+    const searchActor = await actor.findOne({
+      where: {
+        actorName,
+      },
+    });
+    if (!searchActor) {
+      res.sendStatus(404);
+    } else {
+      const payload = {
+        id: searchActor.dataValues.id,
+        actorName: searchActor.dataValues.actorName,
+        actorImage: searchActor.dataValues.image,
+      };
+      res.status(200).send({ payload });
+    }
   },
 };
