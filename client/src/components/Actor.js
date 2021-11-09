@@ -11,6 +11,7 @@ export default function Actor({ getId, actor }) {
   const isFavorite = useSelector((state) => state.favorite);
   const url = window.location.pathname;
   const actorId = actor?.id;
+
   const payload = {
     actorId,
     actor: { id: actor?.id, actorName: actor?.actorName, image: actor?.image },
@@ -43,7 +44,7 @@ export default function Actor({ getId, actor }) {
     <div id="actor-container" onClick={url === "/mypage" ? actorClick : null}>
       <div className={url === "/mypage" ? "actorimg-crop" : ""}>
         <img
-          src={actor && actor?.image}
+          src={(actor && actor?.image) || actor?.actorImage}
           alt={actor && actor?.actorName}
           className={url === "/mypage" ? "favActor-image" : "actor-image"}
         />
