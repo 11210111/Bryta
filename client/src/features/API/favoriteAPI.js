@@ -5,7 +5,7 @@ export const getFavorite = createAsyncThunk(
   "favorite/getFavorite",
   async (isLogin) => {
     const favorite = await axios
-      .get("http://api.bryta.shop/favorite", {
+      .get("http://localhost:8080/favorite", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${isLogin.accessToken}`,

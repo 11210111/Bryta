@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Actor from "../components/Actor";
-
+import { Link } from "react-router-dom";
 import { useLocation, useHistory } from "react-router";
 import axios from "axios";
+
 import "../css/Search.css";
 
 function Search() {
@@ -10,6 +11,7 @@ function Search() {
   const history = useHistory();
   const value = location.state.value.searchInput;
   const [searchActor, setSearchActor] = useState([]);
+
   useEffect(() => {
     result();
   }, [value]);
@@ -30,7 +32,9 @@ function Search() {
       <div className="search_In">
         <div className="searchActor_container">
           <div className="searchActor">
-            <Actor actor={searchActor} />
+            <Link to={`detail/${searchActor.id}`}>
+              <Actor actor={searchActor} />
+            </Link>
           </div>
         </div>
       </div>

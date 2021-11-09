@@ -8,8 +8,22 @@
   margin: 0 20px;
 }
 
-.movie-image {
+.movie-info {
+  position: relative;
+  margin-bottom: 15px;
   width: 120px;
   height: 150px;
-  margin-bottom: 15px;
 }
+/* .movie-image {
+  width: 120px;
+  height: 150px;
+} */
+.movie-checkBtn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+/* .movie-name {
+  width: 120px;
+} */
