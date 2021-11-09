@@ -11,7 +11,7 @@ function MainPage2() {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get("https://localhost:8080/actor/recommendation")
+      .get("http://localhost:8080/actor/recommendation")
       .then((res) => {
         const data = res.data.actorMovie;
         setIsTodayActor(data);
