@@ -64,7 +64,7 @@ const Loader = styled.div`
   }
 `;
 
-export default () => (
+const LoadingPage = () => (
   <Container>
     <Box>
       <Logo src={process.env.PUBLIC_URL + "/icon192.png"} />
@@ -73,3 +73,5 @@ export default () => (
     </Box>
   </Container>
 );
+
+export default LoadingPage;
