@@ -10,7 +10,7 @@ module.exports = {
         bodySize: "184cm",
         debut: "2003년 영화 '마들렌'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201703%2F20170309160737361.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088847-263142bb-cd07-4a1c-9990-a7cecded6a14.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -21,7 +21,7 @@ module.exports = {
         bodySize: "180cm, 75kg",
         debut: "1994년 뮤지컬 '지하철 1호선'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202003%2F20200316134444946.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088652-3202289b-f137-4a1e-b8ed-0c318bc1192c.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -32,7 +32,7 @@ module.exports = {
         bodySize: "180cm, 80kg",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202102%2F20210222160936234.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088634-b5d3b9a1-6241-458a-afad-79c3c007cb47.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -43,7 +43,7 @@ module.exports = {
         bodySize: "",
         debut: "2004년 영화 '아는 여자'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201902%2F20190212162454882-3571992.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088802-32568ab6-bdc5-4a3d-b5e0-e78fed8dc2cc.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -54,7 +54,7 @@ module.exports = {
         bodySize: "174cm, 65kg",
         debut: "1997년 영화 '블랙잭'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202103%2F2021032416372949.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088745-951f40a1-7241-46c2-bb52-1b14f5369ea6.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -65,7 +65,7 @@ module.exports = {
         bodySize: "180cm",
         debut: "1993년 SBS 드라마 '공룡선생'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F42%2F201812191840306281.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088727-aa541048-2759-45df-b4da-0224f3495f4c.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -76,7 +76,7 @@ module.exports = {
         bodySize: "176cm, 68kg, B형",
         debut: "1990년 극단 연회단거리패 입단",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F94%2F201303131549208821.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088751-deb6fbb6-8aaa-4334-99e5-1888407f460c.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -87,7 +87,7 @@ module.exports = {
         bodySize: "178cm, 68kg",
         debut: "1988년 연극 '욕망이라는 이름의 전차'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F43%2F201404021448328811.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088816-cd8efeaf-7e29-4a96-9858-2940a08d60b0.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -98,7 +98,7 @@ module.exports = {
         bodySize: "186cm, 66kg",
         debut: "2003년 MBC 드라마 '위풍당당 그녀'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F37%2F201604181854386741.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088845-4bc028ae-f5dd-4e2e-9379-59814e50c1ef.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -109,7 +109,7 @@ module.exports = {
         bodySize: "178cm, 100kg",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202012%2F20201207192857469.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088792-75bab4d5-dd4d-4c03-9ddd-549abbb3e6cb.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -120,7 +120,7 @@ module.exports = {
         bodySize: "177cm, 72kg",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201810%2F201810021644077.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088736-f29e15fe-642a-443b-aa49-3e9f4ec6cd52.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -131,7 +131,7 @@ module.exports = {
         bodySize: "178cm",
         debut: "1993년 연극 '심바새매'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201707%2F20170712110232236-4258953.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088775-e041e0c2-db17-4493-92bf-830ff17e267d.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -142,7 +142,7 @@ module.exports = {
         bodySize: "187cm",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201502%2F20150204115955124-6648994.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088700-12ad66e0-a83a-4d4a-ac97-73ab00c5f20f.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -153,7 +153,7 @@ module.exports = {
         bodySize: "177cm, 70kg",
         debut: "1989년 드라마 '야망의 세월'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201607%2F20160706172032800.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088687-ddbbabbb-9e6a-4cfb-8130-8bd1a448afec.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -164,7 +164,7 @@ module.exports = {
         bodySize: "",
         debut: "2004년 영화 '말죽거리 잔혹사'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201708%2F20170821165401677.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088702-8196f261-6af3-4f2a-a1bc-a7472ce4a464.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -175,7 +175,7 @@ module.exports = {
         bodySize: "A형",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F139%2F201810151034496351.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088748-105fb659-8543-4d6c-bd6f-97be33534671.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -186,7 +186,7 @@ module.exports = {
         bodySize: "184cm, 74kg, A형",
         debut: "2001년 KBS 드라마 '학교 4'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202107%2F20210722120819584.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088834-45ed1765-d73b-4bc7-a146-20c57f8b7ff7.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -197,7 +197,7 @@ module.exports = {
         bodySize: "",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F138%2F201911221208562971.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141089237-00fc270f-1ddd-4844-b6f4-fe65262a1adf.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -208,7 +208,7 @@ module.exports = {
         bodySize: "165cm",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202002%2F20200228151453288.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088766-7e8b01e2-5b11-4396-a0e0-376f4e8e8652.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -219,7 +219,7 @@ module.exports = {
         bodySize: "",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201608%2F20160810155746864.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088693-be3cffec-95f1-4b01-850a-859a7f75627f.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -230,7 +230,7 @@ module.exports = {
         bodySize: "177cm, 68kg, O형",
         debut: "2000년 연극 '청춘예찬'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201506%2F20150613010719340-7239341.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088781-053c2af7-1614-49b2-8b06-27b5e861be8f.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -241,7 +241,7 @@ module.exports = {
         bodySize: "",
         debut: "1997년 패션잡지 '에꼴'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202106%2F20210607161142258.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141089213-ef395e12-96ff-4c4b-8445-8c3e865289b7.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -252,7 +252,7 @@ module.exports = {
         bodySize: "180cm, 65kg",
         debut: "1996년 SBS 6기 공채 탤런트",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202103%2F20210303145401112.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088819-072805f7-a10f-4666-83b6-ee1d75471cf2.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -263,7 +263,7 @@ module.exports = {
         bodySize: "",
         debut: "2004년 뮤지컬 '호두까기인형'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202108%2F202108201044543.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088703-0a129cdc-f120-44ca-9f61-c88d9e42a642.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -274,7 +274,7 @@ module.exports = {
         bodySize: "A형",
         debut: "1993년 영화 '바람 부는 날이면 압구정동에 가야한다'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201908%2F20190816151112982.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088754-26aa5ced-d88f-4819-96a2-92ff008e4b7a.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -285,7 +285,7 @@ module.exports = {
         bodySize: "",
         debut: "1986년 영화 '깜보'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F42%2F201802141225151721.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088808-7c7fcfbb-4e0c-4c93-96db-3fdbd896b7d5.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -296,7 +296,7 @@ module.exports = {
         bodySize: "186cm",
         debut: "1994년 영화 '구미호'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201812%2F20181220111450105.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088712-45b1e8b2-49cd-4cde-b418-9b507258cb89.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -307,7 +307,7 @@ module.exports = {
         bodySize: "183cm, 70kg",
         debut: "2015년 영화 '소셜포비아'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201905%2F20190528142316857-8531317.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088798-ab785d28-8f9d-4fe8-9ba4-d6cf625eb15e.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -318,7 +318,7 @@ module.exports = {
         bodySize: "",
         debut: "2003년 드라마 '대장금'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201801%2F20180104100848526-1340226.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088760-ccf329ce-b224-4336-950f-a34a17bc5c9b.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -329,7 +329,7 @@ module.exports = {
         bodySize: "",
         debut: "2006년 제50회 미스코리아 선발대회",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202106%2F20210617145942474.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088724-40ca4c38-fb00-4dfe-9ec9-cb721b32b81a.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -340,7 +340,7 @@ module.exports = {
         bodySize: "",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202106%2F20210603120556175.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088829-8791ebb3-b71e-4031-ac08-eb0c2a0d917c.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -351,7 +351,7 @@ module.exports = {
         bodySize: "",
         debut: "2001년 뮤지컬 '록키호러쇼'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201705%2F20170510003420102-7278827.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088733-0243be62-c562-4572-8bd7-efdfed0b8ac3.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -362,7 +362,7 @@ module.exports = {
         bodySize: "",
         debut: "1996년 KBS 신세대 보고 - 어른들은 몰라요",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202002%2F20200224175055200.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088674-d32d4a70-16f9-4e5e-8e3d-ba1c590ad53e.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -373,7 +373,7 @@ module.exports = {
         bodySize: "168cm, 48kg",
         debut: "1996년 MBC 드라마 '화려한 휴가'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F194%2F201005241048583111.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088813-9343ee66-26a4-4b45-99b8-6f237bd87d65.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -384,7 +384,7 @@ module.exports = {
         bodySize: "178cm, 68kg",
         debut: "2000년 영화 '죽거나 혹은 나쁘거나'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F122%2F201011091145128401.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088801-e1e3d234-fcd4-480a-87cc-acdbf1f67504.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -395,7 +395,7 @@ module.exports = {
         bodySize: "",
         debut: "2003년 미스 빙그레 선발대회",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202006%2F20200609190539136.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088664-e8ba2ada-1416-4526-be91-895da2da8c14.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -406,7 +406,7 @@ module.exports = {
         bodySize: "185cm, 74kg",
         debut: "2003년 KBS 드라마 '보디가드'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201909%2F20190909110909451-6101473.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088658-20f54eb8-7147-435a-8bf9-e6580d27855c.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -417,7 +417,7 @@ module.exports = {
         bodySize: "177cm, 78kg",
         debut: "1991년 SBS 1기 공채 탤런트",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F84%2F200803031339272621.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088772-6423f2b3-ff90-4c9d-bd5b-21264d79b5ce.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -428,7 +428,7 @@ module.exports = {
         bodySize: "179cm, 67kg",
         debut: "",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202107%2F20210719185949590.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088742-975ba6ee-d54a-4031-86a1-20652b99836d.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -439,7 +439,7 @@ module.exports = {
         bodySize: "",
         debut: "2006년 EBS 드라마 '비밀의 교정'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F15%2F202005111648169131.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088788-74a97e85-63a6-4a69-ada7-9a52c5118ba2.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -450,7 +450,7 @@ module.exports = {
         bodySize: "B형",
         debut: "2004년 영화 '순흔'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202107%2F2021072301331283.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088822-8683989a-30fd-4753-bffc-70d00d2e433d.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -461,7 +461,7 @@ module.exports = {
         bodySize: "",
         debut: "2011년 MBC 드라마 '짝패'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201911%2F20191111162806970-8759926.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088679-45bedac5-f4c2-4735-aac6-e93e95330625.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -472,7 +472,7 @@ module.exports = {
         bodySize: "163cm",
         debut: "1997년 잡지 'Ceci' 모델",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201408%2F2014081216530934-7249138.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088704-05cf2a41-bc65-4a1b-93bd-acab381b471a.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -484,7 +484,7 @@ module.exports = {
         bodySize: "177cm",
         debut: "2004년 연극 '거울공주 평강이야기'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F159%2F201901211445306131.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088698-785350a5-9132-4238-8809-e013829b487d.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -496,7 +496,7 @@ module.exports = {
         bodySize: "184cm",
         debut: "1999년 KBS2 드라마 '학교'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202106%2F20210629202332185.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088826-00098d3c-8e7a-44d4-9980-60c992a69797.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -508,7 +508,7 @@ module.exports = {
         bodySize: "183cm",
         debut: "1999년 영화 '사이간'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201206%2F2012061311455478-3465371.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088818-096a5bf8-4f6e-43a3-8bb5-60cdffb1e974.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -520,7 +520,7 @@ module.exports = {
         bodySize: "183cm",
         debut: "2013년 웹드라마 방과후 복불복 시즌1",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202011%2F20201102135115429.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088836-164fe276-a68e-4afb-931d-7d9f2bf61008.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -532,7 +532,7 @@ module.exports = {
         bodySize: "180cm",
         debut: "1995년 연극 '허탕'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F146%2F202109061941584561.gif&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088709-fc8a9dcb-7a43-4d1f-b669-55e277912c82.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -544,7 +544,7 @@ module.exports = {
         bodySize: "163cm",
         debut: "2003년 단편 영화 '사랑하는 소녀'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F122%2F201703151820454931.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088710-cd7838fd-dad2-4deb-96ee-9ff220f773a1.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -556,7 +556,7 @@ module.exports = {
         bodySize: "181cm",
         debut: "2007년 KBS 2TV 드라마 '최강! 울엄마'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202002%2F20200203155236234-7932904.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088839-3ca39df9-ce21-4d0a-8cd3-2ca0442bc5d7.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -568,7 +568,7 @@ module.exports = {
         bodySize: "175cm",
         debut: "1957년 영화 '황혼열차'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F21%2F201302271816087311.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141089232-a133ae74-a267-42a8-b368-d6bdfb7c806e.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -580,7 +580,7 @@ module.exports = {
         bodySize: "178cm",
         debut: "1990년 KBS 성우극회 22기",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201505%2F20150514181602930.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088671-67be8fa5-09c1-4386-94aa-f0a5024a2031.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -592,7 +592,7 @@ module.exports = {
         bodySize: "178cm",
         debut: "1986년 영화 깜보",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202107%2F20210716143845587.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088784-eb0d821c-2496-486c-8585-74e001f43705.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -604,7 +604,7 @@ module.exports = {
         bodySize: "181cm",
         debut: "1992년 MBC 21기 공채 탤런트",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F104%2F201904151435119511.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088720-6a8c7e65-e560-4a3c-b144-e6a55aa88354.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -616,7 +616,7 @@ module.exports = {
         bodySize: "175cm",
         debut: "1988년 연극 '대결'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202104%2F2021042814480688.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088707-9b9bbf1b-b68c-46d9-9a18-6c1a9dd64230.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -628,7 +628,7 @@ module.exports = {
         bodySize: "162cm",
         debut: "1966년 영화 '핏줄'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F50%2F201302271821397491.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088841-a544de4e-0ee2-47ac-9bc3-3b3d1cf9ac48.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -640,7 +640,7 @@ module.exports = {
         bodySize: "",
         debut: "1978년 제3회 미스 롯데 선발대회",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F172%2F201204301825039481.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088740-61dea5eb-8099-434a-9713-5bdad55d3e6a.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -652,7 +652,7 @@ module.exports = {
         bodySize: "188cm",
         debut: "1988년 모델라인 18기",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F19%2F201608121456331871.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088696-c5f7ab6e-1abe-4bff-8f17-2e2e9f36f429.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -664,7 +664,7 @@ module.exports = {
         bodySize: "184cm",
         debut: "1990년 영화 '장군의 아들'",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202102%2F20210215121042224.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088763-0871530d-76b7-453c-8790-8f81f3b7ae31.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -676,7 +676,7 @@ module.exports = {
         bodySize: "",
         debut: "1988년 삼성전자 TV CF",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F56%2F201404161358287651.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088677-5107366c-c40b-432d-ade2-9539b230399b.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -688,7 +688,7 @@ module.exports = {
         bodySize: "180cm",
         debut: "1985년 연극 〈방황하는 별들〉",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F35%2F201710101911049321.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088683-a2702d48-b503-4e47-9a32-dcb57725edcf.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -700,7 +700,7 @@ module.exports = {
         bodySize: "171cm",
         debut: "1987년 연산일기",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F156%2F202012151437249261.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088743-9e8cf4f4-dbdd-44bc-a882-f4157e286028.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -712,7 +712,7 @@ module.exports = {
         bodySize: "180cm",
         debut: "1995년 MBC 24기 공채 탤런트",
         image:
-          "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202104%2F20210412173154475.jpg&type=u120_150&quality=95",
+          "https://user-images.githubusercontent.com/81801426/141088730-da7b625e-8e77-437c-a965-1545a76fcebf.png",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
