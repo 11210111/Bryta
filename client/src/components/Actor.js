@@ -1,9 +1,10 @@
 import "../css/Actor.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import LoginErrorModal from "./LoginErrorModal";
-import { addFavorite, delFavorite } from "../features/API/favoriteAPI";
+import ActorCheckModal from "./ActorCheckModal";
+import { addFavorite} from "../features/API/favoriteAPI";
 
 export default function Actor({ getId, actor }) {
   const dispatch = useDispatch();
@@ -11,11 +12,13 @@ export default function Actor({ getId, actor }) {
   const isFavorite = useSelector((state) => state.favorite);
   const url = window.location.pathname;
   const actorId = actor?.id;
+  const [modal, setModal] = useState(false);
+  const [checkModal, setCheckModal] = useState(false);
+
   const payload = {
     actorId,
     actor: { id: actor?.id, actorName: actor?.actorName, image: actor?.image },
   };
-  const [modal, setModal] = useState(false);
 
   const actorClick = () => {
     getId(actorId);
@@ -33,17 +36,26 @@ export default function Actor({ getId, actor }) {
     if (!isLogin) {
       setModal(!modal);
     } else {
-      emptyHeart
-        ? await dispatch(addFavorite({ isLogin, payload })).unwrap()
-        : await dispatch(delFavorite({ isLogin, payload })).unwrap();
+      // emptyHeart
+      // ? await dispatch(addFavorite({ isLogin, payload })).unwrap()
+      // : await dispatch(delFavorite({ isLogin, payload })).unwrap();
+      // setCheckModal(!checkModal);
+      if (emptyHeart) {
+        await dispatch(addFavorite({ isLogin, payload })).unwrap();
+        setEmptyHeart((heart) => !heart);
+      } else {
+        setCheckModal(!checkModal);
+        // await dispatch(delFavorite({ isLogin, payload })).unwrap();
+        setEmptyHeart((heart) => !heart);
+      }
     }
-    setEmptyHeart((heart) => !heart);
   };
+
   return (
     <div id="actor-container" onClick={url === "/mypage" ? actorClick : null}>
       <div className={url === "/mypage" ? "actorimg-crop" : ""}>
         <img
-          src={actor && actor?.image}
+          src={(actor && actor?.image) || actor?.actorImage}
           alt={actor && actor?.actorName}
           className={url === "/mypage" ? "favActor-image" : "actor-image"}
         />
@@ -60,8 +72,16 @@ export default function Actor({ getId, actor }) {
           onClick={favoriteHandler}
         />
       )}
-
-      <LoginErrorModal modal={modal} setModal={setModal} />
+      <ActorCheckModal
+        checkModal={checkModal}
+        payload={payload}
+        setCheckModal={setCheckModal}
+      />
+      <LoginErrorModal
+        setEmptyHeart={setEmptyHeart}
+        modal={modal}
+        setModal={setModal}
+      />
     </div>
   );
 }

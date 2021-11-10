@@ -14,6 +14,8 @@ import Detail from "./pages/Detail";
 import Board from "./pages/Board";
 import Request from "./pages/Request";
 import MyPage from "./pages/MyPage";
+import Search from "./pages/Search";
+import { SearchError } from "./pages/SearchError";
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -28,7 +30,7 @@ function App() {
       setIsLogin(false);
     }
     console.log(isLogin);
-    setTimeout(() => setLoader(false), 1000);
+    setTimeout(() => setLoader(false), 500);
   }, []);
 
   return (
@@ -49,6 +51,12 @@ function App() {
             </Route>
             <Route exact path="/signup">
               <SignUpPage />
+            </Route>
+            <Route path="/search">
+              <Search />
+            </Route>
+            <Route path="/searcherror">
+              <SearchError />
             </Route>
             <Route path="/detail/:id">
               <Detail />

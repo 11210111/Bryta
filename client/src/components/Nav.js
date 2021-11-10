@@ -17,6 +17,12 @@ function Nav() {
   const modalHandler = () => {
     setModal(!modal);
   };
+
+  // const onKeyHandler = (e) => {
+  //   if (e.key === "Enter") {
+  //     searchInputHandler(e);
+  //   }
+  // };
   const searchInputHandler = (e) => {
     e.preventDefault();
     setSearchInput(e.target.value);
@@ -43,8 +49,16 @@ function Nav() {
             type="text"
             placeholder="  배우를 검색해주세요."
             onChange={(e) => searchInputHandler(e)}
+            // onKeyPress={(e) =>
+            //   e.key === "Enter" ? searchInputHandler(e) : null
+            // }
           />
-          <Link to={{ pathname: "/search", state: { value: { searchInput } } }}>
+          <Link
+            to={{
+              pathname: "/search",
+              state: { value: { searchInput } },
+            }}
+          >
             <BiSearch className="nav-search-icon" />
           </Link>
         </div>

@@ -2,6 +2,7 @@ const { user } = require("../../models");
 
 module.exports = async (req, res) => {
   const { username, email, password } = req.body;
+  console.log(req.body);
   if (!username || !email || !password) {
     res.sendStatus(404);
   } else {
@@ -10,7 +11,7 @@ module.exports = async (req, res) => {
         username,
       },
     });
-    if (userInfo.username) {
+    if (userInfo) {
       res.status(404).send({ message: "email exists" });
     } else {
       await user

@@ -13,6 +13,9 @@ const favOneSlice = createSlice({
         state = action.payload;
         return state;
       })
+      // .addCase(patchMovie.fulfilled, (state) => {
+      //   console.log(current(state));
+      // })
       .addDefaultCase((state) => {
         return state;
       });

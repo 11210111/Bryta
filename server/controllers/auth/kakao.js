@@ -1,5 +1,11 @@
 const axios = require("axios");
-const { sendAccessToken, sendRefreshToken } = require("./token");
+const {
+  generateAccessToken,
+  generateRefreshToken,
+  sendAccessToken,
+  sendRefreshToken,
+} = require("./token");
+const { user } = require("../../models");
 const kakaoClientId = process.env.KAKAO_CLIENT_ID;
 const kakaoClientSecret = process.env.KAKAO_CLIENT_SECRET;
 
@@ -14,31 +20,46 @@ module.exports = {
         },
       })
       .then((data) => {
-        const accessToken = data.data.access_token;
-        const refreshToken = data.data.refresh_token;
-        sendAccessToken(res, accessToken);
-        sendRefreshToken(res, refreshToken);
-      });
-  },
+        const profileUrl =
+          "https://kapi.kakao.com/v2/user/me?profile=profile_nickname";
+        axios
+          .get(profileUrl, {
+            headers: {
+              "Content-type": "application/x-www-form-urlencoded;charset-utf-8",
+              Authorization: `Bearer ${data.data.access_token}`,
+            },
+          })
+          .then(async (data) => {
+            console.log(data.data);
+            const userInfo = {
+              username: data.data.kakao_account.profile.nickname,
+            };
 
-  getUserInfo: (req, res) => {
-    const authorization = req.headers.accesstoken;
-    const profileUrl =
-      "https://kapi.kakao.com/v2/user/me?profile=profile_nickname";
-    axios
-      .get(profileUrl, {
-        headers: {
-          "Content-type": "application/x-www-form-urlencoded;charset-utf-8",
-          Authorization: `Bearer ${authorization}`,
-        },
-      })
-      .then((data) => {
-        console.log(data.data);
-        const userInfo = {
-          nickname: data.data.kakao_account.profile.nickname,
-          profileImage: data.data.kakao_account.profile.profile_image_url,
-        };
-        res.status(201).send({ userInfo });
+            const usernameInfo = await user.findOne({
+              where: {
+                username: userInfo.username,
+              },
+            });
+
+            if (!usernameInfo) {
+              await user.create({
+                username: userInfo.username,
+                email: null,
+                password: null,
+              });
+              const accessToken = generateAccessToken(userInfo);
+              const refreshToken = generateRefreshToken(userInfo);
+
+              sendRefreshToken(res, refreshToken);
+              sendAccessToken(res, accessToken, userInfo);
+            } else {
+              const accessToken = generateAccessToken(userInfo);
+              const refreshToken = generateRefreshToken(userInfo);
+
+              sendRefreshToken(res, refreshToken);
+              sendAccessToken(res, accessToken, userInfo);
+            }
+          });
       });
   },
 };

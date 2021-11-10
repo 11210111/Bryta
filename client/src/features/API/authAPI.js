@@ -13,14 +13,51 @@ export const login = createAsyncThunk("auth/login", async (loginInfo) => {
   return response.data;
 });
 
-export const logout = createAsyncThunk("auth/logout", async (user) => {
-  await axios
-    .get("http://localhost:8080/auth/logout", {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.accessToken}`,
-      },
-      withCredentials: true,
-    })
-    .then((res) => console.log(res));
-});
+export const logout = createAsyncThunk(
+  "auth/logout",
+  async (user, { rejectWithValue }) => {
+    await axios
+      .get("http://localhost:8080/auth/logout", {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.accessToken}`,
+        },
+        withCredentials: true,
+      })
+      .then((res) => console.log(res))
+      .catch((err) => rejectWithValue(err));
+  }
+);
+
+export const signup = createAsyncThunk(
+  "auth/signup",
+  async ({ username, email, password }) => {
+    await axios
+      .post(
+        "http://localhost:8080/auth/signup",
+        { username, email, password },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          withCredentials: true,
+        }
+      )
+      .then((res) => console.log(res));
+  }
+);
+
+export const kakao = createAsyncThunk(
+  "auth/kakao",
+  async ({ serverUrl, authorizationCode }, { rejectWithValue }) => {
+    const code = { code: authorizationCode };
+    const res = await axios
+      .post(serverUrl, code, {
+        withCredentials: true,
+      })
+      .then((res) => {
+        return res.data;
+      });
+    return res;
+  }
+);

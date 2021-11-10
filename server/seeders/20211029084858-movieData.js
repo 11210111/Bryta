@@ -8471,7 +8471,7 @@ module.exports = {
         id: 1046,
         movieName: "워킹걸",
         movieImage:
-          "https://movie-phinf.pstatic.net/20150107_209/1420605412910J8shr_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20150107_209/1420605412910J8shr_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8480,7 +8480,7 @@ module.exports = {
         id: 1047,
         movieName: "흡혈형사 나도열",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111223_282/1324574854291prB4X_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111223_282/1324574854291prB4X_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8491,7 +8491,7 @@ module.exports = {
         id: 1048,
         movieName: "로망",
         movieImage:
-          "https://movie-phinf.pstatic.net/20190306_13/1551862037635qnE0r_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20190306_13/1551862037635qnE0r_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8500,7 +8500,7 @@ module.exports = {
         id: 1049,
         movieName: "암전",
         movieImage:
-          "https://movie-phinf.pstatic.net/20190814_273/1565762582530bwo3n_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20190814_273/1565762582530bwo3n_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8508,7 +8508,7 @@ module.exports = {
         id: 1050,
         movieName: "출국",
         movieImage:
-          "https://movie-phinf.pstatic.net/20181022_106/1540170285123a57tG_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20181022_106/1540170285123a57tG_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8517,7 +8517,7 @@ module.exports = {
         id: 1051,
         movieName: "허스토리",
         movieImage:
-          "https://movie-phinf.pstatic.net/20180618_223/1529289387860nUBT1_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20180618_223/1529289387860nUBT1_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8526,7 +8526,7 @@ module.exports = {
         id: 1052,
         movieName: "극적인 하룻밤",
         movieImage:
-          "https://movie-phinf.pstatic.net/20151103_138/1446524904404zf9yt_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20151103_138/1446524904404zf9yt_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8535,7 +8535,7 @@ module.exports = {
         id: 1053,
         movieName: "찌라시: 위험한 소문",
         movieImage:
-          "https://movie-phinf.pstatic.net/20140124_268/1390525769948zPLtK_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20140124_268/1390525769948zPLtK_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8544,7 +8544,7 @@ module.exports = {
         id: 1054,
         movieName: "개들의 전쟁",
         movieImage:
-          "https://movie-phinf.pstatic.net/20121119_6/1353313829862sI49N_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20121119_6/1353313829862sI49N_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8552,7 +8552,7 @@ module.exports = {
         id: 1055,
         movieName: "풍산개",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111223_151/1324638863499dqBxS_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111223_151/1324638863499dqBxS_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8561,7 +8561,7 @@ module.exports = {
         id: 1056,
         movieName: "기묘한 가족",
         movieImage:
-          "https://movie-phinf.pstatic.net/20190213_142/1550020349326Pk2m3_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20190213_142/1550020349326Pk2m3_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8570,7 +8570,7 @@ module.exports = {
         id: 1057,
         movieName: "어느날",
         movieImage:
-          "https://movie-phinf.pstatic.net/20170317_251/1489740465672uWKkN_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20170317_251/1489740465672uWKkN_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8579,7 +8579,7 @@ module.exports = {
         id: 1058,
         movieName: "폭풍전야",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111223_243/1324606646612UDU9L_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111223_243/1324606646612UDU9L_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8588,7 +8588,7 @@ module.exports = {
         id: 1059,
         movieName: "미인도",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111223_163/1324580679545RJvej_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111223_163/1324580679545RJvej_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8597,7 +8597,7 @@ module.exports = {
         id: 1060,
         movieName: "내 청춘에게 고함",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111223_19/13245823032436iYUE_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111223_19/13245823032436iYUE_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8606,7 +8606,7 @@ module.exports = {
         id: 1061,
         movieName: "하류인생",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_232/1324558848852YClqJ_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_232/1324558848852YClqJ_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8615,7 +8615,7 @@ module.exports = {
         id: 1062,
         movieName: "메모리즈",
         movieImage:
-          "https://movie-phinf.pstatic.net/20190328_130/1553738231369vV0Uh_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20190328_130/1553738231369vV0Uh_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8624,7 +8624,7 @@ module.exports = {
         id: 1063,
         movieName: "침입자",
         movieImage:
-          "https://movie-phinf.pstatic.net/20200604_287/1591247101011RnPbV_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20200604_287/1591247101011RnPbV_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8633,7 +8633,7 @@ module.exports = {
         id: 1064,
         movieName: "정직한 후보",
         movieImage:
-          "https://movie-phinf.pstatic.net/20200121_186/1579570188386BXMMG_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20200121_186/1579570188386BXMMG_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8642,7 +8642,7 @@ module.exports = {
         id: 1065,
         movieName: "머니백",
         movieImage:
-          "https://movie-phinf.pstatic.net/20180413_210/1523588214265phMH9_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20180413_210/1523588214265phMH9_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8651,7 +8651,7 @@ module.exports = {
         id: 1066,
         movieName: "기억의 밤",
         movieImage:
-          "https://movie-phinf.pstatic.net/20171129_172/1511930306592dumMz_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20171129_172/1511930306592dumMz_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8660,7 +8660,7 @@ module.exports = {
         id: 1067,
         movieName: "연평해전",
         movieImage:
-          "https://movie-phinf.pstatic.net/20150709_22/1436403002631h77Nm_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20150709_22/1436403002631h77Nm_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8669,7 +8669,7 @@ module.exports = {
         id: 1068,
         movieName: "작전",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111223_102/1324585715572s9HYe_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111223_102/1324585715572s9HYe_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8678,7 +8678,7 @@ module.exports = {
         id: 1069,
         movieName: "어떤 시선",
         movieImage:
-          "https://movie-phinf.pstatic.net/20131001_201/1380593419587VwSwU_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20131001_201/1380593419587VwSwU_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8687,7 +8687,7 @@ module.exports = {
         id: 1070,
         movieName: "이것이 우리의 끝이다",
         movieImage:
-          "https://movie-phinf.pstatic.net/20140602_201/1401686414502iynDa_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20140602_201/1401686414502iynDa_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8696,7 +8696,7 @@ module.exports = {
         id: 1071,
         movieName: "도희야",
         movieImage:
-          "https://movie-phinf.pstatic.net/20140428_113/1398651623151hi6gC_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20140428_113/1398651623151hi6gC_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8705,7 +8705,7 @@ module.exports = {
         id: 1072,
         movieName: "수색역",
         movieImage:
-          "https://movie-phinf.pstatic.net/20161103_205/14781604039264NHSB_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20161103_205/14781604039264NHSB_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8714,7 +8714,7 @@ module.exports = {
         id: 1073,
         movieName: "기방도령",
         movieImage:
-          "https://movie-phinf.pstatic.net/20190617_165/15607469302864PYiu_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20190617_165/15607469302864PYiu_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8725,7 +8725,7 @@ module.exports = {
         id: 1074,
         movieName: "꼴찌부터 일등까지 우리반을 찾습니다",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111221_299/1324479296324sPl0I_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111221_299/1324479296324sPl0I_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8734,7 +8734,7 @@ module.exports = {
         id: 1075,
         movieName: "박봉곤 가출사건",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_103/1324538065895zmBKh_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_103/1324538065895zmBKh_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8743,7 +8743,7 @@ module.exports = {
         id: 1076,
         movieName: "산부인과",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_63/1324555582753euFnV_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_63/1324555582753euFnV_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8752,7 +8752,7 @@ module.exports = {
         id: 1077,
         movieName: "기막힌 사내들",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_47/13245422976852faaq_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_47/13245422976852faaq_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8761,7 +8761,7 @@ module.exports = {
         id: 1078,
         movieName: "공포 택시",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_238/1324561818110wvUsL_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_238/1324561818110wvUsL_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8778,7 +8778,7 @@ module.exports = {
         id: 1080,
         movieName: "귀여워",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_290/1324562157432FJMBV_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_290/1324562157432FJMBV_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8787,7 +8787,7 @@ module.exports = {
         id: 1081,
         movieName: "웰컴 투 동막골",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_184/1324548976401Dstma_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_184/1324548976401Dstma_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8796,7 +8796,7 @@ module.exports = {
         id: 1082,
         movieName: "나의 결혼 원정기",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111223_269/1324584845501ekhQS_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111223_269/1324584845501ekhQS_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8805,7 +8805,7 @@ module.exports = {
         id: 1083,
         movieName: "마이 캡틴 김대출",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_68/1324545254582DKGPl_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_68/1324545254582DKGPl_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8814,7 +8814,7 @@ module.exports = {
         id: 1084,
         movieName: "바르게 살자",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_74/1324560950013hmyqS_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_74/1324560950013hmyqS_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8823,7 +8823,7 @@ module.exports = {
         id: 1085,
         movieName: "신기전",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_186/1324563337863OLb03_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_186/1324563337863OLb03_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8832,7 +8832,7 @@ module.exports = {
         id: 1086,
         movieName: "김씨 표류기",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111223_176/1324586769904ku1af_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111223_176/1324586769904ku1af_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8841,7 +8841,7 @@ module.exports = {
         id: 1087,
         movieName: "내가 살인범이다",
         movieImage:
-          "https://movie-phinf.pstatic.net/20121011_241/1349930904051M4Q8m_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20121011_241/1349930904051M4Q8m_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8850,7 +8850,7 @@ module.exports = {
         id: 1088,
         movieName: "열한시",
         movieImage:
-          "https://movie-phinf.pstatic.net/20131030_225/1383114607772ek05F_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20131030_225/1383114607772ek05F_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8859,7 +8859,7 @@ module.exports = {
         id: 1089,
         movieName: "플랜맨",
         movieImage:
-          "https://movie-phinf.pstatic.net/20131218_181/1387345701824dCQKf_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20131218_181/1387345701824dCQKf_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8868,7 +8868,7 @@ module.exports = {
         id: 1090,
         movieName: "방황하는 칼날",
         movieImage:
-          "https://movie-phinf.pstatic.net/20140319_119/1395194521255hF9K1_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20140319_119/1395194521255hF9K1_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8877,7 +8877,7 @@ module.exports = {
         id: 1091,
         movieName: "지금은맞고그때는틀리다",
         movieImage:
-          "https://movie-phinf.pstatic.net/20150827_95/1440654096792IEz1B_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20150827_95/1440654096792IEz1B_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8886,7 +8886,7 @@ module.exports = {
         id: 1092,
         movieName: "밤의 해변에서 혼자",
         movieImage:
-          "https://movie-phinf.pstatic.net/20170309_161/14890242787646H90q_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20170309_161/14890242787646H90q_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8896,7 +8896,7 @@ module.exports = {
         id: 1093,
         movieName: "사랑하는 소녀",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111224_154/1324655377004FnrxT_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111224_154/1324655377004FnrxT_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8905,7 +8905,7 @@ module.exports = {
         id: 1094,
         movieName: "폴라로이드 작동법",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111224_283/1324655748372b2EBC_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111224_283/1324655748372b2EBC_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8914,7 +8914,7 @@ module.exports = {
         id: 1095,
         movieName: "사랑니",
         movieImage:
-          "https://movie-phinf.pstatic.net/20111222_73/1324547910104Em3MD_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20111222_73/1324547910104Em3MD_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -8932,7 +8932,7 @@ module.exports = {
         id: 1097,
         movieName: "가족 같은 개, 개 같은 가족",
         movieImage:
-          "https://movie-phinf.pstatic.net/20131127_9/1385533181568YmdBg_JPEG/movie_image.jpg",
+          "https://movie-phinf.pstatic.net/20131127_9/1385533181568YmdBg_JPEG/movie_image.jpg?type=m133_190_2",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
