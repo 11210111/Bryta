@@ -1,5 +1,4 @@
 # Bryta
-## 프로젝트 소개:
 ## LOGO
 ![Frame 2](https://user-images.githubusercontent.com/81801426/139842356-7b9c2c1e-b3cf-492e-a404-4bf7338225fb.png)
 ## About
@@ -18,3 +17,29 @@
 - 이미 본 영화라면 체크 버튼 클릭! 영화를 하나씩 깰 수 있게 도와드릴게요!
 - 체크 버튼 클릭 시 본 영화 리스트로 저장!
 - 필모(filmorgraphy) 깨기란 좋아하는 배우의 작품을 모두 찾아서 보는 것을 의미합니다~
+
+
+## Teck Stack 
+#### FrontEnd
+![JavaScript](https://img.shields.io/badge/javascript-%23F7dF1E.svg?style=for-the-badge&logo=javascript&logoColor=white)
+![CSS](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/react-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+#### BackEnd
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+
+
+## SO WHAT CODING
+|Name|Role|Github|
+|------|---|---|
+|김동현|Full-Stack|[![GitHub](https://img.shields.io/badge/ehdgusdl9177-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ehdgusdl9177)|
+|강미정|Front-End|[![GitHub](https://img.shields.io/badge/11210111-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/11210111)|
+|김수영|Full-Stack|[![GitHub](https://img.shields.io/badge/kimdlzp-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/kimdlzp)|
+|이성은|Full-Stack|[![GitHub](https://img.shields.io/badge/tjddmsdl2056-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/tjddmsdl2056)|
+
+## More Information
+[Bryta WIKI](https://github.com/codestates/Bryta/wiki)
