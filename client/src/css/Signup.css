@@ -37,6 +37,7 @@
   height: 100%;
 }
 .signup-main .title {
+  color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -60,7 +61,7 @@
   position: relative;
 }
 .signup-main .input-box input {
-  width: 100%;
+  width: 85%;
   padding: 10px 20px;
   padding-right: 52px;
   outline: none;
@@ -80,7 +81,7 @@
 }
 
 .signup-main .signup-btn {
-  width: 100%;
+  width: 112%;
   padding: 10px 20px;
   outline: none;
   border: 1px solid #8a8a8a;

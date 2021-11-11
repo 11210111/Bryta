@@ -18,7 +18,7 @@ function LoginErrorModal({ modal, setModal }) {
               </button>
             </Link>
             <button
-              className="login-error-modal-btn"
+              className="login-error-modal-btn modal-right-btn"
               onClick={() => setModal(!modal)}
             >
               확인
