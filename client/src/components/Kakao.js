@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { kakao } from "../features/API/authAPI";
+import { kakao } from "../features/authSlice";
 
 const KakaoLogin = () => {
   const dispatch = useDispatch();

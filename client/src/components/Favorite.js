@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/Favorite.css";
 import { useDispatch, useSelector } from "react-redux";
-import { getFavOne } from "../features/API/favOneAPI";
+import { getFavOne } from "../features/favOneSlice";
 import MovieList from "./MovieList";
 import Actor from "./Actor";
 import EmptyFavorite from "./EmptyFavorite";
