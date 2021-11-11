@@ -1,3 +1,7 @@
 .favorite-actors {
   display: flex;
 }
+.favorite-container {
+  width: 70%;
+  margin: 0 auto;
+}
