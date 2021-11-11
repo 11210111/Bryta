@@ -74,10 +74,10 @@ const favoriteSlice = createSlice({
 
         return state;
       })
-      // .addCase(addFavorite.pending, (state) => {
-      //   state = [];
-      //   return state;
-      // })
+      .addCase(addFavorite.pending, (state) => {
+        state = [];
+        return state;
+      })
       .addCase(addFavorite.fulfilled, (state, action) => {
         state.push(action.payload);
       })
