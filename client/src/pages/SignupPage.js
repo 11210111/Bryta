@@ -4,7 +4,7 @@ import {
   ConfirmSignupModal,
   ConfirmErrorModal,
 } from "../components/ConfirmSignupModal";
-import { signup } from "../features/API/authAPI";
+import { signup } from "../features/authSlice";
 import "../css/Signup.css";
 
 function SignUpPage() {

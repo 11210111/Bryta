@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import LoginErrorModal from "./LoginErrorModal";
 import ActorCheckModal from "./ActorCheckModal";
-import { addFavorite} from "../features/API/favoriteAPI";
+import { addFavorite } from "../features/favoriteSlice";
 
 export default function Actor({ getId, actor }) {
   const dispatch = useDispatch();
@@ -77,6 +77,7 @@ export default function Actor({ getId, actor }) {
         payload={payload}
         setCheckModal={setCheckModal}
       />
+
       <LoginErrorModal
         setEmptyHeart={setEmptyHeart}
         modal={modal}

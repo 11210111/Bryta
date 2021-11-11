@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import KakaoLogin from "../components/Kakao";
 import { useDispatch } from "react-redux";
-import { login } from "../features/API/authAPI";
+import { login } from "../features/authSlice";
 import "../css/LoginPage.css";
 
 function LoginPage({ userInfo, setUserInfo }) {

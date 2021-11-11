@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { BiSearch } from "react-icons/bi";
 import "../css/Nav.css";
 import LoginErrorModal from "./LoginErrorModal";
-import { logout } from "../features/API/authAPI";
+import { logout } from "../features/authSlice";
 
 function Nav() {
   const history = useHistory();

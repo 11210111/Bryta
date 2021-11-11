@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import "../css/MyPage.css";
 import EditUserModal from "../components/EditUserModal";
 import Favorite from "../components/Favorite";
-import { getFavorite } from "../features/API/favoriteAPI";
+import { getFavorite } from "../features/favoriteSlice";
 
 function Mypage() {
   const dispatch = useDispatch();

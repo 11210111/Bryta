@@ -4,23 +4,26 @@ import "../css/Movie.css";
 import { BsCircleFill, BsCheckCircleFill } from "react-icons/bs"; // 본거안본거체크아이콘
 import LoginErrorModal from "./LoginErrorModal";
 import axios from "axios";
+import Spinner from "../components/Spinner";
 
 export default function Movie({ moviePayload, movie }) {
   const url = window.location.pathname;
   const isLogin = useSelector((state) => state.auth);
   const [modal, setModal] = useState(false);
   const [isWatch, setIsWatch] = useState(false);
-
+  const [isLoading, setIsLoading] = useState(false);
   const actorId = moviePayload?.actorId;
   const movieId = movie?.id;
+
   const watchHandler = async (e) => {
     // e.preventDefault();
+
     if (!isLogin) {
       setModal(!modal);
     } else {
       if (!moviePayload?.watch) {
-        // console.log(moviePayload?.watch);
         try {
+          setIsLoading(true);
           await axios
             .patch(
               `http://localhost:8080/favorite/${actorId}/${movieId}`,
@@ -35,11 +38,13 @@ export default function Movie({ moviePayload, movie }) {
             )
             .then((res) => {
               setIsWatch(true);
+              setIsLoading(false);
             });
         } catch (err) {
           console.log(err);
         }
       } else {
+        setIsLoading(true);
         await axios
           .patch(
             `http://localhost:8080/favorite/${actorId}/${movieId}`,
@@ -54,6 +59,7 @@ export default function Movie({ moviePayload, movie }) {
           )
           .then((res) => {
             setIsWatch(false);
+            setIsLoading(false);
           });
       }
     }
@@ -81,6 +87,7 @@ export default function Movie({ moviePayload, movie }) {
         )}
         <span className="movie-name">{movie?.movieName}</span>
       </section>
+      {isLoading ? <Spinner /> : ""}
       <LoginErrorModal modal={modal} setModal={setModal} />
     </div>
   );
