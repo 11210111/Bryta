@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
@@ -7,8 +7,8 @@ import "../css/Request.css";
 export default function Request() {
   const isLogin = useSelector((state) => state.auth);
   const [requestValue, setRequestValue] = useState("");
-  const postRequest = async () => {
-    await axios
+  const postRequest = () => {
+    axios
       .post(
         "http://localhost:8080/noticeBoard",
         {
@@ -22,7 +22,7 @@ export default function Request() {
           withCredentials: true,
         }
       )
-      .then((res) => console.log(res));
+      .then((res) => window.location.replace("/board"));
   };
   const requestHandler = (e) => {
     setRequestValue(e.target.value);
