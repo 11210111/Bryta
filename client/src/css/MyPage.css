@@ -10,6 +10,11 @@
 
 .mypage-username h3 {
   display: inline;
+  color: #fff;
+}
+
+.mypage-username {
+  color: #fff;
 }
 
 .mypage-username span {
