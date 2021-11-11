@@ -26,26 +26,26 @@ function Board() {
   return (
     <div className="board-container">
       <section className="board-section">
+        <img
+          className="logo-img"
+          alt="icon"
+          src={process.env.PUBLIC_URL + "/icon192.png"}
+        />
         <div className="board-name">
-          <img
-            className="logo-img"
-            alt="icon"
-            src={process.env.PUBLIC_URL + "/icon192.png"}
-          />
           <h3>배우 추가 건의</h3>
-        </div>
-        {isLogin ? (
-          <button className="board-writebtn" onClick={boardWriteHandler}>
-            게시물 작성
-          </button>
-        ) : (
-          <>
-            <button className="board-writebtn" onClick={modalHandler}>
+          {isLogin ? (
+            <button className="board-writebtn" onClick={boardWriteHandler}>
               게시물 작성
             </button>
-            <LoginErrorModal modal={modal} setModal={setModal} />
-          </>
-        )}
+          ) : (
+            <>
+              <button className="board-writebtn" onClick={modalHandler}>
+                게시물 작성
+              </button>
+              <LoginErrorModal modal={modal} setModal={setModal} />
+            </>
+          )}
+        </div>
 
         <div className="board-postlist">
           {isPost?.map((post) => (
