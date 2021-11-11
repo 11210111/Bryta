@@ -53,6 +53,7 @@ label {
   flex-direction: column;
 }
 .user-edit-write {
+  color: #fff;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;
