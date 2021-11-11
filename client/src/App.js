@@ -48,7 +48,7 @@ function App() {
               component={SignUpPage}
               path="/signup"
             />
-            <PublicRoute restricted={false} component={Search} path="/search" />
+            <Route component={Search} path="/search" />
             <Route component={SearchError} path="/searcherror" />
             <Route component={Detail} path="/detail/:id" />
             <Route component={Board} path="/board" />
