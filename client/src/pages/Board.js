@@ -11,6 +11,8 @@ function Board() {
   const isLogin = useSelector((state) => state.auth);
   const [isPost, setIsPost] = useState(null);
   const [modal, setModal] = useState(false);
+  const [isCurrent, setIsCurrent] = useState(1);
+  const [isPages, setIsPages] = useState(10);
   const modalHandler = () => {
     setModal(!modal);
   };
@@ -23,6 +25,20 @@ function Board() {
     history.push("/request");
   };
 
+  const indexOfLast = isCurrent * isPages;
+  const indexOfFirst = indexOfLast - isPages;
+  function currentPosts(posts) {
+    if (!isPost) {
+      return;
+    } else {
+      return posts.slice(indexOfFirst, indexOfLast);
+    }
+  }
+
+  const pageNumbers = [];
+  for (let i = 1; i <= Math.ceil(isPost?.length / isPages); i++) {
+    pageNumbers.push(i);
+  }
   return (
     <div className="board-container">
       <section className="board-section">
@@ -46,11 +62,22 @@ function Board() {
             </>
           )}
         </div>
-
         <div className="board-postlist">
-          {isPost?.map((post) => (
+          {currentPosts(isPost)?.map((post) => (
             <Post key={post.id} post={post} />
           ))}
+          <ul className="board-pagination">
+            {pageNumbers.map((number, i) => (
+              <li key={i} className="board-page">
+                <span
+                  className="board-page-btn"
+                  onClick={() => setIsCurrent(number)}
+                >
+                  {number}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </div>
