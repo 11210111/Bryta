@@ -13,10 +13,25 @@
   bottom: 5%;
   transform: translate(5%, 5%);
   white-space: nowrap;
-  border: red 1px solid;
-  padding: 30px 0px 30px 0px;
+  /* border: red 1px solid; */
+  /* padding: 30px 0px 30px 0px; */
 }
 
+.todayactor-text {
+  font-size: 35px;
+  margin: 10px 10px 30px 10px;
+  /* text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3); */
+  display: flex;
+  justify-content: left;
+  color: #fff;
+}
+
+.todayactor-images {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+/* 
 .todayactor-actor {
   width: 190px;
   height: 230px;
@@ -24,39 +39,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.todayactor-text {
-  /* color: white;
-  text-align: center;
-  font-size: 25px;
-  margin: 10px 10px 20px 40px;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
-    0px -5px 35px rgba(255, 255, 255, 0.3); */
-  display: flex;
-  justify-content: left;
-  color: #fff;
-  padding-bottom: 20px;
-}
+} */
 
 .todayactor-img {
-  width: 220px;
-  height: 250px;
+  width: 270px;
+  height: 300px;
   margin-left: 20px;
   margin-bottom: 15px;
 }
 
-.todayactor-images {
+.actor-name {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  color: #fff;
 }
 
 .todayactor-movies {
   display: flex;
 }
+
 .todayactor-movie {
-  width: 190px;
-  height: 230px;
+  width: 210px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,11 +68,8 @@
   margin: 0 20px;
 }
 
-.actor-name {
-  color: #fff;
-}
-
 .movie-name {
+  margin-top: 10px;
   color: #fff;
 }
 
@@ -85,3 +86,26 @@
     font-size: max(calc(100vw / 20));
   }
 }
+
+/*
+.main-todayactor {
+  padding: 20px;
+}
+
+.todayactor-text {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+  margin: 10px 10px 20px 40px;
+}
+
+.todayactor-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.todayactor-movies {
+  display: flex;
+}*/
