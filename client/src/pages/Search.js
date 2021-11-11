@@ -17,7 +17,7 @@ function Search() {
   }, [value]);
   const result = () => {
     axios
-      .get("http://localhost:8080/actor/search", {
+      .get("https://api.bryta.shop//actor/search", {
         params: { actorName: value },
         headers: { "Content-Type": "application/json" },
         withCredentials: true,
