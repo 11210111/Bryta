@@ -1,5 +1,7 @@
 .favorite-actors {
   display: flex;
+  width: 80%;
+  overflow-x: scroll;
 }
 .favorite-container {
   width: 70%;
