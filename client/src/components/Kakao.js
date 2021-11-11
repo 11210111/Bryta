@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { kakao } from "../features/API/authAPI";
+import { kakao } from "../features/authSlice";
 
-const KakaoLogin = ({ userInfo, setUserInfo }) => {
+const KakaoLogin = () => {
   const dispatch = useDispatch();
   const [authorizationCode, setAuthorization] = useState("");
   const serverUrl = "http://localhost:8080/auth/kakao/getAccessToken";
@@ -20,7 +20,6 @@ const KakaoLogin = ({ userInfo, setUserInfo }) => {
       ]);
     }
   }, []);
-
 
   return (
     <div>

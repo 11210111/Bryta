@@ -1,14 +1,47 @@
 .request-container {
-  margin-top: 20%;
-  width: 70vh;
+  height: 50vh;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 200px;
+  color: #fff;
 }
 .request-form {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 20%;
-  left: 40%;
+  width: 70%;
+  margin: 0 auto;
 }
 .request-form-btn {
-  width: 20px;
+  margin-top: 30px;
+  width: 120px;
+  height: 40px;
+  background-color: #ffba00;
+  border: 2px solid #ffba00;
+  font-weight: bold;
+}
+.request-form-btn:hover {
+  color: #000;
+}
+.request-font {
+  font-size: 30px;
+}
+.request-form-actor {
+  height: 50px;
+  width: 70%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  transition: 0.3s;
+  color: #fff;
+}
+.request-form-actor:hover {
+  border-bottom: 2px solid #ffba00;
+}
+
+.request-form-actor:hover::-webkit-input-placeholder {
+  font-size: 20px;
+}
+.request-form-actor::-webkit-input-placeholder {
+  transition: 0.3s;
 }

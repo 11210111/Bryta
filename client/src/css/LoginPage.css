@@ -39,6 +39,7 @@
 }
 
 .login-main .title {
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -58,7 +59,7 @@
   letter-spacing: 1px;
 }
 .login-main .login-input input {
-  width: 100%;
+  width: 85%;
   padding: 10px 20px;
   outline: none;
   font-weight: 400;
@@ -92,7 +93,7 @@
   flex-flow: row nowrap;
   margin-bottom: 25px;
 }
-.login-oauth .googleOauth {
+/* .login-oauth .googleOauth {
   border-radius: 50%;
   border: 1.5px solid #8a8a8a;
   margin: 16px;
@@ -103,7 +104,7 @@
   background-image: url("../images/google.jpeg");
   background-size: cover;
   background-position: center;
-}
+} */
 
 .login-oauth .kakaoOauth {
   border-radius: 50%;
@@ -128,5 +129,5 @@
   transition: all 0.3s ease-out;
 }
 .signup-path:hover {
-  color: #000;
+  color: #ffaa28;
 }

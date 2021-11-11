@@ -1,6 +1,7 @@
 #detail-container {
   width: 100vw;
-  height: 500px;
+  margin-top: 50px;
+  color: #fff;
 }
 .detail-actor {
   margin: 0 auto;
@@ -11,9 +12,15 @@
   display: flex;
 }
 .detail-actor-movies {
+  width: 70%;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
   grid-gap: 2rem;
   justify-content: space-around;
   justify-items: center;
+}
+.detail-actor-title {
+  border-bottom: 2px solid #ffba00;
+  padding-bottom: 10px;
 }

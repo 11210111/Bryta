@@ -1,8 +1,19 @@
 .post-container {
-  width: 400vh;
+  border-bottom: 2px solid #fff;
 }
 .post-section {
   display: grid;
-  grid-template-columns: 300px 100px 100px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 70% 15% 15%;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.post-content {
+}
+
+.post-writer {
+}
+
+.post-date {
 }

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { PublicRoute, PrivateRoute } from "./Router";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
-/*** Components ***/
+
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import MainPage from "./pages/Mainpages/MainPage";
@@ -15,21 +16,14 @@ import Board from "./pages/Board";
 import Request from "./pages/Request";
 import MyPage from "./pages/MyPage";
 import Search from "./pages/Search";
-import { SearchError } from "./pages/SearchError";
+import SearchError from "./pages/SearchError";
+import Error from "./pages/Error";
 
 function App() {
   const [loader, setLoader] = useState(true);
-  const [userInfo, setUserInfo] = useState("");
-  const [isLogin, setIsLogin] = useState(false);
 
   useEffect(() => {
     AOS.init();
-    if (window.sessionStorage.getItem("accessToken")) {
-      setIsLogin(true);
-    } else {
-      setIsLogin(false);
-    }
-    console.log(isLogin);
     setTimeout(() => setLoader(false), 500);
   }, []);
 
@@ -43,33 +37,16 @@ function App() {
             <Nav />
           </header>
           <Switch>
-            <Route exact path="/">
-              <MainPage />
-            </Route>
-            <Route exact path="/login">
-              <LoginPage userInfo={userInfo} setUserInfo={setUserInfo} />
-            </Route>
-            <Route exact path="/signup">
-              <SignUpPage />
-            </Route>
-            <Route path="/search">
-              <Search />
-            </Route>
-            <Route path="/searcherror">
-              <SearchError />
-            </Route>
-            <Route path="/detail/:id">
-              <Detail />
-            </Route>
-            <Route path="/board">
-              <Board />
-            </Route>
-            <Route path="/request">
-              <Request />
-            </Route>
-            <Route path="/mypage">
-              <MyPage />
-            </Route>
+            <Route component={MainPage} path="/" exact />
+            <PublicRoute component={LoginPage} path="/login" />
+            <PublicRoute component={SignUpPage} path="/signup" />
+            <Route component={Search} path="/search" />
+            <Route component={SearchError} path="/searcherror" />
+            <Route component={Detail} path="/detail/:id" />
+            <Route component={Board} path="/board" />
+            <PrivateRoute component={Request} path="/request" />
+            <PrivateRoute component={MyPage} path="/mypage" />
+            <Route component={Error} />
           </Switch>
           <Footer />
         </BrowserRouter>

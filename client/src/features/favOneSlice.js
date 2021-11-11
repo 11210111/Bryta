@@ -1,11 +1,26 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { getFavOne } from "./API/favOneAPI";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
-const initialState = [];
+export const getFavOne = createAsyncThunk(
+  "favOne/getFavOne",
+  async ({ isLogin, id }) => {
+    const response = await axios
+      .get(`http://localhost:8080/favorite/${id}`, {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${isLogin.accessToken}`,
+        },
+        withCredentials: true,
+      })
+      .then((res) => res.data.data);
+    return response;
+  }
+);
 
+// favOneSlice
 const favOneSlice = createSlice({
   name: "favOne",
-  initialState,
+  initialState: [],
   reducers: {},
   extraReducers: (builder) => {
     builder
@@ -13,9 +28,6 @@ const favOneSlice = createSlice({
         state = action.payload;
         return state;
       })
-      // .addCase(patchMovie.fulfilled, (state) => {
-      //   console.log(current(state));
-      // })
       .addDefaultCase((state) => {
         return state;
       });

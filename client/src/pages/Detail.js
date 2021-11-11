@@ -43,7 +43,7 @@ export default function Detail() {
               <ActorProfile actor={isActor} />
             </div>
             <div className="detail-actor-movie">
-              <h2>출연작</h2>
+              <h2 className="detail-actor-title">출연작</h2>
               <div className="detail-actor-movies">
                 {isActor &&
                   isActor?.actor_movies.map((actor_movie) => (
