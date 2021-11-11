@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-container">
           <div className="footer-row">
             <div className="footer-col">
-              <h4>서비스 소개</h4>
+              <h4>About</h4>
               <ul>
                 <li>
                   <a
@@ -30,6 +30,16 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className="footer-col">
+              <div className="footer-logo">
+                <img
+                  className="footer-logo-img"
+                  alt="icon"
+                  src={process.env.PUBLIC_URL + "/icon192.png"}
+                />
+                <div className="footer-logo-text">Bryta</div>
+              </div>
             </div>
             <div className="footer-col">
               <h4>Team members</h4>
