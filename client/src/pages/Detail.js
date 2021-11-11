@@ -20,7 +20,7 @@ export default function Detail() {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`https://api.bryta.shop//actor/${id}`)
+      .get(`https://api.bryta.shop/actor/${id}`)
       .then((res) => {
         const data = res.data.actorDetail;
         setIsActor(data);
