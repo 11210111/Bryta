@@ -5,7 +5,7 @@ export const getFavorite = createAsyncThunk(
   "favorite/getFavorite",
   async (isLogin) => {
     const favorite = await axios
-      .get("https://api.bryta.shop//favorite", {
+      .get("https://api.bryta.shop/favorite", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${isLogin.accessToken}`,
@@ -23,7 +23,7 @@ export const addFavorite = createAsyncThunk(
     try {
       await axios
         .post(
-          "https://api.bryta.shop//favorite",
+          "https://api.bryta.shop/favorite",
           { actorId: payload.actorId },
           {
             headers: {
@@ -47,7 +47,7 @@ export const delFavorite = createAsyncThunk(
     const id = payload.actorId;
     try {
       await axios
-        .delete(`https://api.bryta.shop//favorite/${id}`, {
+        .delete(`https://api.bryta.shop/favorite/${id}`, {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${isLogin.accessToken}`,

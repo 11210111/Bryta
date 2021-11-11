@@ -18,7 +18,7 @@ function Board() {
   };
   useEffect(() => {
     axios
-      .get("https://api.bryta.shop//noticeBoard")
+      .get("https://api.bryta.shop/noticeBoard")
       .then((res) => setIsPost(res.data.post));
   }, []);
   const boardWriteHandler = () => {
