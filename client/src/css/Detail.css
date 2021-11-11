@@ -12,7 +12,9 @@
   display: flex;
 }
 .detail-actor-movies {
+  width: 70%;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
   grid-gap: 2rem;
   justify-content: space-around;
