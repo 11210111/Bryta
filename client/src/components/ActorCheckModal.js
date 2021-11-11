@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { delFavorite } from "../features/API/favoriteAPI";
+import { delFavorite } from "../features/favoriteSlice";
 import "../css/ActorCheckModal.css";
 
 export default function ConfirmSignupModal({

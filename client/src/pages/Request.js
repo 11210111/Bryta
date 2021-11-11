@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import "../css/Request.css";
@@ -6,10 +7,10 @@ import "../css/Request.css";
 export default function Request() {
   const isLogin = useSelector((state) => state.auth);
   const [requestValue, setRequestValue] = useState("");
-  const postRequest = async () => {
-    await axios
+  const postRequest = () => {
+    axios
       .post(
-        "https://localhost:8080/noticeBoard",
+        "http://localhost:8080/noticeBoard",
         {
           content: requestValue,
         },
@@ -21,14 +22,14 @@ export default function Request() {
           withCredentials: true,
         }
       )
-      .then((res) => console.log(res));
+      .then((res) => window.location.replace("/board"));
   };
   const requestHandler = (e) => {
     setRequestValue(e.target.value);
   };
   return (
     <div className="request-container">
-      <form className="request-form" onSubmit={postRequest}>
+      <form className="request-form">
         <h3 className="request-font">배우 추가 건의</h3>
         <input
           className="request-form-actor"
@@ -36,9 +37,15 @@ export default function Request() {
           onChange={requestHandler}
           value={requestValue}
         />
-        <button type="submit" className="request-form-btn">
-          요청
-        </button>
+        <Link to="/board">
+          <button
+            type="submit"
+            onClick={postRequest}
+            className="request-form-btn"
+          >
+            요청
+          </button>
+        </Link>
       </form>
     </div>
   );

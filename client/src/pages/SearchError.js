@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/SearchError.css";
 
-export function SearchError() {
+export default function SearchError() {
   return (
     <div className="search-error-container">
       <section className="search-error-section">

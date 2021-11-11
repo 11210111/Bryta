@@ -1,9 +1,9 @@
 import React from "react";
 import { useHistory } from "react-router";
 import "../css/EditCheckModal.css";
-import { logout } from "../features/API/authAPI";
+import { logout } from "../features/authSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { deleteInfo, editInfo } from "../features/API/userAPI";
+import { deleteInfo, editInfo } from "../features/userSlice";
 
 export function EditCheckModal({ editModal, setEditModal, data }) {
   const history = useHistory();

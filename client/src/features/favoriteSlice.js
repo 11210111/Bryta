@@ -1,22 +1,83 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { getFavorite, addFavorite, delFavorite } from "./API/favoriteAPI";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
-const initialState = null;
+export const getFavorite = createAsyncThunk(
+  "favorite/getFavorite",
+  async (isLogin) => {
+    const favorite = await axios
+      .get("http://localhost:8080/favorite", {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${isLogin.accessToken}`,
+        },
+        withCredentials: true,
+      })
+      .then((res) => res.data);
+    return favorite.favoriteActor.favorites;
+  }
+);
 
+export const addFavorite = createAsyncThunk(
+  "favorite/addFavorite",
+  async ({ isLogin, payload }) => {
+    try {
+      await axios
+        .post(
+          "http://localhost:8080/favorite",
+          { actorId: payload.actorId },
+          {
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${isLogin.accessToken}`,
+            },
+            withCredentials: true,
+          }
+        )
+        .then((res) => console.log(res));
+      return payload;
+    } catch (err) {
+      throw err;
+    }
+  }
+);
+
+export const delFavorite = createAsyncThunk(
+  "favorite/delFavorite",
+  async ({ isLogin, payload }) => {
+    const id = payload.actorId;
+    try {
+      await axios
+        .delete(`http://localhost:8080/favorite/${id}`, {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${isLogin.accessToken}`,
+          },
+          withCredentials: true,
+        })
+        .then((res) => console.log(res));
+      return payload;
+    } catch (err) {
+      throw err;
+    }
+  }
+);
+
+// favoriteSlice
 const favoriteSlice = createSlice({
   name: "favorite",
-  initialState,
+  initialState: null,
   reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(getFavorite.fulfilled, (state, action) => {
         state = action.payload;
+
         return state;
       })
-      .addCase(addFavorite.pending, (state) => {
-        state = [];
-        return state;
-      })
+      // .addCase(addFavorite.pending, (state) => {
+      //   state = [];
+      //   return state;
+      // })
       .addCase(addFavorite.fulfilled, (state, action) => {
         state.push(action.payload);
       })
