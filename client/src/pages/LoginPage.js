@@ -84,11 +84,7 @@ function LoginPage({ userInfo, setUserInfo }) {
 
             <div className="login-oauth">
               <button className="googleOauth"></button>
-              <KakaoLogin
-                className="kakaoOauth"
-                userInfo={userInfo}
-                setUserInfo={setUserInfo}
-              />
+              <KakaoLogin className="kakaoOauth" />
             </div>
           </div>
         </div>
