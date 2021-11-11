@@ -29,17 +29,7 @@ const MainPage1 = () => {
           </div>
         </div>
 
-        <div className="part1-button-wrapper">
-          <button
-            data-aos="fade"
-            data-aos-delay="50"
-            data--aos-easing="ease-in-out"
-            className="part1-button"
-            onClick={() => history.push("/actor")}
-          >
-            좋아하는 배우 찾으러 가기
-          </button>
-        </div>
+        <div className="part1-button-wrapper"></div>
         <div className="scroll-down">
           <div className="chevron"></div>
           <div className="chevron"></div>
