@@ -6,7 +6,7 @@ export const editInfo = createAsyncThunk(
   async ({ isLogin, payload, password }, { rejectWithValue }) => {
     try {
       await axios.patch(
-        "http://localhost:8080/mypage",
+        "https://api.bryta.shop//mypage",
         {
           email: payload.email,
           password,
@@ -30,7 +30,7 @@ export const deleteInfo = createAsyncThunk(
   "user/deleteInfo",
   async (isLogin) => {
     await axios.delete(
-      "http://localhost:8080/mypage",
+      "https://api.bryta.shop//mypage",
 
       {
         headers: {
