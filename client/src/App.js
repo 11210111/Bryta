@@ -38,16 +38,8 @@ function App() {
           </header>
           <Switch>
             <Route component={MainPage} path="/" exact />
-            <PublicRoute
-              restricted={true}
-              component={LoginPage}
-              path="/login"
-            />
-            <PublicRoute
-              restircted={true}
-              component={SignUpPage}
-              path="/signup"
-            />
+            <PublicRoute component={LoginPage} path="/login" />
+            <PublicRoute component={SignUpPage} path="/signup" />
             <Route component={Search} path="/search" />
             <Route component={SearchError} path="/searcherror" />
             <Route component={Detail} path="/detail/:id" />
