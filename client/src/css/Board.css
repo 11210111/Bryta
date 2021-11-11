@@ -1,4 +1,37 @@
-/* 임시적용 */
+.board-container {
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 150px;
+  width: 70%;
+}
+
 .board-section {
-  margin-top: 20%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.board-postlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-writebtn {
+  background-color: transparent;
+  color: #ffba00;
+  border: 2px solid #ffba00;
+  left: 65%;
+  font-weight: bold;
+}
+
+.board-writebtn:hover {
+  background-color: #ffba00;
+  color: #000;
+}
+
+.board-name {
+  color: #fff;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }

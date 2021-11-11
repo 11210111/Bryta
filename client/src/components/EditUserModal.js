@@ -28,8 +28,7 @@ export default function UserEditModal({ modal, setModal }) {
 
   const onClickEdit = (e) => {
     e.preventDefault();
-    const emailCheck =
-      /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+    const emailCheck = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
     const passwordCheck = /^(?=.*\d)(?=.*[a-z])(?=.*[!@#$%^&*]).{8,16}$/;
 
     if (email === "" || password === "") {
@@ -51,61 +50,75 @@ export default function UserEditModal({ modal, setModal }) {
         <section className="user-edit-modal-section">
           <div className="user-edit-modal-container">
             <form className="user-edit-form">
+              <div className="user-modal-close">
+                <DelCheckModal delModal={delModal} setDelModal={setDelModal} />
+
+                <IoCloseCircleOutline
+                  style={{ size: "2em" }}
+                  type="button"
+                  onClick={() => setModal(!modal)}
+                />
+              </div>
               <p className="user-edit-modal-text">정보수정</p>
-              <div className="user-edit-input">
-                <label>이메일</label>
-                <input
-                  type="text"
-                  placeholder="email"
-                  name="email"
-                  value={email}
-                  onChange={onChangeValue}
-                />
-              </div>
-              <div className="user-edit-input">
-                <label>비밀번호</label>
-                <input
-                  type="password"
-                  placeholder="password"
-                  name="password"
-                  value={password}
-                  onChange={onChangeValue}
-                />
-              </div>
-              <div className="user-edit-input">
-                <label>비밀번호 확인</label>
-                <input
-                  type="password"
-                  placeholder="password"
-                  name="confirmPassword"
-                  value={confirmPassword}
-                  onChange={onChangeValue}
-                />
+              <div className="user-edit-container">
+                <div className="user-edit-input">
+                  <label>이메일</label>
+                  <input
+                    className="user-edit-write"
+                    type="text"
+                    placeholder="email"
+                    name="email"
+                    value={email}
+                    onChange={onChangeValue}
+                  />
+                </div>
+                <div className="user-edit-input">
+                  <label>비밀번호</label>
+                  <input
+                    className="user-edit-write"
+                    type="password"
+                    placeholder="password"
+                    name="password"
+                    value={password}
+                    onChange={onChangeValue}
+                  />
+                </div>
+                <div className="user-edit-input">
+                  <label>비밀번호 확인</label>
+                  <input
+                    className="user-edit-write"
+                    type="password"
+                    placeholder="password"
+                    name="confirmPassword"
+                    value={confirmPassword}
+                    onChange={onChangeValue}
+                  />
+                </div>
               </div>
 
-              <button
-                type="button"
-                onClick={onClickEdit}
-                className="user-edit-btn"
-              >
-                수정하기
-              </button>
-              <div className="user-input-errMessage">{errMessage}</div>
-              <EditCheckModal
-                editModal={editModal}
-                setEditModal={setEditModal}
-                data={{ email, password }}
-              />
+              <div className="user-btn-lap">
+                <button
+                  type="button"
+                  onClick={onClickEdit}
+                  className="user-edit-btn"
+                >
+                  수정하기
+                </button>
+                <div className="user-input-errMessage">{errMessage}</div>
+                <EditCheckModal
+                  editModal={editModal}
+                  setEditModal={setEditModal}
+                  data={{ email, password }}
+                />
 
-              <button type="button" onClick={() => setDelModal(!delModal)}>
-                계정 삭제하기
-              </button>
-              <DelCheckModal delModal={delModal} setDelModal={setDelModal} />
-              <IoCloseCircleOutline
-                style={{ size: "2em" }}
-                type="button"
-                onClick={() => setModal(!modal)}
-              />
+                <button
+                  className="user-edit-delete-btn"
+                  type="button"
+                  onClick={() => setDelModal(!delModal)}
+                >
+                  계정 삭제하기
+                </button>
+              </div>
             </form>
           </div>
         </section>

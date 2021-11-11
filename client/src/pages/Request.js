@@ -29,9 +29,8 @@ export default function Request() {
   return (
     <div className="request-container">
       <form className="request-form" onSubmit={postRequest}>
-        <h3>배우 추가 건의</h3>
-        <label>내용</label>
-        <textarea
+        <h3 className="request-font">배우 추가 건의</h3>
+        <input
           className="request-form-actor"
           placeholder="배우 이름을 적어주세요."
           onChange={requestHandler}
