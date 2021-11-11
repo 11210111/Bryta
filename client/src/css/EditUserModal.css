@@ -99,3 +99,8 @@ button:hover {
 .user-edit-delete-btn {
   margin-left: 20px;
 }
+
+.user-input-errMessage {
+  display: flex;
+  justify-content: center;
+}

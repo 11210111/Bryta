@@ -104,7 +104,7 @@ export default function UserEditModal({ modal, setModal }) {
                 >
                   수정하기
                 </button>
-                <div className="user-input-errMessage">{errMessage}</div>
+
                 <EditCheckModal
                   editModal={editModal}
                   setEditModal={setEditModal}
@@ -119,6 +119,7 @@ export default function UserEditModal({ modal, setModal }) {
                   계정 삭제하기
                 </button>
               </div>
+              <div className="user-input-errMessage">{errMessage}</div>
             </form>
           </div>
         </section>
