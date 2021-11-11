@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const login = createAsyncThunk("auth/login", async (loginInfo) => {
   const response = await axios.post(
-    "http://localhost:8080/auth/login",
+    "https://api.bryta.shop//auth/login",
     loginInfo,
     {
       headers: { "Content-Type": "application/json" },
@@ -17,7 +17,7 @@ export const logout = createAsyncThunk(
   "auth/logout",
   async (user, { rejectWithValue }) => {
     await axios
-      .get("http://localhost:8080/auth/logout", {
+      .get("https://api.bryta.shop//auth/logout", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${user.accessToken}`,
@@ -34,7 +34,7 @@ export const signup = createAsyncThunk(
   async ({ username, email, password }) => {
     await axios
       .post(
-        "http://localhost:8080/auth/signup",
+        "https://api.bryta.shop//auth/signup",
         { username, email, password },
         {
           headers: {

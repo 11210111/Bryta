@@ -12,7 +12,7 @@ export default function MovieList({ actorId }) {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`http://localhost:8080/favorite/${actorId}`, {
+      .get(`https://api.bryta.shop//favorite/${actorId}`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${isLogin.accessToken}`,

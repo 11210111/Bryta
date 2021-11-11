@@ -26,7 +26,7 @@ export default function Movie({ moviePayload, movie }) {
           setIsLoading(true);
           await axios
             .patch(
-              `http://localhost:8080/favorite/${actorId}/${movieId}`,
+              `https://api.bryta.shop//favorite/${actorId}/${movieId}`,
               { watch: true },
               {
                 headers: {
@@ -47,7 +47,7 @@ export default function Movie({ moviePayload, movie }) {
         setIsLoading(true);
         await axios
           .patch(
-            `http://localhost:8080/favorite/${actorId}/${movieId}`,
+            `https://api.bryta.shop//favorite/${actorId}/${movieId}`,
             { watch: false },
             {
               headers: {

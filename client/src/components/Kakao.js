@@ -5,9 +5,9 @@ import { kakao } from "../features/authSlice";
 const KakaoLogin = () => {
   const dispatch = useDispatch();
   const [authorizationCode, setAuthorization] = useState("");
-  const serverUrl = "http://localhost:8080/auth/kakao/getAccessToken";
+  const serverUrl = "https://api.bryta.shop//auth/kakao/getAccessToken";
   const onClickKakao = () => {
-    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=c139469ef8f15044f5e9ceaed0648aa8&redirect_uri=http://localhost:3000/login&response_type=code`;
+    window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=c139469ef8f15044f5e9ceaed0648aa8&redirect_uri=https://api.bryta.shop//login&response_type=code`;
   };
 
   useEffect(() => {

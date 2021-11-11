@@ -11,7 +11,7 @@ function MainPage2() {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get("http://localhost:8080/actor/recommendation")
+      .get("https://api.bryta.shop//actor/recommendation")
       .then((res) => {
         const data = res.data.actorMovie;
         setIsTodayActor(data);
