@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import "../css/Request.css";
@@ -9,7 +10,7 @@ export default function Request() {
   const postRequest = async () => {
     await axios
       .post(
-        "https://localhost:8080/noticeBoard",
+        "http://localhost:8080/noticeBoard",
         {
           content: requestValue,
         },
@@ -28,7 +29,7 @@ export default function Request() {
   };
   return (
     <div className="request-container">
-      <form className="request-form" onSubmit={postRequest}>
+      <form className="request-form">
         <h3>배우 추가 건의</h3>
         <label>내용</label>
         <textarea
@@ -37,9 +38,15 @@ export default function Request() {
           onChange={requestHandler}
           value={requestValue}
         />
-        <button type="submit" className="request-form-btn">
-          요청
-        </button>
+        <Link to="/board">
+          <button
+            type="submit"
+            onClick={postRequest}
+            className="request-form-btn"
+          >
+            요청
+          </button>
+        </Link>
       </form>
     </div>
   );
