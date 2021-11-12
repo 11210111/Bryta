@@ -2,7 +2,7 @@
 ## LOGO
 ![Frame 2](https://user-images.githubusercontent.com/81801426/139842356-7b9c2c1e-b3cf-492e-a404-4bf7338225fb.png)
 
-## [Bryta](bryta.shop)
+## [Bryta](https://bryta.shop)
 ## About
 필모 깨기에 진심인 분들! 영화에 진심인 분들!
 
