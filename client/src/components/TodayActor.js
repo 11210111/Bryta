@@ -45,7 +45,7 @@ export default function TodayActor({ todayActor }) {
               />
             </div>
             <div
-              className="actor-name"
+              className="todayactor-name"
               data-aos="fade-left"
               data-aos-delay="50"
               data-aos-duration="1300"
