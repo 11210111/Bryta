@@ -26,14 +26,43 @@ export default function TodayActor({ todayActor }) {
           >
             오늘의 추천배우
           </div>
-          <div className="todayactor-images">
-            <div className="todayactor-actor" onClick={actorClick}>
+          <div className="todayactor-click-message">
+            배우 이미지 클릭 시 상세 페이지로 이동합니다.
+          </div>
+          <article className="todayactor-info">
+            <div
+              className="todayactor-actor"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1300"
+              data-aos-easing="ease-out"
+              onClick={actorClick}
+            >
               <img
                 src={todayActor?.image}
                 alt={todayActor?.actorName}
                 className="todayactor-img"
               />
-              <div className="actor-name">{todayActor?.actorName}</div>
+            </div>
+            <div
+              className="actor-name"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1300"
+              data-aos-easing="ease-out"
+            >
+              {todayActor?.actorName}
+            </div>
+          </article>
+          <article
+            className="todayactor-movie-article"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1300"
+            data-aos-easing="ease-out"
+          >
+            <div className="todayactor-movie-message">
+              <span>{todayActor?.actorName}</span>의 출연작
             </div>
             <div className="todayactor-movies">
               {todayActor?.actor_movies.map((actor_movie) => (
@@ -49,7 +78,7 @@ export default function TodayActor({ todayActor }) {
                 </div>
               ))}
             </div>
-          </div>
+          </article>
         </section>
       </div>
     </>

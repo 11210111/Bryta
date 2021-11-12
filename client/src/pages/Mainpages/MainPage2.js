@@ -1,27 +1,8 @@
 import "../../css/MainPage.css";
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import TodayActor from "../../components/TodayActor";
+
 import Background from "../../images/MainPage2.jpg";
 
 function MainPage2() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [isTodayActor, setIsTodayActor] = useState(null);
-
-  useEffect(() => {
-    setIsLoading(true);
-    axios
-      .get("https://api.bryta.shop/actor/recommendation")
-      .then((res) => {
-        const data = res.data.actorMovie;
-        setIsTodayActor(data);
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
   return (
     <>
       <div
@@ -34,13 +15,6 @@ function MainPage2() {
       >
         <div id="main-container">
           <nav className="main-nav">
-            <section className="main-todayactor">
-              {isLoading ? (
-                <div>loading...</div>
-              ) : (
-                <TodayActor todayActor={isTodayActor} />
-              )}
-            </section>
             <section className="main-bryta">
               <div
                 data-aos="fade-down"
