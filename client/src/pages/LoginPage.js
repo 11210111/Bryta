@@ -24,11 +24,15 @@ function LoginPage({ userInfo, setUserInfo }) {
 
   const onClickLogin = async (e) => {
     e.preventDefault();
-    if (username === "" || password === "") {
-      setErrMessage("빈칸을 입력하세요");
-    } else {
-      await dispatch(login({ username, password })).unwrap();
-      window.location.replace("/");
+    try {
+      if (username === "" || password === "") {
+        setErrMessage("빈칸을 입력하세요");
+      } else {
+        await dispatch(login({ username, password })).unwrap();
+        window.location.replace("/");
+      }
+    } catch (err) {
+      setErrMessage("아이디, 비밀번호를 확인해주세요.");
     }
   };
 
@@ -75,7 +79,7 @@ function LoginPage({ userInfo, setUserInfo }) {
                 로그인
               </button>
               {errMessage ? (
-                <div className="errMessage">{errMessage}</div>
+                <div className="login-errMessage">{errMessage}</div>
               ) : null}
             </form>
             <div className="signup-path">
