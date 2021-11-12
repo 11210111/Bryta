@@ -1,21 +1,30 @@
-.confirm-signup-modal-section {
+.actor-check-modal-section {
   position: fixed;
   background: rgba(212, 212, 212, 0.5);
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 10;
 }
 
-.confirm-signup-modal-container {
+.actor-check-modal-container {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 6.5rem 1.5rem;
-  width: 15rem;
-  height: 8rem;
-  background-color: #fff;
-  border: 1px solid #000;
+  width: 300px;
+  height: 120px;
+  background-color: black;
+  color: #ffba00;
+  border-radius: 10px;
+}
+
+.actor-check-modal-text {
+  display: flex;
+  justify-content: center;
+}
+
+.actor-check-modal-btn {
+  margin-left: 20px;
 }

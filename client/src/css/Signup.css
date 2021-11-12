@@ -118,3 +118,7 @@
 .text.profile {
   margin-bottom: 15px;
 }
+
+.signup-error {
+  color: #ffaa28;
+}

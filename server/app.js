@@ -26,6 +26,8 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://bryta-bucket.s3-website.ap-northeast-2.amazonaws.com",
+      "https://bryta.shop",
+      "https://www.bryta.shop",
     ],
     methods: ["GET", "POST", "DELETE", "PATCH", "OPTIONS"],
     credentials: true,

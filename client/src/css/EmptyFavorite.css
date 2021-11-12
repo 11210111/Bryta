@@ -1,9 +1,15 @@
 .empty-favorite-container {
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
 .empty-favorite-section {
-  width: 120px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* width: 120px;
+  margin: 0 auto; */
+  margin-top: 80px;
+  margin-bottom: 250px;
+  font-size: 25px;
+  color: #fff;
 }
