@@ -76,12 +76,16 @@ export default function Movie({ moviePayload, movie }) {
           <BsCircleFill
             onClick={() => watchHandler()}
             color="#fff"
+            style={{
+              border: "1px solid black",
+              borderRadius: "50px",
+            }}
             className={url === `/detail/${actorId}` ? "hide" : "movie-checkBtn"}
           />
         ) : (
           <BsCheckCircleFill
             onClick={() => watchHandler()}
-            color="#D94E43"
+            color="#FFAA28"
             className={url === `/detail/${actorId}` ? "hide" : "movie-checkBtn"}
           />
         )}
