@@ -1,10 +1,28 @@
 .searchActor_container {
   width: 60%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 120px;
+  height: 550px;
+  color: #fff;
 }
 
+.search-result {
+  font-size: 18px;
+  font-weight: 700;
+}
 .searchActor {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 240px;
+  height: 330px;
+  margin-top: 5%;
+  text-align: center;
+}
+.search-actorImage {
+  height: 288px;
+  margin-bottom: 20px;
+}
+.search-actorName {
+  font-size: 20px;
+  font-weight: 700;
 }
