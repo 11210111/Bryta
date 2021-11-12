@@ -112,10 +112,10 @@ function SignUpPage() {
                     onChange={onChangeValue}
                   ></input>
                 </div>
+                <div className="signup-error">{errMessage}</div>
                 <button type="submit" className="signup-btn">
                   회원가입
                 </button>
-                <div className="signup-error">{errMessage}</div>
                 {signupModal ? (
                   <ConfirmSignupModal
                     signupModal={signupModal}
