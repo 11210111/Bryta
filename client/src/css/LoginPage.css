@@ -44,7 +44,7 @@
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 30px;
-  border-bottom: 4px solid #8a8a8a;
+  border-bottom: 4px solid #ffaa28;
   letter-spacing: 1px;
 }
 .login-main .login-input {
@@ -87,24 +87,17 @@
   color: #fff;
   background-color: #ffaa28;
 }
-
+.login-errMessage {
+  color: #ffaa28;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 4px;
+}
 .login-oauth {
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 25px;
 }
-/* .login-oauth .googleOauth {
-  border-radius: 50%;
-  border: 1.5px solid #8a8a8a;
-  margin: 16px;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  transition: transform 0.5s;
-  background-image: url("../images/google.jpeg");
-  background-size: cover;
-  background-position: center;
-} */
 
 .login-oauth .kakaoOauth {
   border-radius: 50%;

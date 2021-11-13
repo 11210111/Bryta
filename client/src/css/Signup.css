@@ -41,7 +41,7 @@
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 30px;
-  border-bottom: 4px solid #8a8a8a;
+  border-bottom: 4px solid #ffaa28;
   letter-spacing: 1px;
 }
 .signup-main .input-box {
@@ -97,7 +97,7 @@
 }
 .signup-main .signup-btn:hover {
   color: #fff;
-  background-color: #8a8a8a;
+  background-color: #ffaa28;
 }
 
 .login-path {
