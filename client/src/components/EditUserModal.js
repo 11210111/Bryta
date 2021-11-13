@@ -106,6 +106,7 @@ export default function UserEditModal({ modal, setModal }) {
                   editModal={editModal}
                   setEditModal={setEditModal}
                   data={{ username, password }}
+                  setModal={setModal}
                 />
 
                 <button

@@ -54,17 +54,47 @@ export const kakao = createAsyncThunk(
   }
 );
 
-// export const validateEmail = createAsyncThunk(
-//   "auth/validateEmail",
-//   async (email) => {
-//     return await axios
-//       .post("http://localhost:8080/auth/validateEmail", email, {
-//         headers: { "Content-Type": "application/json" },
-//         withCredentials: true,
-//       })
-//       .then((res) => res.data);
-//   }
-// );
+export const editInfo = createAsyncThunk(
+  "auth/editInfo",
+  async ({ isLogin, payload, password }, { rejectWithValue }) => {
+    try {
+      await axios.patch(
+        "http://localhost:8080/mypage",
+        {
+          username: payload.username,
+          password,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${isLogin.accessToken}`,
+          },
+          withCredentials: true,
+        }
+      );
+    } catch (err) {
+      rejectWithValue(err);
+    }
+    return payload;
+  }
+);
+
+export const deleteInfo = createAsyncThunk(
+  "auth/deleteInfo",
+  async (isLogin) => {
+    await axios.delete(
+      "http://localhost:8080/mypage",
+
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${isLogin.accessToken}`,
+        },
+        withCredentials: true,
+      }
+    );
+  }
+);
 
 // authSlice
 const authSlice = createSlice({
@@ -85,10 +115,15 @@ const authSlice = createSlice({
         state = action.payload;
         return state;
       })
-      // .addCase(validateEmail.fulfilled, (state, action) => {
-      //   console.log(action.payload);
-      //   return action.payload;
-      // })
+      .addCase(editInfo.fulfilled, (state, action) => {
+        const res = state;
+        res.data = action.payload;
+        return res;
+      })
+      .addCase(deleteInfo.fulfilled, (state) => {
+        state = null;
+        return state;
+      })
       .addDefaultCase((state) => {
         return state;
       });

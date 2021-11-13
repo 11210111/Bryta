@@ -3,24 +3,25 @@ import { useHistory } from "react-router";
 import "../css/EditCheckModal.css";
 import { logout } from "../features/authSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { deleteInfo, editInfo } from "../features/userSlice";
+import { deleteInfo, editInfo } from "../features/authSlice";
 
-export function EditCheckModal({ editModal, setEditModal, data }) {
+export function EditCheckModal({ editModal, setEditModal, data, setModal }) {
   const history = useHistory();
   const dispatch = useDispatch();
   const isLogin = useSelector((state) => state.auth);
   const payload = {
     id: isLogin.data.id,
-    email: data.email,
-    username: isLogin.data.username,
+    email: isLogin.data.email,
+    username: data.username,
   };
 
   const editHandler = async (e) => {
-    if (isLogin.email !== payload.email) {
+    e.preventDefault();
+    if (isLogin.username !== payload.username) {
       const password = data.password;
       await dispatch(editInfo({ isLogin, payload, password })).unwrap();
-    } else {
-      history.push("/mypage");
+      setEditModal(false);
+      setModal(false);
     }
   };
   return (

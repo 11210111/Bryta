@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/Post.css";
-
 export default function Post({ post }) {
   const changeDate = (date) => {
     return new Date(date).toLocaleDateString("ko-kr");

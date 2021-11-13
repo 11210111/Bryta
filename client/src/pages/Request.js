@@ -8,21 +8,21 @@ export default function Request() {
   const isLogin = useSelector((state) => state.auth);
   const [requestValue, setRequestValue] = useState("");
   const postRequest = () => {
-    axios
-      .post(
-        "https://api.bryta.shop/noticeBoard",
-        {
-          content: requestValue,
+    axios.post(
+      "http://localhost:8080/noticeBoard",
+      {
+        content: requestValue,
+        username: isLogin.data.username,
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${isLogin.accessToken}`,
         },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${isLogin.accessToken}`,
-          },
-          withCredentials: true,
-        }
-      )
-      .then((res) => window.location.replace("/board"));
+        withCredentials: true,
+      }
+    );
+    window.location.replace("/board");
   };
   const requestHandler = (e) => {
     setRequestValue(e.target.value);
