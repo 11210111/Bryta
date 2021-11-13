@@ -43,8 +43,8 @@ module.exports = {
 
             if (!usernameInfo) {
               await user.create({
-                username: userInfo.username,
                 email: null,
+                username: userInfo.username,
                 password: null,
               });
               const accessToken = generateAccessToken(userInfo);

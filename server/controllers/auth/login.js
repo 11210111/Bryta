@@ -20,8 +20,8 @@ module.exports = async (req, res) => {
   } else {
     const data = {
       id: userInfo.dataValues.id,
-      username: userInfo.dataValues.username,
       email: userInfo.dataValues.email,
+      username: userInfo.dataValues.username,
     };
     const accessToken = generateAccessToken(data);
     const refreshToken = generateRefreshToken(data);

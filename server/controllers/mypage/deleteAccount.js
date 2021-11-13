@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
   }
   await user
     .destroy({
-      where: { username: userInfo.username },
+      where: { username: userInfo.email },
     })
     .then(() => {
       res.sendStatus(201);
