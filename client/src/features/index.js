@@ -5,7 +5,6 @@ import storage from "redux-persist/lib/storage/session";
 // import storage from "redux-persist/lib/storage";
 
 import authReducer from "./authSlice";
-import userReducer from "./userSlice";
 import favoriteReducer from "./favoriteSlice";
 import favOneReducer from "./favOneSlice";
 
@@ -13,12 +12,11 @@ const persistConfig = {
   key: "root",
   storage,
   whitelist: ["auth"], // 스토리지에서 관리
-  blacklist: ["favorite", "favOne", "user"],
+  blacklist: ["favorite", "favOne"],
 };
 
 const rootReducer = combineReducers({
   auth: authReducer,
-  user: userReducer,
   favorite: favoriteReducer,
   favOne: favOneReducer,
 });
