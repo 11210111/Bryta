@@ -1,14 +1,13 @@
 const { user } = require("../../models");
 
 module.exports = async (req, res) => {
-  const { username, email, password } = req.body;
-  console.log(req.body);
-  if (!username || !email || !password) {
+  const { email, username, password } = req.body;
+  if (!email || !username || !password) {
     res.sendStatus(404);
   } else {
     const userInfo = await user.findOne({
       where: {
-        username,
+        email,
       },
     });
     if (userInfo) {
@@ -16,8 +15,8 @@ module.exports = async (req, res) => {
     } else {
       await user
         .create({
-          username,
           email,
+          username,
           password,
         })
         .then(() => {

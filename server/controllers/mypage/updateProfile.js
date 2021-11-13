@@ -6,17 +6,17 @@ module.exports = async (req, res) => {
   if (!userInfo) {
     res.sendStatus(404);
   }
-  const { email, password } = req.body;
+  const { username, password } = req.body;
 
   await user
     .update(
       {
-        email,
+        username,
         password,
       },
       {
         where: {
-          username: userInfo.username,
+          username: userInfo.email,
         },
       }
     )

@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.actor-name {
+  color: #fff;
+}
+
 .actor-image {
   width: 120px;
   height: 150px;
