@@ -18,7 +18,7 @@ function Board() {
   };
   useEffect(() => {
     axios
-      .get("https://api.bryta.shop/noticeBoard")
+      .get("http://localhost:8080/noticeBoard")
       .then((res) => setIsPost([...res.data.post].reverse()));
   }, []);
   const boardWriteHandler = () => {
