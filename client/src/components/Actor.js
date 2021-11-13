@@ -1,7 +1,7 @@
 import "../css/Actor.css";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { FaHeart } from "react-icons/fa";
+import { FaRegHeart, FaHeart } from "react-icons/fa";
 import LoginErrorModal from "./LoginErrorModal";
 import ActorCheckModal from "./ActorCheckModal";
 import { addFavorite } from "../features/favoriteSlice";
@@ -62,14 +62,16 @@ export default function Actor({ getId, actor }) {
       </div>
       <div className="actor-name">{actor && actor?.actorName}</div>
       {emptyHeart ? (
-        <FaHeart
+        <FaRegHeart
           className={url === "/search" ? "hide" : "myfav-btn emptyHeart"}
-          onClick={favoriteHandler} color="#fff"
+          onClick={favoriteHandler}
+          color="#d94e43"
         />
       ) : (
         <FaHeart
           className={url === "/search" ? "hide" : "myfav-btn fullHeart"}
-          onClick={favoriteHandler} color="#d94e43"
+          onClick={favoriteHandler}
+          color="#d94e43"
         />
       )}
       <ActorCheckModal

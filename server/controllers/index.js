@@ -2,6 +2,7 @@ module.exports = {
   login: require("./auth/login"),
   logout: require("./auth/logout"),
   signup: require("./auth/signup"),
+  validateEmail: require("./auth/emailAuthentication"),
   getAccessToken: require("./auth/kakao").getAccessToken,
   search: require("./actor/actor").search,
   recommendation: require("./actor/recommendation"),

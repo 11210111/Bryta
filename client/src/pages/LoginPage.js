@@ -7,15 +7,15 @@ import "../css/LoginPage.css";
 
 function LoginPage({ userInfo, setUserInfo }) {
   const dispatch = useDispatch();
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errMessage, setErrMessage] = useState("");
 
   const onChangeLoginState = (e) => {
     const { name, value } = e.target;
     switch (name) {
-      case "username":
-        return setUsername(value);
+      case "email":
+        return setEmail(value);
       case "password":
         return setPassword(value);
       default:
@@ -24,11 +24,15 @@ function LoginPage({ userInfo, setUserInfo }) {
 
   const onClickLogin = async (e) => {
     e.preventDefault();
-    if (username === "" || password === "") {
-      setErrMessage("빈칸을 입력하세요");
-    } else {
-      await dispatch(login({ username, password })).unwrap();
-      window.location.replace("/");
+    try {
+      if (email === "" || password === "") {
+        setErrMessage("빈칸을 입력하세요");
+      } else {
+        await dispatch(login({ email, password })).unwrap();
+        window.location.replace("/");
+      }
+    } catch (err) {
+      setErrMessage("이메일, 비밀번호를 확인해주세요.");
     }
   };
 
@@ -46,16 +50,17 @@ function LoginPage({ userInfo, setUserInfo }) {
             <h2 className="title">LOGIN</h2>
             <form className="login-form">
               <div className="login-input">
-                <label htmlFor="username">아이디</label>
+                <label htmlFor="email">이메일</label>
                 <input
                   type="text"
-                  placeholder="username"
+                  placeholder="email"
                   onChange={onChangeLoginState}
-                  name="username"
+                  name="email"
                   required
-                  value={username}
+                  value={email}
                 />
               </div>
+
               <div className="login-input">
                 <label htmlFor="password">비밀번호</label>
                 <input
@@ -75,7 +80,7 @@ function LoginPage({ userInfo, setUserInfo }) {
                 로그인
               </button>
               {errMessage ? (
-                <div className="errMessage">{errMessage}</div>
+                <div className="login-errMessage">{errMessage}</div>
               ) : null}
             </form>
             <div className="signup-path">

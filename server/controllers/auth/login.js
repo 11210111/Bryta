@@ -8,10 +8,11 @@ const {
 const { user } = require("../../models");
 
 module.exports = async (req, res) => {
-  const { username, password } = req.body;
+  const { email, password } = req.body;
+  console.log(req.body);
   const userInfo = await user.findOne({
     where: {
-      username,
+      email,
       password,
     },
   });
@@ -20,8 +21,8 @@ module.exports = async (req, res) => {
   } else {
     const data = {
       id: userInfo.dataValues.id,
-      username: userInfo.dataValues.username,
       email: userInfo.dataValues.email,
+      username: userInfo.dataValues.username,
     };
     const accessToken = generateAccessToken(data);
     const refreshToken = generateRefreshToken(data);
