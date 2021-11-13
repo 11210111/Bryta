@@ -16,6 +16,8 @@ function SignUpPage() {
   const [errMessage, setErrMessage] = useState("");
   const [signupModal, setSignupModal] = useState(false);
   const [errorModal, setErrorModal] = useState(false);
+  const [emailCode, setEmailCode] = useState("");
+  const [emailInput, setEmailInput] = useState(false);
 
   const onChangeValue = (e) => {
     e.preventDefault();
@@ -29,6 +31,8 @@ function SignUpPage() {
         return setPassword(value);
       case "confirmPassword":
         return setConfirmPassword(value);
+      case "emailCode":
+        return setEmailCode(value);
       default:
     }
   };
@@ -55,6 +59,11 @@ function SignUpPage() {
     } catch (err) {
       setErrorModal(!errorModal);
     }
+  };
+
+  const onClickEmail = (e) => {
+    e.preventDefault();
+    setEmailInput(true);
   };
   return (
     <>
@@ -91,6 +100,21 @@ function SignUpPage() {
                     ></input>
                   </div>
                 </div>
+                <button className="login-email-btn" onClick={onClickEmail}>
+                  인증
+                </button>
+                {emailInput ? (
+                  <>
+                    <input
+                      type="text"
+                      placeholder="이메일 인증코드를 입력해주세요."
+                      onChange={onChangeValue}
+                      name="emailCode"
+                      value={emailCode}
+                    ></input>
+                    <button>확인</button>
+                  </>
+                ) : null}
                 <div className="input-box">
                   <label htmlFor="password">비밀번호</label>
                   <input

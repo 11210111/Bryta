@@ -7,7 +7,7 @@ import { IoCloseCircleOutline } from "react-icons/io5";
 export default function UserEditModal({ modal, setModal }) {
   const [editModal, setEditModal] = useState(false);
   const [delModal, setDelModal] = useState(false);
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errMessage, setErrMessage] = useState("");
@@ -16,8 +16,8 @@ export default function UserEditModal({ modal, setModal }) {
     e.preventDefault();
     const { name, value } = e.target;
     switch (name) {
-      case "email":
-        return setEmail(value);
+      case "username":
+        return setUsername(value);
       case "password":
         return setPassword(value);
       case "confirmPassword":
@@ -28,13 +28,10 @@ export default function UserEditModal({ modal, setModal }) {
 
   const onClickEdit = (e) => {
     e.preventDefault();
-    const emailCheck = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
     const passwordCheck = /^(?=.*\d)(?=.*[a-z])(?=.*[!@#$%^&*]).{8,16}$/;
 
-    if (email === "" || password === "") {
+    if (username === "" || password === "") {
       setErrMessage("빈칸을 입력하세요");
-    } else if (!emailCheck.test(email)) {
-      setErrMessage("올바른 이메일 형식이 아닙니다");
     } else if (!passwordCheck.test(password)) {
       setErrMessage("8~16자의 영문 소문자, 숫자, 특수문자를 사용해주세요.");
     } else if (password !== confirmPassword) {
@@ -62,13 +59,13 @@ export default function UserEditModal({ modal, setModal }) {
               <p className="user-edit-modal-text">정보수정</p>
               <div className="user-edit-container">
                 <div className="user-edit-input">
-                  <label>이메일</label>
+                  <label>아이디</label>
                   <input
                     className="user-edit-write"
                     type="text"
-                    placeholder="email"
-                    name="email"
-                    value={email}
+                    placeholder="username"
+                    name="username"
+                    value={username}
                     onChange={onChangeValue}
                   />
                 </div>
@@ -108,7 +105,7 @@ export default function UserEditModal({ modal, setModal }) {
                 <EditCheckModal
                   editModal={editModal}
                   setEditModal={setEditModal}
-                  data={{ email, password }}
+                  data={{ username, password }}
                 />
 
                 <button
