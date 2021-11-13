@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
     res.sendStatus(404);
   } else {
     await noticeBoard.create({
-      username: userInfo.email,
+      username: userInfo.username,
       content,
     });
   }
