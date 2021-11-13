@@ -16,7 +16,7 @@ module.exports = async (req, res) => {
       },
       {
         where: {
-          username: userInfo.email,
+          email: userInfo.email,
         },
       }
     )
