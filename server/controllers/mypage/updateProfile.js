@@ -1,4 +1,4 @@
-const { user } = require("../../models");
+const { user, noticeBoard } = require("../../models");
 const { isAuthorized } = require("../auth/token");
 
 module.exports = async (req, res) => {
@@ -8,6 +8,17 @@ module.exports = async (req, res) => {
   }
   const { username, password } = req.body;
 
+  await noticeBoard.update(
+    {
+      username,
+    },
+    {
+      where: {
+        email: userInfo.email,
+      },
+    }
+  );
+
   await user
     .update(
       {
@@ -16,7 +27,7 @@ module.exports = async (req, res) => {
       },
       {
         where: {
-          username: userInfo.email,
+          email: userInfo.email,
         },
       }
     )

@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   noticeBoard.init(
     {
+      email: DataTypes.STRING,
       username: DataTypes.STRING,
       content: DataTypes.STRING,
     },

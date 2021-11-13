@@ -3,13 +3,14 @@ const { isAuthorized } = require("../auth/token");
 
 module.exports = async (req, res) => {
   const userInfo = isAuthorized(req);
-  const { content } = req.body;
+  const { username, content } = req.body;
 
   if (!userInfo) {
     res.sendStatus(404);
   } else {
     await noticeBoard.create({
-      username: userInfo.email,
+      email: userInfo.email,
+      username,
       content,
     });
   }
