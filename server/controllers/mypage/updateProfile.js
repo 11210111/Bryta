@@ -1,4 +1,4 @@
-const { user } = require("../../models");
+const { user, noticeBoard } = require("../../models");
 const { isAuthorized } = require("../auth/token");
 
 module.exports = async (req, res) => {
@@ -7,6 +7,17 @@ module.exports = async (req, res) => {
     res.sendStatus(404);
   }
   const { username, password } = req.body;
+
+  await noticeBoard.update(
+    {
+      username,
+    },
+    {
+      where: {
+        email: userInfo.email,
+      },
+    }
+  );
 
   await user
     .update(
