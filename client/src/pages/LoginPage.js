@@ -28,13 +28,11 @@ function LoginPage({ userInfo, setUserInfo }) {
       if (email === "" || password === "") {
         setErrMessage("빈칸을 입력하세요");
       } else {
-        console.log(email);
-        console.log(password);
         await dispatch(login({ email, password })).unwrap();
         window.location.replace("/");
       }
     } catch (err) {
-      setErrMessage("아이디, 비밀번호를 확인해주세요.");
+      setErrMessage("이메일, 비밀번호를 확인해주세요.");
     }
   };
 

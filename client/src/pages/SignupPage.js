@@ -6,6 +6,7 @@ import {
 } from "../components/ConfirmSignupModal";
 import { signup } from "../features/authSlice";
 import "../css/Signup.css";
+import axios from "axios";
 
 function SignUpPage() {
   const dispatch = useDispatch();
@@ -18,6 +19,8 @@ function SignUpPage() {
   const [errorModal, setErrorModal] = useState(false);
   const [emailCode, setEmailCode] = useState("");
   const [emailInput, setEmailInput] = useState(false);
+  const [isCode, setIsCode] = useState("");
+  const [confirm, setConfirm] = useState(true);
 
   const onChangeValue = (e) => {
     e.preventDefault();
@@ -60,11 +63,34 @@ function SignUpPage() {
       setErrorModal(!errorModal);
     }
   };
+  const codeHandler = (e) => {
+    e.preventDefault();
+    console.log(isCode);
+    console.log(emailCode);
+    if (isCode !== emailCode) {
+      setErrMessage("인증 코드를 확인해주세요.");
+    } else {
+      setErrMessage("인증이 확인되었습니다.");
+      setEmailInput(false);
+      setConfirm(false);
+    }
+  };
 
-  const onClickEmail = (e) => {
+  const onClickEmail = async (e) => {
     e.preventDefault();
     setEmailInput(true);
+    await axios
+      .post(
+        "http://localhost:8080/auth/validateEmail",
+        { email: String(email) },
+        {
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
+        }
+      )
+      .then((res) => setIsCode(res.data.data.verificationCode));
   };
+
   return (
     <>
       <div className="main">
@@ -100,9 +126,11 @@ function SignUpPage() {
                     ></input>
                   </div>
                 </div>
-                <button className="login-email-btn" onClick={onClickEmail}>
-                  인증
-                </button>
+                {confirm ? (
+                  <button className="login-email-btn" onClick={onClickEmail}>
+                    인증
+                  </button>
+                ) : null}
                 {emailInput ? (
                   <>
                     <input
@@ -112,7 +140,7 @@ function SignUpPage() {
                       name="emailCode"
                       value={emailCode}
                     ></input>
-                    <button>확인</button>
+                    <button onClick={codeHandler}>확인</button>
                   </>
                 ) : null}
                 <div className="input-box">
