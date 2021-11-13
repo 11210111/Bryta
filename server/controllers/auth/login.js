@@ -8,10 +8,11 @@ const {
 const { user } = require("../../models");
 
 module.exports = async (req, res) => {
-  const { username, password } = req.body;
+  const { email, password } = req.body;
+  console.log(req.body);
   const userInfo = await user.findOne({
     where: {
-      username,
+      email,
       password,
     },
   });
