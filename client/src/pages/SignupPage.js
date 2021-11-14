@@ -82,7 +82,7 @@ function SignUpPage() {
       setEmailInput(true);
       await axios
         .post(
-          "http://localhost:8080/auth/validateEmail",
+          "https://api.bryta.shop/auth/validateEmail",
           { email: String(email) },
           {
             headers: { "Content-Type": "application/json" },
