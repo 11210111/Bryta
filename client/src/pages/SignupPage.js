@@ -40,11 +40,11 @@ function SignUpPage() {
     }
   };
 
+  const emailCheck =
+    /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
   const onClickSignup = async (e) => {
     e.preventDefault();
     try {
-      const emailCheck =
-        /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
       const passwordCheck = /^(?=.*\d)(?=.*[a-z])(?=.*[!@#$%^&*]).{8,16}$/;
       if (email === "" || password === "") {
         setErrMessage("빈칸을 입력하세요");
@@ -65,9 +65,7 @@ function SignUpPage() {
   };
   const codeHandler = (e) => {
     e.preventDefault();
-    console.log(isCode);
-    console.log(emailCode);
-    if (isCode !== emailCode) {
+    if (isCode !== emailCode || !isCode.length) {
       setErrMessage("인증 코드를 확인해주세요.");
     } else {
       setErrMessage("인증이 확인되었습니다.");
@@ -78,17 +76,21 @@ function SignUpPage() {
 
   const onClickEmail = async (e) => {
     e.preventDefault();
-    setEmailInput(true);
-    await axios
-      .post(
-        "http://localhost:8080/auth/validateEmail",
-        { email: String(email) },
-        {
-          headers: { "Content-Type": "application/json" },
-          withCredentials: true,
-        }
-      )
-      .then((res) => setIsCode(res.data.data.verificationCode));
+    if (!email.length || !emailCheck.test(email)) {
+      setErrMessage("올바른 이메일 형식이 아닙니다.");
+    } else {
+      setEmailInput(true);
+      await axios
+        .post(
+          "http://localhost:8080/auth/validateEmail",
+          { email: String(email) },
+          {
+            headers: { "Content-Type": "application/json" },
+            withCredentials: true,
+          }
+        )
+        .then((res) => setIsCode(res.data.data.verificationCode));
+    }
   };
 
   return (
@@ -113,26 +115,29 @@ function SignUpPage() {
                     ></input>
                   </div>
                 </div>
-                <div className="input-box">
+
+                <div className="input-email-check">
                   <label htmlFor="email">이메일</label>
-                  <div className="input-wrapper">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="example@example.com"
-                      value={email}
-                      required
-                      onChange={onChangeValue}
-                    ></input>
-                  </div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="example@example.com"
+                    value={email}
+                    required
+                    onChange={onChangeValue}
+                  ></input>
+                  {confirm ? (
+                    <button
+                      className="login-email-checkBtn"
+                      onClick={onClickEmail}
+                    >
+                      인증
+                    </button>
+                  ) : null}
                 </div>
-                {confirm ? (
-                  <button className="login-email-btn" onClick={onClickEmail}>
-                    인증
-                  </button>
-                ) : null}
                 {emailInput ? (
-                  <>
+                  <div className="input-email-check">
+                    <label htmlFor="text">이메일 인증 코드</label>
                     <input
                       type="text"
                       placeholder="이메일 인증코드를 입력해주세요."
@@ -140,8 +145,13 @@ function SignUpPage() {
                       name="emailCode"
                       value={emailCode}
                     ></input>
-                    <button onClick={codeHandler}>확인</button>
-                  </>
+                    <button
+                      className="login-email-checkBtn"
+                      onClick={codeHandler}
+                    >
+                      확인
+                    </button>
+                  </div>
                 ) : null}
                 <div className="input-box">
                   <label htmlFor="password">비밀번호</label>

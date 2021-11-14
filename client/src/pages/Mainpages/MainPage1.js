@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "../../css/MainPage.css";
-import Background from "../../images/Mainpage-part1.jpg";
+import Background from "../../images/Mainpage-part1.png";
 const MainPage1 = () => {
   const history = useHistory();
 

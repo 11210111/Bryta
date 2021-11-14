@@ -24,7 +24,7 @@ export default function TodayActor({ todayActor }) {
             data-aos-easing="ease-out"
             className="todayactor-text"
           >
-            오늘의 추천배우
+            당신을 위한 추천배우
           </div>
           <div className="todayactor-click-message">
             배우 이미지 클릭 시 상세 페이지로 이동합니다.
