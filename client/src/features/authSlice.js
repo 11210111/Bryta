@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const login = createAsyncThunk("auth/login", async (loginInfo) => {
   const response = await axios.post(
-    "http://localhost:8080/auth/login",
+    "https://api.bryta.shop/auth/login",
     loginInfo,
     {
       headers: { "Content-Type": "application/json" },
@@ -59,7 +59,7 @@ export const editInfo = createAsyncThunk(
   async ({ isLogin, payload, password }, { rejectWithValue }) => {
     try {
       await axios.patch(
-        "http://localhost:8080/mypage",
+        "https://api.bryta.shop/mypage",
         {
           username: payload.username,
           password,
@@ -83,7 +83,7 @@ export const deleteInfo = createAsyncThunk(
   "auth/deleteInfo",
   async (isLogin) => {
     await axios.delete(
-      "http://localhost:8080/mypage",
+      "https://api.bryta.shop/mypage",
 
       {
         headers: {
