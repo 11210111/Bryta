@@ -38,7 +38,7 @@
 ## SO WHAT CODING
 |Name|Role|Github|
 |------|---|---|
-|김동현|Full-Stack|[![GitHub](https://img.shields.io/badge/ehdgusdl9177-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ehdgusdl9177)|
+|김동현|Back-End|[![GitHub](https://img.shields.io/badge/ehdgusdl9177-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ehdgusdl9177)|
 |강미정|Front-End|[![GitHub](https://img.shields.io/badge/11210111-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/11210111)|
 |김수영|Full-Stack|[![GitHub](https://img.shields.io/badge/kimdlzp-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/kimdlzp)|
 |이성은|Full-Stack|[![GitHub](https://img.shields.io/badge/tjddmsdl2056-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/tjddmsdl2056)|
