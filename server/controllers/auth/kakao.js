@@ -12,7 +12,7 @@ const kakaoClientSecret = process.env.KAKAO_CLIENT_SECRET;
 module.exports = {
   getAccessToken: (req, res) => {
     const code = req.body.code;
-    const kakaoUrl = `https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id=${kakaoClientId}&client_secret=${kakaoClientSecret}&redirect_uri=http://localhost:3000/login&code=${code}`;
+    const kakaoUrl = `https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id=${kakaoClientId}&client_secret=${kakaoClientSecret}&redirect_uri=https://api.bryta.shop/login&code=${code}`;
     axios
       .post(kakaoUrl, {
         headers: {
