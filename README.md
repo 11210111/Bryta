@@ -32,6 +32,10 @@
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
+### Stack Architecture
+
+![architecture](https://user-images.githubusercontent.com/81801426/141786902-f49ab1a4-2bce-484a-a3a5-7975395e2eee.png)
+
 
 ## SO WHAT CODING
 |Name|Role|Github|
