@@ -36,11 +36,14 @@
 
 ![architecture](https://user-images.githubusercontent.com/81801426/141786902-f49ab1a4-2bce-484a-a3a5-7975395e2eee.png)
 
+## Flowchart
+
+![Flowchart](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F426e60ef-a08e-4a18-9d64-4147969d48e2%2FUntitled.png?table=block&id=256d7210-8540-4af8-a618-9fec2caf9239&spaceId=82d63a72-8254-4cde-bf1e-b2597b7c099c&width=2000&userId=a065cf41-1472-4e16-b296-a4e343ce12dd&cache=v2)
 
 ## SO WHAT CODING
 |Name|Role|Github|
 |------|---|---|
-|김동현|Full-Stack|[![GitHub](https://img.shields.io/badge/ehdgusdl9177-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ehdgusdl9177)|
+|김동현|Back-End|[![GitHub](https://img.shields.io/badge/ehdgusdl9177-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ehdgusdl9177)|
 |강미정|Front-End|[![GitHub](https://img.shields.io/badge/11210111-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/11210111)|
 |김수영|Full-Stack|[![GitHub](https://img.shields.io/badge/kimdlzp-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/kimdlzp)|
 |이성은|Full-Stack|[![GitHub](https://img.shields.io/badge/tjddmsdl2056-FFAA28?style=for-the-badge&logo=github&logoColor=black)](https://github.com/tjddmsdl2056)|
